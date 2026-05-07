@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug Chatbot - Unipulse</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .debug-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .status {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        
+        .success { background: #d4edda; color: #155724; }
+        .error { background: #f8d7da; color: #721c24; }
+        .info { background: #d1ecf1; color: #0c5460; }
+        
+        button {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        
+        button:hover { background: #5a6fd8; }
+        
+        /* Chatbot Styles */
+        .chatbot-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 9999;
+        }
+
+        .chatbot-toggle {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border: none;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+            box-shadow: 0 4px 20px rgba(102, 126, 234, 0.4);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .chatbot-toggle:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 25px rgba(102, 126, 234, 0.6);
+        }
+
+        .chatbot-window {
+            position: absolute;
+            bottom: 80px;
+            right: 0;
+            width: 350px;
+            height: 500px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            display: none;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .chatbot-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .chatbot-header h3 {
+            margin: 0;
+            font-size: 1.1rem;
+        }
+
+        .chatbot-close {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 50%;
+            transition: background 0.3s;
+        }
+
+        .chatbot-close:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .chatbot-messages {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .message {
+            max-width: 80%;
+            padding: 12px 16px;
+            border-radius: 18px;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        .message.bot {
+            background: #f1f3f5;
+            color: #333;
+            align-self: flex-start;
+            border-bottom-left-radius: 6px;
+        }
+
+        .message.user {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            align-self: flex-end;
+            border-bottom-right-radius: 6px;
+        }
+
+        .chatbot-input-area {
+            padding: 15px 20px;
+            border-top: 1px solid #eee;
+            display: flex;
+            gap: 10px;
+        }
+
+        .chatbot-input {
+            flex: 1;
+            padding: 12px 16px;
+            border: 1px solid #ddd;
+            border-radius: 25px;
+            outline: none;
+            font-size: 14px;
+            transition: border-color 0.3s;
+            resize: none;
+            min-height: 40px;
+        }
+
+        .chatbot-input:focus {
+            border-color: #667eea;
+        }
+
+        .chatbot-send {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border: none;
+            color: white;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.2s;
+        }
+
+        .chatbot-send:hover {
+            transform: scale(1.05);
+        }
+
+        .typing-indicator {
+            display: none;
+            align-items: center;
+            gap: 5px;
+            padding: 12px 16px;
+            background: #f1f3f5;
+            border-radius: 18px;
+            border-bottom-left-radius: 6px;
+            align-self: flex-start;
+            max-width: 80px;
+        }
+
+        .typing-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #999;
+            animation: typing 1.4s infinite;
+        }
+
+        .typing-dot:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .typing-dot:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+
+        @keyframes typing {
+            0%, 60%, 100% {
+                transform: translateY(0);
+            }
+            30% {
+                transform: translateY(-10px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="debug-container">
+        <h1>🔧 Chatbot Debug Page</h1>
+        
+        <div id="status-container">
+            <div class="status info">Loading debug information...</div>
+        </div>
+        
+        <h3>Manual Tests</h3>
+        <button onclick="testChatbotVisibility()">Check Chatbot Visibility</button>
+        <button onclick="testChatbotElements()">Test Elements</button>
+        <button onclick="openChatbot()">Open Chatbot</button>
+        <button onclick="testMessage()">Send Test Message</button>
+        
+        <div id="debug-log" style="margin-top: 20px; padding: 15px; background: #f8f9fa; border-radius: 8px; font-family: monospace; white-space: pre-wrap; max-height: 300px; overflow-y: auto;"></div>
+        
+        <div class="status info" style="margin-top: 20px;">
+            <strong>Instructions:</strong><br>
+            1. Look for the chat button in the bottom-right corner<br>
+            2. Click it to open the chatbot<br>
+            3. Try sending a message<br>
+            4. Check the debug log below for any errors
+        </div>
+    </div>
+
+    <!-- AI Chatbot -->
+    <div class="chatbot-container">
+        <button class="chatbot-toggle" id="chatbot-toggle" title="Chat with Unipulse Assistant">
+            <i class="fas fa-comments"></i>
+        </button>
+        
+        <div class="chatbot-window" id="chatbot-window">
+            <div class="chatbot-header">
+                <div>
+                    <h3><i class="fas fa-robot"></i> Unipulse AI Assistant</h3>
+                    <small>Debug Mode</small>
+                </div>
+                <button class="chatbot-close" id="chatbot-close" title="Close chat">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="chatbot-messages" id="chatbot-messages">
+                <!-- Messages will be added here dynamically -->
+            </div>
+            
+            <div class="typing-indicator" id="typing-indicator">
+                <div class="typing-dot"></div>
+                <div class="typing-dot"></div>
+                <div class="typing-dot"></div>
+            </div>
+            
+            <div class="chatbot-input-area">
+                <textarea class="chatbot-input" id="chatbot-input" placeholder="Type your message..." maxlength="1000" rows="1"></textarea>
+                <button class="chatbot-send" id="chatbot-send" title="Send message">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Load chatbot scripts -->
+    <script src="chatbot-config.js"></script>
+    <script src="chatbot.js"></script>
+
+    <script>
+        const statusContainer = document.getElementById('status-container');
+        const debugLog = document.getElementById('debug-log');
+        
+        function addStatus(message, type = 'info') {
+            const div = document.createElement('div');
+            div.className = `status ${type}`;
+            div.innerHTML = `<strong>${new Date().toLocaleTimeString()}:</strong> ${message}`;
+            statusContainer.appendChild(div);
+        }
+        
+        function addLog(message) {
+            debugLog.textContent += `[${new Date().toLocaleTimeString()}] ${message}\n`;
+            debugLog.scrollTop = debugLog.scrollHeight;
+        }
+        
+        // Override console.log to capture chatbot logs
+        const originalLog = console.log;
+        const originalError = console.error;
+        
+        console.log = function(...args) {
+            originalLog.apply(console, args);
+            addLog('LOG: ' + args.join(' '));
+        };
+        
+        console.error = function(...args) {
+            originalError.apply(console, args);
+            addLog('ERROR: ' + args.join(' '));
+        };
+        
+        function testChatbotVisibility() {
+            const toggle = document.getElementById('chatbot-toggle');
+            if (toggle) {
+                const rect = toggle.getBoundingClientRect();
+                const isVisible = rect.width > 0 && rect.height > 0;
+                addStatus(`Chatbot button ${isVisible ? 'is visible' : 'is hidden'}`, isVisible ? 'success' : 'error');
+                addLog(`Button dimensions: ${rect.width}x${rect.height}, position: ${rect.left},${rect.top}`);
+            } else {
+                addStatus('Chatbot button not found', 'error');
+            }
+        }
+        
+        function testChatbotElements() {
+            const elements = [
+                'chatbot-toggle',
+                'chatbot-window', 
+                'chatbot-messages',
+                'chatbot-input',
+                'chatbot-send'
+            ];
+            
+            elements.forEach(id => {
+                const element = document.getElementById(id);
+                addStatus(`${id}: ${element ? 'Found' : 'Not found'}`, element ? 'success' : 'error');
+            });
+        }
+        
+        function openChatbot() {
+            const toggle = document.getElementById('chatbot-toggle');
+            if (toggle) {
+                toggle.click();
+                addStatus('Clicked chatbot toggle button', 'info');
+            } else {
+                addStatus('Chatbot toggle not found', 'error');
+            }
+        }
+        
+        function testMessage() {
+            const input = document.getElementById('chatbot-input');
+            const send = document.getElementById('chatbot-send');
+            
+            if (input && send) {
+                input.value = 'Hello, this is a test message';
+                send.click();
+                addStatus('Sent test message', 'success');
+            } else {
+                addStatus('Input or send button not found', 'error');
+            }
+        }
+        
+        // Initial checks
+        setTimeout(() => {
+            addStatus('Debug page loaded', 'success');
+            testChatbotVisibility();
+            testChatbotElements();
+            
+            if (typeof CHATBOT_CONFIG !== 'undefined') {
+                addStatus('Chatbot config loaded', 'success');
+            } else {
+                addStatus('Chatbot config not loaded', 'error');
+            }
+            
+            if (window.unipulseChatbot) {
+                addStatus('Chatbot instance created', 'success');
+            } else {
+                addStatus('Chatbot instance not found', 'error');
+            }
+        }, 1000);
+    </script>
+</body>
+</html>

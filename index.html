@@ -1,0 +1,4097 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unipulse - Find Your Dream College | Maharashtra College Finder</title>
+    <meta name="description"
+        content="Discover 1000+ engineering, medical, and pharmacy colleges across Maharashtra with detailed cutoffs, fees, and rankings.">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #667eea;
+            --primary-dark: #5a6fd8;
+            --secondary: #764ba2;
+            --accent: #f093fb;
+            --success: #4ecdc4;
+            --warning: #ffe066;
+            --danger: #ff6b6b;
+            --light: #f8fafc;
+            --dark: #1a202c;
+            --gray: #718096;
+            --white: #ffffff;
+            --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12);
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+            --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.15);
+            --shadow-xl: 0 25px 50px rgba(0, 0, 0, 0.25);
+            --gradient-primary: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            --gradient-accent: linear-gradient(135deg, var(--accent) 0%, var(--primary) 100%);
+            --border-radius: 12px;
+            --border-radius-lg: 20px;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.7;
+            color: var(--dark);
+            background: var(--gradient-primary);
+            min-height: 100vh;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+        .loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease;
+        }
+
+        .loading.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 4px solid var(--light);
+            border-top: 4px solid var(--primary);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-text-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .nav-link:hover {
+            color: var(--primary);
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background: var(--primary);
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .mobile-menu-toggle {
+            display: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+            color: var(--dark);
+        }
+
+        /* Mobile Navigation */
+        .mobile-nav {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 1000;
+            padding-top: 80px;
+        }
+
+        .mobile-nav.active {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 2rem;
+        }
+
+        .mobile-nav .nav-link {
+            color: white;
+            font-size: 1.5rem;
+            text-decoration: none;
+            padding: 1rem 2rem;
+            border-radius: var(--border-radius);
+            transition: var(--transition);
+        }
+
+        .mobile-nav .nav-link:hover {
+            background: var(--primary);
+        }
+
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            box-shadow: var(--shadow-lg);
+            transition: var(--transition);
+            z-index: 999;
+        }
+
+        .back-to-top:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        .back-to-top.visible {
+            display: flex;
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+
+            .mobile-menu-toggle {
+                display: block;
+            }
+
+            .nav-actions .btn {
+                padding: 0.5rem 1rem;
+                font-size: 0.9rem;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .hero-actions {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .stats {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem;
+            }
+        }
+
+        .logo-image {
+            height: 60px;
+            width: 60px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            border: 2px solid rgba(255, 255, 255, 0.8);
+            background: white;
+            padding: 2px;
+            transition: all 0.3s ease;
+            object-fit: contain;
+        }
+
+        .logo-image:hover {
+            transform: scale(1.08);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+            border-color: var(--primary);
+        }
+
+        .logo-text {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--primary);
+            transition: color 0.3s ease;
+        }
+
+        .logo-tagline {
+            font-size: 0.9rem;
+            color: var(--secondary);
+            font-weight: 500;
+            margin-left: -10px;
+        }
+
+        .logo:hover .logo-text {
+            color: var(--primary-dark);
+        }
+
+        .logo-container {
+            position: relative;
+        }
+
+        .logo-fallback {
+            height: 60px;
+            width: 60px;
+            border-radius: 12px;
+            background: var(--gradient-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            border: 2px solid rgba(255, 255, 255, 0.8);
+        }
+
+        .logo-fallback i {
+            font-size: 28px;
+            color: white;
+        }
+
+        /* AI Chatbot Styles */
+        .chatbot-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 9999;
+        }
+
+        .chatbot-toggle {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: var(--gradient-primary);
+            border: none;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+            box-shadow: 0 4px 20px rgba(102, 126, 234, 0.4);
+            transition: all 0.3s ease;
+            display: flex !important;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 1000;
+        }
+
+        .chatbot-toggle:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 25px rgba(102, 126, 234, 0.6);
+        }
+
+        .chatbot-window {
+            position: absolute;
+            bottom: 80px;
+            right: 0;
+            width: 350px;
+            height: 500px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            display: none;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .chatbot-header {
+            background: var(--gradient-primary);
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .chatbot-header h3 {
+            margin: 0;
+            font-size: 1.1rem;
+        }
+
+        .chatbot-close {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 50%;
+            transition: background 0.3s;
+        }
+
+        .chatbot-close:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .chatbot-messages {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .message {
+            max-width: 80%;
+            padding: 12px 16px;
+            border-radius: 18px;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        .message.bot {
+            background: #f1f3f5;
+            color: #333;
+            align-self: flex-start;
+            border-bottom-left-radius: 6px;
+        }
+
+        .message.user {
+            background: var(--gradient-primary);
+            color: white;
+            align-self: flex-end;
+            border-bottom-right-radius: 6px;
+        }
+
+        .chatbot-input-area {
+            padding: 15px 20px;
+            border-top: 1px solid #eee;
+            display: flex;
+            gap: 10px;
+        }
+
+        .chatbot-input {
+            flex: 1;
+            padding: 12px 16px;
+            border: 1px solid #ddd;
+            border-radius: 25px;
+            outline: none;
+            font-size: 14px;
+            transition: border-color 0.3s;
+        }
+
+        .chatbot-input:focus {
+            border-color: var(--primary);
+        }
+
+        .chatbot-send {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--gradient-primary);
+            border: none;
+            color: white;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.2s;
+        }
+
+        .chatbot-send:hover {
+            transform: scale(1.05);
+        }
+
+        .typing-indicator {
+            display: none;
+            align-items: center;
+            gap: 5px;
+            padding: 12px 16px;
+            background: #f1f3f5;
+            border-radius: 18px;
+            border-bottom-left-radius: 6px;
+            align-self: flex-start;
+            max-width: 80px;
+        }
+
+        .typing-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #999;
+            animation: typing 1.4s infinite;
+        }
+
+        .typing-dot:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .typing-dot:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+
+        @keyframes typing {
+
+            0%,
+            60%,
+            100% {
+                transform: translateY(0);
+            }
+
+            30% {
+                transform: translateY(-10px);
+            }
+        }
+
+        /* Enhanced message styles */
+        .message-timestamp {
+            font-size: 10px;
+            opacity: 0.6;
+            margin-top: 4px;
+            text-align: right;
+        }
+
+        .message.bot .message-timestamp {
+            text-align: left;
+        }
+
+        /* Enhanced input styles */
+        .chatbot-input {
+            resize: none;
+            min-height: 40px;
+            max-height: 100px;
+            overflow-y: auto;
+        }
+
+        /* Loading state for send button */
+        .chatbot-send.loading {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        .chatbot-send.loading::after {
+            content: '';
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            border: 2px solid transparent;
+            border-top: 2px solid white;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @media (max-width: 768px) {
+            .chatbot-window {
+                width: 300px;
+                height: 450px;
+            }
+
+            .chatbot-container {
+                bottom: 15px;
+                right: 15px;
+            }
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 6rem 0 4rem;
+            color: white;
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3.8rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.4rem;
+            margin-bottom: 3rem;
+            opacity: 0.95;
+            line-height: 1.8;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-actions {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 4rem;
+            flex-wrap: wrap;
+        }
+
+        .btn-large {
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        /* Quick Features Section */
+        .quick-features {
+            background: white;
+            padding: 4rem 0;
+            margin-top: -2rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        .quick-features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .quick-feature {
+            text-align: center;
+            padding: 2rem 1.5rem;
+            background: white;
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border: 1px solid #f1f3f4;
+        }
+
+        .quick-feature:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .quick-feature-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--gradient-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 2rem;
+            color: white;
+        }
+
+        .quick-feature h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+
+        .quick-feature p {
+            color: var(--gray);
+            line-height: 1.6;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            min-width: 150px;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--warning);
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        /* Search Section */
+        .search-section {
+            background: var(--white);
+            padding: 4rem 0;
+            margin: -50px 0 0 0;
+            position: relative;
+            z-index: 10;
+        }
+
+        .search-container {
+            background: var(--white);
+            border-radius: var(--border-radius-lg);
+            padding: 3rem;
+            box-shadow: var(--shadow-xl);
+            margin-bottom: 3rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(20px);
+        }
+
+        .search-box {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 2rem;
+        }
+
+        .search-input {
+            flex: 1;
+            padding: 15px 25px;
+            border: 2px solid #e1e5ee;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            background: #f8f9fa;
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 4px rgba(74, 107, 255, 0.1);
+            background: white;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary) 0%, #3a5ae8 100%);
+            color: white;
+            box-shadow: var(--shadow);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .filters {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .filter-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--dark);
+            font-size: 0.95rem;
+        }
+
+        .filter-group select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #e1e5ee;
+            border-radius: 10px;
+            background: white;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .filter-group select:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(74, 107, 255, 0.1);
+        }
+
+        /* Results Section */
+        .results-section {
+            background: var(--light);
+            padding: 4rem 0;
+            min-height: 60vh;
+        }
+
+        .results-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .results-header h2 {
+            font-size: 2.2rem;
+            color: var(--dark);
+            font-weight: 700;
+        }
+
+        .results-count {
+            background: var(--primary);
+            color: var(--white);
+            padding: 0.5rem 1.2rem;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+        }
+
+        .results-filters {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: var(--white);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .sort-options {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .sort-options label {
+            font-weight: 600;
+            color: var(--dark);
+        }
+
+        .sort-options select {
+            padding: 0.5rem 1rem;
+            border: 2px solid #e2e8f0;
+            border-radius: var(--border-radius);
+            background: var(--white);
+            font-size: 0.9rem;
+            min-width: 150px;
+        }
+
+        .view-toggle {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .view-btn {
+            padding: 0.75rem;
+            border: 2px solid #e2e8f0;
+            background: var(--white);
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            transition: var(--transition);
+            color: var(--gray);
+        }
+
+        .view-btn.active,
+        .view-btn:hover {
+            background: var(--primary);
+            border-color: var(--primary);
+            color: var(--white);
+        }
+
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .results-grid.list-view {
+            grid-template-columns: 1fr;
+        }
+
+        .result-card {
+            background: var(--white);
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border: 1px solid #e2e8f0;
+        }
+
+        .result-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .result-card.list-view {
+            display: flex;
+            align-items: center;
+            padding: 1.5rem;
+        }
+
+        .college-header {
+            padding: 1.5rem;
+            background: var(--gradient-primary);
+            color: var(--white);
+            text-align: center;
+        }
+
+        .college-type {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .college-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            line-height: 1.3;
+        }
+
+        .college-location {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            opacity: 0.9;
+        }
+
+        .college-body {
+            padding: 1.5rem;
+        }
+
+        .college-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .stat {
+            text-align: center;
+            padding: 1rem;
+            background: var(--light);
+            border-radius: var(--border-radius);
+        }
+
+        .stat-value {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--primary);
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: var(--gray);
+            margin-top: 0.25rem;
+        }
+
+        .college-branches {
+            margin-bottom: 1.5rem;
+        }
+
+        .branches-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--dark);
+            margin-bottom: 0.75rem;
+        }
+
+        .branches-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .branch-tag {
+            padding: 0.25rem 0.75rem;
+            background: var(--success);
+            color: var(--white);
+            border-radius: 15px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
+        .college-actions {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+            padding: 0.75rem 1.5rem;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .btn-outline:hover {
+            background: var(--primary);
+            color: var(--white);
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 4rem 2rem;
+            color: var(--gray);
+        }
+
+        .no-results i {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            opacity: 0.5;
+        }
+
+        .no-results h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+
+        /* Pagination */
+        .pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 2rem;
+        }
+
+        .page-btn {
+            padding: 0.75rem 1rem;
+            border: 1px solid #e2e8f0;
+            background: var(--white);
+            color: var(--gray);
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            transition: var(--transition);
+            font-weight: 500;
+        }
+
+        .page-btn:hover,
+        .page-btn.active {
+            background: var(--primary);
+            border-color: var(--primary);
+            color: var(--white);
+        }
+
+        .page-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        /* Section Headers */
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            color: var(--dark);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .section-header p {
+            font-size: 1.2rem;
+            color: var(--gray);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 4rem 0;
+            background: white;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--dark);
+            position: relative;
+            display: inline-block;
+            padding-bottom: 15px;
+            margin-bottom: 1rem;
+        }
+
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--success));
+            border-radius: 2px;
+        }
+
+        .section-title p {
+            font-size: 1.2rem;
+            color: var(--gray);
+            margin-top: 1rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        /* About Section */
+        .about-section {
+            padding: 4rem 0;
+            background: var(--light);
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-text h2 {
+            font-size: 2.5rem;
+            color: var(--dark);
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+
+        .about-description {
+            font-size: 1.1rem;
+            color: var(--gray);
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        .about-features {
+            margin-bottom: 2rem;
+        }
+
+        .about-feature {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .about-feature i {
+            color: var(--success);
+            font-size: 1.2rem;
+        }
+
+        .about-feature span {
+            color: var(--dark);
+            font-weight: 500;
+        }
+
+        .about-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+
+        .about-stat {
+            text-align: center;
+            padding: 1.5rem;
+            background: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+
+        .about-stat h3 {
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .about-stat p {
+            color: var(--gray);
+            font-weight: 500;
+        }
+
+        .about-image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .about-image-placeholder {
+            text-align: center;
+            padding: 3rem;
+            background: white;
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow-lg);
+            border: 1px solid #f1f3f4;
+        }
+
+        .about-image-placeholder i {
+            font-size: 4rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .about-image-placeholder h3 {
+            font-size: 1.5rem;
+            color: var(--dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .about-image-placeholder p {
+            color: var(--gray);
+        }
+
+        @media (max-width: 768px) {
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .about-stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Contact Section */
+        .contact-section {
+            padding: 4rem 0;
+            background: white;
+        }
+
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            padding: 1.5rem;
+            background: var(--light);
+            border-radius: var(--border-radius);
+            transition: var(--transition);
+        }
+
+        .contact-item:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow);
+        }
+
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: white;
+            flex-shrink: 0;
+        }
+
+        .contact-details h4 {
+            font-size: 1.2rem;
+            color: var(--dark);
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .contact-details p {
+            color: var(--gray);
+            font-size: 1rem;
+        }
+
+        .contact-form {
+            background: var(--light);
+            padding: 2.5rem;
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem 1.5rem;
+            border: 2px solid #e1e5ee;
+            border-radius: var(--border-radius);
+            font-size: 1rem;
+            transition: var(--transition);
+            background: white;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        @media (max-width: 768px) {
+            .contact-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .contact-form {
+                padding: 2rem;
+            }
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 1px solid #f1f3f4;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--primary), var(--success));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 2rem;
+            color: white;
+        }
+
+        .feature-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+
+        .feature-description {
+            color: var(--secondary);
+            line-height: 1.7;
+        }
+
+        /* Colleges Preview */
+        .colleges-preview {
+            padding: 4rem 0;
+            background: #f8f9fa;
+        }
+
+        .colleges-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .college-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+        }
+
+        .college-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .college-image {
+            height: 200px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem;
+        }
+
+        .college-details {
+            padding: 1.5rem;
+        }
+
+        .college-name {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--dark);
+        }
+
+        .college-location {
+            display: flex;
+            align-items: center;
+            color: var(--secondary);
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+
+        .college-location i {
+            margin-right: 8px;
+            color: var(--primary);
+        }
+
+        .college-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+            font-size: 0.85rem;
+        }
+
+        .info-item {
+            text-align: center;
+            flex: 1;
+        }
+
+        .info-item .label {
+            color: var(--secondary);
+            display: block;
+            margin-bottom: 3px;
+        }
+
+        .info-item .value {
+            font-weight: 600;
+            color: var(--dark);
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary), var(--success));
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .cta-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .cta-title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .cta-description {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 3rem 0 1.5rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-column h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1.2rem;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .footer-column h3::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 40px;
+            height: 2px;
+            background: var(--primary);
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 8px;
+        }
+
+        .footer-links a {
+            color: #adb5bd;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background: var(--primary);
+            transform: translateY(-3px);
+        }
+
+        .footer-logo-section {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .footer-logo-image {
+            height: 45px;
+            width: 45px;
+            border-radius: 10px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2px;
+            object-fit: contain;
+            transition: all 0.3s ease;
+        }
+
+        .footer-logo-image:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: #adb5bd;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+
+            .search-box {
+                flex-direction: column;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .stats {
+                gap: 1.5rem;
+            }
+
+            .colleges-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .logo {
+                gap: 10px;
+            }
+
+            .logo-image {
+                height: 50px;
+                width: 50px;
+            }
+
+            .logo-text {
+                font-size: 1.6rem;
+            }
+
+            .logo-tagline {
+                font-size: 0.75rem;
+            }
+
+            .footer-logo-section {
+                gap: 8px;
+            }
+
+            .footer-logo-image {
+                height: 38px;
+                width: 38px;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .section-title h2 {
+                font-size: 1.8rem;
+            }
+
+            .cta-title {
+                font-size: 2rem;
+            }
+
+            .results-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .results-filters {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .college-actions {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loading" id="loading">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <div class="logo-container">
+                        <img src="unipulse-logo.png" alt="Unipulse Logo" class="logo-image"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="logo-fallback" style="display: none;">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                    </div>
+                    <div class="logo-text-container">
+                        <span class="logo-text">Unipulse</span>
+                        <span class="logo-tagline">Find Your Dream College</span>
+                    </div>
+                </div>
+
+                <div class="nav-menu">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#search" class="nav-link">Search Colleges</a>
+                    <a href="#features" class="nav-link">Features</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <a href="admin.html" class="nav-link"><i class="fas fa-lock"
+                            style="font-size:0.8em;margin-right:4px;"></i>Admin</a>
+                </div>
+
+                <div class="nav-actions" id="nav-auth-area">
+                    <a href="login.html" class="btn btn-outline" id="nav-login-btn" style="text-decoration:none;">
+                        <i class="fas fa-sign-in-alt"></i> Login
+                    </a>
+                    <a href="login.html#signup" class="btn btn-primary" id="nav-signup-btn"
+                        style="text-decoration:none;font-size:0.95rem;padding:10px 20px;">
+                        <i class="fas fa-user-plus"></i> Sign Up
+                    </a>
+                    <!-- Shown when logged in -->
+                    <div id="nav-user-profile" style="display:none;align-items:center;gap:10px;">
+                        <div style="width:38px;height:38px;background:linear-gradient(135deg,#667eea,#764ba2);border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:0.95rem;"
+                            id="nav-user-avatar">U</div>
+                        <span style="font-weight:600;color:var(--dark);font-size:0.95rem;"
+                            id="nav-user-name">User</span>
+                        <button class="btn btn-outline" onclick="logoutUser()"
+                            style="padding:8px 16px;font-size:0.85rem;">
+                            <i class="fas fa-sign-out-alt"></i> Logout
+                        </button>
+                    </div>
+                </div>
+
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up">
+                <h1>Find Your Dream College in Maharashtra</h1>
+                <p>Discover the perfect engineering, medical, or pharmacy college with our comprehensive database of
+                    1000+ institutions across all 36 districts of Maharashtra.</p>
+
+                <div class="hero-actions" data-aos="fade-up" data-aos-delay="300">
+                    <a href="#search" class="btn btn-primary btn-large">
+                        <i class="fas fa-search"></i> Start Your Search
+                    </a>
+                    <button class="btn btn-secondary btn-large"
+                        onclick="document.getElementById('chatbot-toggle').click()">
+                        <i class="fas fa-robot"></i> Ask AI Assistant
+                    </button>
+                </div>
+
+                <div class="stats" data-aos="fade-up" data-aos-delay="500">
+                    <div class="stat-item">
+                        <span class="stat-number">1000+</span>
+                        <span class="stat-label">Colleges</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">36</span>
+                        <span class="stat-label">Districts</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">Categories</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Accurate Data</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Features Section -->
+    <section class="quick-features">
+        <div class="container">
+            <div class="quick-features-grid">
+                <div class="quick-feature" data-aos="fade-up" data-aos-delay="100">
+                    <div class="quick-feature-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Engineering Colleges</h3>
+                    <p>500+ engineering colleges across all branches</p>
+                </div>
+                <div class="quick-feature" data-aos="fade-up" data-aos-delay="200">
+                    <div class="quick-feature-icon">
+                        <i class="fas fa-stethoscope"></i>
+                    </div>
+                    <h3>Medical Colleges</h3>
+                    <p>300+ medical & dental colleges with NEET data</p>
+                </div>
+                <div class="quick-feature" data-aos="fade-up" data-aos-delay="300">
+                    <div class="quick-feature-icon">
+                        <i class="fas fa-pills"></i>
+                    </div>
+                    <h3>Pharmacy Colleges</h3>
+                    <p>200+ pharmacy colleges with detailed info</p>
+                </div>
+                <div class="quick-feature" data-aos="fade-up" data-aos-delay="400">
+                    <div class="quick-feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>AI Assistant</h3>
+                    <p>Get personalized college recommendations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section id="search" class="search-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Find Your Perfect College</h2>
+                <p>Search through 1000+ colleges across Maharashtra with advanced filters</p>
+            </div>
+
+            <div class="search-container" data-aos="fade-up" data-aos-delay="200">
+                <div class="search-box">
+                    <input type="text" class="search-input"
+                        placeholder="Search by college name, location, or branch...">
+                    <button class="btn btn-primary">
+                        <i class="fas fa-search"></i> Search Colleges
+                    </button>
+                </div>
+                <div class="filters">
+                    <div class="filter-group">
+                        <label for="district">District</label>
+                        <select id="district">
+                            <option value="">All Districts</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Pune">Pune</option>
+                            <option value="Nagpur">Nagpur</option>
+                            <option value="Nashik">Nashik</option>
+                            <option value="Aurangabad">Aurangabad</option>
+                            <option value="Thane">Thane</option>
+                            <option value="Solapur">Solapur</option>
+                            <option value="Kolhapur">Kolhapur</option>
+                            <option value="Ahmednagar">Ahmednagar</option>
+                            <option value="Akola">Akola</option>
+                            <option value="Amravati">Amravati</option>
+                            <option value="Beed">Beed</option>
+                            <option value="Buldhana">Buldhana</option>
+                            <option value="Dhule">Dhule</option>
+                            <option value="Hingoli">Hingoli</option>
+                            <option value="Jalgaon">Jalgaon</option>
+                            <option value="Jalna">Jalna</option>
+                            <option value="Latur">Latur</option>
+                            <option value="Nanded">Nanded</option>
+                            <option value="Raigad">Raigad</option>
+                            <option value="Ratnagiri">Ratnagiri</option>
+                            <option value="Sangli">Sangli</option>
+                            <option value="Satara">Satara</option>
+                            <option value="Sindhudurg">Sindhudurg</option>
+                            <option value="Wardha">Wardha</option>
+                            <option value="Washim">Washim</option>
+                            <option value="Yavatmal">Yavatmal</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="type">College Type</label>
+                        <select id="type">
+                            <option value="">All Types</option>
+                            <option value="Government">Government</option>
+                            <option value="Private">Private</option>
+                            <option value="Autonomous">Autonomous</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="category">Category</label>
+                        <select id="category">
+                            <option value="">All Categories</option>
+                            <option value="engineering">Engineering</option>
+                            <option value="medical">Medical</option>
+                            <option value="pharmacy">Pharmacy</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Cutoff Filters Section - Perfect Match -->
+                <div class="cutoff-filters"
+                    style="margin-top: 2rem; padding: 2rem; background: #f8f9fa; border-radius: 15px; border: 2px solid #e9ecef;">
+                    <h3 style="text-align: center; margin-bottom: 0.5rem; color: var(--dark); font-size: 1.4rem;">
+                        <i class="fas fa-bullseye" style="color: var(--primary); margin-right: 10px;"></i>
+                        Find Your Perfect College Match
+                    </h3>
+                    <p style="text-align: center; color: #666; margin-bottom: 1.5rem; font-size: 0.95rem;">
+                        Enter your obtained marks to find colleges you're eligible for
+                    </p>
+
+                    <div class="cutoff-tabs"
+                        style="display: flex; justify-content: center; margin-bottom: 2rem; gap: 1rem; flex-wrap: wrap; align-items: center;">
+                        <!-- CET Group with PCM/PCB sub-buttons -->
+                        <div class="cet-btn-group"
+                            style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
+                            <button class="cutoff-tab active" data-exam="cet"
+                                style="padding: 0.75rem 1.5rem; border: none; border-radius: 25px; background: var(--primary); color: white; font-weight: 600; cursor: pointer; transition: all 0.3s ease;">
+                                <i class="fas fa-calculator"></i> CET
+                            </button>
+                            <div class="cet-stream-btns" id="cet-stream-btns"
+                                style="display: flex; gap: 0.5rem; animation: fadeIn 0.3s ease;">
+                                <button class="cet-stream-btn active" data-stream="pcm" id="btn-pcm"
+                                    style="padding: 0.5rem 1.2rem; border: none; border-radius: 20px; background: linear-gradient(135deg, #667eea, #764ba2); color: white; font-weight: 600; cursor: pointer; font-size: 0.85rem; transition: all 0.3s ease; box-shadow: 0 3px 10px rgba(102,126,234,0.3);">
+                                    <i class="fas fa-flask"></i> PCM <small style="opacity:0.8;">(Engg)</small>
+                                </button>
+                                <button class="cet-stream-btn" data-stream="pcb" id="btn-pcb"
+                                    style="padding: 0.5rem 1.2rem; border: 2px solid #4ecdc4; border-radius: 20px; background: transparent; color: #4ecdc4; font-weight: 600; cursor: pointer; font-size: 0.85rem; transition: all 0.3s ease;">
+                                    <i class="fas fa-pills"></i> PCB <small style="opacity:0.8;">(Pharma)</small>
+                                </button>
+                            </div>
+                        </div>
+                        <button class="cutoff-tab" data-exam="neet"
+                            style="padding: 0.75rem 1.5rem; border: 2px solid var(--primary); border-radius: 25px; background: transparent; color: var(--primary); font-weight: 600; cursor: pointer; transition: all 0.3s ease;">
+                            <i class="fas fa-stethoscope"></i> NEET
+                        </button>
+                        <button class="cutoff-tab" data-exam="jee"
+                            style="padding: 0.75rem 1.5rem; border: 2px solid var(--primary); border-radius: 25px; background: transparent; color: var(--primary); font-weight: 600; cursor: pointer; transition: all 0.3s ease;">
+                            <i class="fas fa-cogs"></i> JEE
+                        </button>
+                    </div>
+
+                    <!-- Hidden input to track selected CET stream -->
+                    <input type="hidden" id="cet-stream" value="pcm">
+
+                    <!-- CET Filter -->
+                    <div class="cutoff-content active" id="cet-filters">
+                        <div id="cet-stream-label" style="text-align:center; margin-bottom:1rem;">
+                            <span
+                                style="background: linear-gradient(135deg, #667eea, #764ba2); color:white; padding:6px 18px; border-radius:20px; font-weight:600; font-size:0.9rem;">
+                                <i class="fas fa-flask"></i> PCM — Engineering Colleges
+                            </span>
+                        </div>
+                        <div class="filters" style="grid-template-columns: 1fr 1fr; max-width: 600px; margin: 0 auto;">
+                            <div class="filter-group">
+                                <label for="cet-category"><i class="fas fa-users"
+                                        style="margin-right:5px; color: var(--primary);"></i>Reservation
+                                    Category</label>
+                                <select id="cet-category">
+                                    <option value="General">General</option>
+                                    <option value="OBC">OBC</option>
+                                    <option value="SC">SC</option>
+                                    <option value="ST">ST</option>
+                                    <option value="EWS">EWS</option>
+                                </select>
+                            </div>
+                            <div class="filter-group">
+                                <label for="cet-obtained-marks"><i class="fas fa-pen-alt"
+                                        style="margin-right:5px; color: var(--primary);"></i>Enter Your Obtained
+                                    Marks</label>
+                                <input type="number" id="cet-obtained-marks" placeholder="e.g., 145" min="0" max="200"
+                                    style="width: 100%; padding: 12px 15px; border: 2px solid #e1e5ee; border-radius: 10px; background: white; font-size: 1rem;">
+                                <small style="color:#888; margin-top:4px; display:block;">CET marks out of 200</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- NEET Filter -->
+                    <div class="cutoff-content" id="neet-filters" style="display: none;">
+                        <div class="filters" style="grid-template-columns: 1fr 1fr; max-width: 600px; margin: 0 auto;">
+                            <div class="filter-group">
+                                <label for="neet-category"><i class="fas fa-users"
+                                        style="margin-right:5px; color: var(--primary);"></i>Reservation
+                                    Category</label>
+                                <select id="neet-category">
+                                    <option value="General">General</option>
+                                    <option value="OBC">OBC</option>
+                                    <option value="SC">SC</option>
+                                    <option value="ST">ST</option>
+                                    <option value="EWS">EWS</option>
+                                </select>
+                            </div>
+                            <div class="filter-group">
+                                <label for="neet-obtained-marks"><i class="fas fa-pen-alt"
+                                        style="margin-right:5px; color: var(--primary);"></i>Enter Your Obtained
+                                    Marks</label>
+                                <input type="number" id="neet-obtained-marks" placeholder="e.g., 550" min="0" max="720"
+                                    style="width: 100%; padding: 12px 15px; border: 2px solid #e1e5ee; border-radius: 10px; background: white; font-size: 1rem;">
+                                <small style="color:#888; margin-top:4px; display:block;">NEET marks out of 720</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- JEE Filter -->
+                    <div class="cutoff-content" id="jee-filters" style="display: none;">
+                        <div class="filters" style="grid-template-columns: 1fr 1fr; max-width: 600px; margin: 0 auto;">
+                            <div class="filter-group">
+                                <label for="jee-category"><i class="fas fa-users"
+                                        style="margin-right:5px; color: var(--primary);"></i>Reservation
+                                    Category</label>
+                                <select id="jee-category">
+                                    <option value="General">General</option>
+                                    <option value="OBC">OBC</option>
+                                    <option value="SC">SC</option>
+                                    <option value="ST">ST</option>
+                                    <option value="EWS">EWS</option>
+                                </select>
+                            </div>
+                            <div class="filter-group">
+                                <label for="jee-obtained-marks"><i class="fas fa-pen-alt"
+                                        style="margin-right:5px; color: var(--primary);"></i>Enter Your Obtained
+                                    Percentile</label>
+                                <input type="number" id="jee-obtained-marks" placeholder="e.g., 92.5" min="0" max="100"
+                                    step="0.01"
+                                    style="width: 100%; padding: 12px 15px; border: 2px solid #e1e5ee; border-radius: 10px; background: white; font-size: 1rem;">
+                                <small style="color:#888; margin-top:4px; display:block;">JEE percentile out of
+                                    100</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="text-align: center; margin-top: 1.5rem;">
+                        <button class="btn btn-primary" id="apply-cutoff-filters" style="padding: 12px 30px;">
+                            <i class="fas fa-search"></i> Find Matching Colleges
+                        </button>
+                        <button class="btn btn-outline" id="clear-cutoff-filters"
+                            style="margin-left: 1rem; padding: 12px 30px;">
+                            <i class="fas fa-times"></i> Clear
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Cutoff-wise Filters Section (Advanced) -->
+                <div class="cutoff-filters"
+                    style="margin-top: 2rem; padding: 2rem; background: #f8f9fa; border-radius: 15px; border: 2px solid #e9ecef;">
+                    <h3 style="text-align: center; margin-bottom: 0.5rem; color: var(--dark); font-size: 1.4rem;">
+                        <i class="fas fa-chart-line" style="color: #e67e22; margin-right: 10px;"></i>
+                        Cutoff-wise Filters
+                    </h3>
+                    <p style="text-align: center; color: #666; margin-bottom: 1.5rem; font-size: 0.95rem;">
+                        Filter colleges by cutoff rank and marks range
+                    </p>
+
+                    <div class="cutoff-tabs"
+                        style="display: flex; justify-content: center; margin-bottom: 2rem; gap: 1rem; flex-wrap: wrap;">
+                        <button class="cutoff-tab-adv active" data-exam="cet"
+                            style="padding: 0.75rem 1.5rem; border: none; border-radius: 25px; background: #e67e22; color: white; font-weight: 600; cursor: pointer; transition: all 0.3s ease;">
+                            <i class="fas fa-calculator"></i> CET
+                        </button>
+                        <button class="cutoff-tab-adv" data-exam="neet"
+                            style="padding: 0.75rem 1.5rem; border: 2px solid #e67e22; border-radius: 25px; background: transparent; color: #e67e22; font-weight: 600; cursor: pointer; transition: all 0.3s ease;">
+                            <i class="fas fa-stethoscope"></i> NEET
+                        </button>
+                        <button class="cutoff-tab-adv" data-exam="jee"
+                            style="padding: 0.75rem 1.5rem; border: 2px solid #e67e22; border-radius: 25px; background: transparent; color: #e67e22; font-weight: 600; cursor: pointer; transition: all 0.3s ease;">
+                            <i class="fas fa-cogs"></i> JEE
+                        </button>
+                    </div>
+
+                    <!-- CET Advanced -->
+                    <div class="cutoff-content-adv active" id="cet-adv-filters">
+                        <div class="filters" style="grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));">
+                            <div class="filter-group">
+                                <label for="cet-adv-category">Category</label>
+                                <select id="cet-adv-category">
+                                    <option value="">All Categories</option>
+                                    <option value="General">General</option>
+                                    <option value="OBC">OBC</option>
+                                    <option value="SC">SC</option>
+                                    <option value="ST">ST</option>
+                                    <option value="EWS">EWS</option>
+                                </select>
+                            </div>
+                            <div class="filter-group">
+                                <label for="cet-adv-rank-min">Min Rank</label>
+                                <input type="number" id="cet-adv-rank-min" placeholder="e.g., 1000"
+                                    style="width: 100%; padding: 12px 15px; border: 2px solid #e1e5ee; border-radius: 10px; background: white; font-size: 1rem;">
+                            </div>
+                            <div class="filter-group">
+                                <label for="cet-adv-rank-max">Max Rank</label>
+                                <input type="number" id="cet-adv-rank-max" placeholder="e.g., 50000"
+                                    style="width: 100%; padding: 12px 15px; border: 2px solid #e1e5ee; border-radius: 10px; background: white; font-size: 1rem;">
+                            </div>
+                            <div class="filter-group">
+                                <label for="cet-adv-marks-min">Min Marks</label>
+                                <input type="number" id="cet-adv-marks-min" placeholder="e.g., 120" min="0" max="200"
+                                    style="width: 100%; padding: 12px 15px; border: 2px solid #e1e5ee; border-radius: 10px; background: white; font-size: 1rem;">
+                            </div>
+                            <div class="filter-group">
+                                <label for="cet-adv-marks-max">Max Marks</label>
+                                <input type="number" id="cet-adv-marks-max" placeholder="e.g., 180" min="0" max="200"
+                                    style="width: 100%; padding: 12px 15px; border: 2px solid #e1e5ee; border-radius: 10px; background: white; font-size: 1rem;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- NEET Advanced -->
+                    <div class="cutoff-content-adv" id="neet-adv-filters" style="display: none;">
+                        <div class="filters" style="grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));">
+                            <div class="filter-group">
+                                <label for="neet-adv-category">Category</label>
+                                <select id="neet-adv-category">
+                                    <option value="">All Categories</option>
+                                    <option value="General">General</option>
+                                    <option value="OBC">OBC</option>
+                                    <option value="SC">SC</option>
+                                    <option value="ST">ST</option>
+                                    <option value="EWS">EWS</option>
+                                </select>
+                            </div>
+                            <div class="filter-group">
+                                <label for="neet-adv-rank-min">Min Rank</label>
+                                <input type="number" id="neet-adv-rank-min" placeholder="e.g., 500"
+                                    style="width: 100%; padding: 12px 15px; border: 2px solid #e1e5ee; border-radius: 10px; background: white; font-size: 1rem;">
+                            </div>
+                            <div class="filter-group">
+                                <label for="neet-adv-rank-max">Max Rank</label>
+                                <input type="number" id="neet-adv-rank-max" placeholder="e.g., 10000"
+                                    style="width: 100%; padding: 12px 15px; border: 2px solid #e1e5ee; border-radius: 10px; background: white; font-size: 1rem;">
+                            </div>
+                            <div class="filter-group">
+                                <label for="neet-adv-marks-min">Min Marks</label>
+                                <input type="number" id="neet-adv-marks-min" placeholder="e.g., 500" min="0" max="720"
+                                    style="width: 100%; padding: 12px 15px; border: 2px solid #e1e5ee; border-radius: 10px; background: white; font-size: 1rem;">
+                            </div>
+                            <div class="filter-group">
+                                <label for="neet-adv-marks-max">Max Marks</label>
+                                <input type="number" id="neet-adv-marks-max" placeholder="e.g., 650" min="0" max="720"
+                                    style="width: 100%; padding: 12px 15px; border: 2px solid #e1e5ee; border-radius: 10px; background: white; font-size: 1rem;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- JEE Advanced -->
+                    <div class="cutoff-content-adv" id="jee-adv-filters" style="display: none;">
+                        <div class="filters" style="grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));">
+                            <div class="filter-group">
+                                <label for="jee-adv-category">Category</label>
+                                <select id="jee-adv-category">
+                                    <option value="">All Categories</option>
+                                    <option value="General">General</option>
+                                    <option value="OBC">OBC</option>
+                                    <option value="SC">SC</option>
+                                    <option value="ST">ST</option>
+                                    <option value="EWS">EWS</option>
+                                </select>
+                            </div>
+                            <div class="filter-group">
+                                <label for="jee-adv-rank-min">Min Rank</label>
+                                <input type="number" id="jee-adv-rank-min" placeholder="e.g., 1000"
+                                    style="width: 100%; padding: 12px 15px; border: 2px solid #e1e5ee; border-radius: 10px; background: white; font-size: 1rem;">
+                            </div>
+                            <div class="filter-group">
+                                <label for="jee-adv-rank-max">Max Rank</label>
+                                <input type="number" id="jee-adv-rank-max" placeholder="e.g., 100000"
+                                    style="width: 100%; padding: 12px 15px; border: 2px solid #e1e5ee; border-radius: 10px; background: white; font-size: 1rem;">
+                            </div>
+                            <div class="filter-group">
+                                <label for="jee-adv-marks-min">Min Percentile</label>
+                                <input type="number" id="jee-adv-marks-min" placeholder="e.g., 85" min="0" max="100"
+                                    step="0.01"
+                                    style="width: 100%; padding: 12px 15px; border: 2px solid #e1e5ee; border-radius: 10px; background: white; font-size: 1rem;">
+                            </div>
+                            <div class="filter-group">
+                                <label for="jee-adv-marks-max">Max Percentile</label>
+                                <input type="number" id="jee-adv-marks-max" placeholder="e.g., 99" min="0" max="100"
+                                    step="0.01"
+                                    style="width: 100%; padding: 12px 15px; border: 2px solid #e1e5ee; border-radius: 10px; background: white; font-size: 1rem;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="text-align: center; margin-top: 1.5rem;">
+                        <button class="btn btn-primary" id="apply-adv-cutoff-filters"
+                            style="padding: 12px 30px; background: linear-gradient(135deg, #e67e22, #d35400);">
+                            <i class="fas fa-filter"></i> Apply Cutoff Filters
+                        </button>
+                        <button class="btn btn-outline" id="clear-adv-cutoff-filters"
+                            style="margin-left: 1rem; padding: 12px 30px;">
+                            <i class="fas fa-times"></i> Clear Filters
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="results-section" id="results" style="display: none;">
+        <div class="container">
+            <div class="results-header">
+                <h2>Search Results</h2>
+                <div class="results-count">
+                    <span id="results-count">0 colleges found</span>
+                </div>
+            </div>
+            <div class="results-filters">
+                <div class="sort-options">
+                    <label for="sort-by">Sort by:</label>
+                    <select id="sort-by">
+                        <option value="name">College Name</option>
+                        <option value="rating">Rating</option>
+                        <option value="fees">Fees (Low to High)</option>
+                        <option value="established">Establishment Year</option>
+                    </select>
+                </div>
+                <div class="view-toggle">
+                    <button class="view-btn active" data-view="grid">
+                        <i class="fas fa-th-large"></i>
+                    </button>
+                    <button class="view-btn" data-view="list">
+                        <i class="fas fa-list"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="results-grid" id="results-grid">
+                <!-- Results will be populated here -->
+            </div>
+            <div class="pagination" id="pagination">
+                <!-- Pagination will be added here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Why Choose Unipulse?</h2>
+                <p>Your complete solution for Maharashtra college admissions</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="feature-title">Comprehensive Database</h3>
+                    <p class="feature-description">Access detailed information about 1000+ colleges across all 36
+                        districts of Maharashtra with accurate cutoffs, fees, and branch details.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="feature-title">AI-Powered Assistant</h3>
+                    <p class="feature-description">Get personalized college recommendations based on your marks,
+                        preferences, and career goals with our intelligent chatbot.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 class="feature-title">Smart Search & Filters</h3>
+                    <p class="feature-description">Find colleges by name, location, type, or branch with our advanced
+                        filtering system and real-time search capabilities.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="feature-title">Real-Time Data</h3>
+                    <p class="feature-description">Get up-to-date cutoff trends, placement statistics, and admission
+                        information for informed decision making.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="feature-title">All Streams Covered</h3>
+                    <p class="feature-description">Engineering, Medical, and Pharmacy colleges with detailed branch
+                        information and specialization details.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="feature-title">Mobile Friendly</h3>
+                    <p class="feature-description">Access college information anytime, anywhere with our responsive
+                        design optimized for all devices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <h2>About Unipulse</h2>
+                    <p class="about-description">
+                        Unipulse is Maharashtra's most comprehensive college finder platform, designed to help students
+                        discover their perfect educational institution. With detailed information about 1000+ colleges
+                        across all 36 districts, we make college selection simple and informed.
+                    </p>
+
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Complete college database with accurate information</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>AI-powered personalized recommendations</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Real-time cutoff and admission updates</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Expert guidance and career counseling</span>
+                        </div>
+                    </div>
+
+                    <div class="about-stats">
+                        <div class="about-stat">
+                            <h3>1000+</h3>
+                            <p>Colleges Listed</p>
+                        </div>
+                        <div class="about-stat">
+                            <h3>36</h3>
+                            <p>Districts Covered</p>
+                        </div>
+                        <div class="about-stat">
+                            <h3>50,000+</h3>
+                            <p>Students Helped</p>
+                        </div>
+                        <div class="about-stat">
+                            <h3>99%</h3>
+                            <p>Data Accuracy</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-image" data-aos="fade-left">
+                    <div class="about-image-placeholder">
+                        <i class="fas fa-university"></i>
+                        <h3>Your Dream College Awaits</h3>
+                        <p>Discover the perfect institution for your future</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Colleges Preview -->
+    <section class="colleges-preview">
+        <div class="container">
+            <div class="section-title">
+                <h2>Featured Colleges</h2>
+            </div>
+            <div class="colleges-grid">
+                <!-- College Card 1 -->
+                <div class="college-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="college-image">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="college-details">
+                        <h3 class="college-name">College of Engineering, Pune</h3>
+                        <div class="college-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Pune, Maharashtra</span>
+                        </div>
+                        <div class="college-info">
+                            <div class="info-item">
+                                <span class="label">Type</span>
+                                <span class="value">Government</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Rating</span>
+                                <span class="value">4.8/5</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Est.</span>
+                                <span class="value">1854</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- College Card 2 -->
+                <div class="college-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="college-image" style="background: linear-gradient(135deg, #28a745, #20c997);">
+                        <i class="fas fa-hospital"></i>
+                    </div>
+                    <div class="college-details">
+                        <h3 class="college-name">Grant Medical College</h3>
+                        <div class="college-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Mumbai, Maharashtra</span>
+                        </div>
+                        <div class="college-info">
+                            <div class="info-item">
+                                <span class="label">Type</span>
+                                <span class="value">Government</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Rating</span>
+                                <span class="value">4.7/5</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Est.</span>
+                                <span class="value">1845</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- College Card 3 -->
+                <div class="college-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="college-image" style="background: linear-gradient(135deg, #ffc107, #fd7e14);">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <div class="college-details">
+                        <h3 class="college-name">Institute of Chemical Technology</h3>
+                        <div class="college-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Mumbai, Maharashtra</span>
+                        </div>
+                        <div class="college-info">
+                            <div class="info-item">
+                                <span class="label">Type</span>
+                                <span class="value">Government</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Rating</span>
+                                <span class="value">4.5/5</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Est.</span>
+                                <span class="value">1933</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Find Your Dream College?</h2>
+                <p class="cta-description">Start your journey towards a successful career with the right college choice.
+                    Our platform makes it easy!</p>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary">
+                        <i class="fas fa-rocket"></i> Start Searching
+                    </button>
+                    <button class="btn btn-secondary">
+                        <i class="fas fa-info-circle"></i> Learn More
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Get In Touch</h2>
+                <p>Have questions? We're here to help you find your perfect college</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Our Location</h4>
+                            <p>Deulgove Raja, Maharashtra, India</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Call Us</h4>
+                            <p>+91 93224 43030</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email Us</h4>
+                            <p>info@unipulse.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Website</h4>
+                            <p>www.unipulse.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form" data-aos="fade-left">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Your Phone">
+                        </div>
+                        <div class="form-group">
+                            <selectrequired>
+                                <option value="">Select Query Type</option>
+                                <option value="college-info">College Information</option>
+                                <option value="admission">Admission Guidance</option>
+                                <option value="cutoffs">Cutoff Information</option>
+                                <option value="other">Other</option>
+                                </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-large">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo-section">
+                        <img src="unipulse-logo.png" alt="Unipulse Logo" class="footer-logo-image">
+                        <div class="footer-brand">
+                            <h3 style="margin: 0; color: white; font-size: 1.4rem;">Unipulse</h3>
+                            <p style="margin: 5px 0 0 0; color: #adb5bd; font-size: 0.85rem;">Find your dream college
+                            </p>
+                        </div>
+                    </div>
+                    <p>Unipulse helps students discover the best colleges across Maharashtra with detailed information
+                        on courses, fees, cutoffs, and more. Find your dream college with our comprehensive database.
+                    </p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Engineering Colleges</a></li>
+                        <li><a href="#">Medical Colleges</a></li>
+                        <li><a href="#">Pharmacy Colleges</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> Deulgove Raja, Maharashtra</li>
+                        <li><i class="fas fa-phone"></i> +91 93224 43030</li>
+                        <li><i class="fas fa-envelope"></i> info@unipulse.com</li>
+                        <li><i class="fas fa-globe"></i> www.unipulse.com</li>
+                    </ul>
+                    <div class="developer-info"
+                        style="margin-top: 20px; padding-top: 15px; border-top: 1px solid rgba(255,255,255,0.1);">
+                        <h4 style="color: var(--primary); margin-bottom: 10px; font-size: 1rem;">Developed By</h4>
+                        <div class="developers"
+                            style="display: grid; grid-template-columns: 1fr 1fr; gap: 5px; font-size: 0.9rem;">
+                            <span><i class="fas fa-user"></i> Dhiraj</span>
+                            <span><i class="fas fa-user"></i> Rushi</span>
+                            <span><i class="fas fa-user"></i> Gajanan</span>
+                            <span><i class="fas fa-user"></i> Akshay</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Unipulse - Find Your Dream College. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AI Chatbot -->
+    <div class="chatbot-container">
+        <button class="chatbot-toggle" id="chatbot-toggle" title="Chat with Unipulse Assistant">
+            <i class="fas fa-comments"></i>
+        </button>
+
+        <div class="chatbot-window" id="chatbot-window">
+            <div class="chatbot-header">
+                <div>
+                    <h3><i class="fas fa-robot"></i> Unipulse AI Assistant</h3>
+                    <small>Powered by Gemini AI</small>
+                </div>
+                <button class="chatbot-close" id="chatbot-close" title="Close chat">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <div class="chatbot-messages" id="chatbot-messages">
+                <!-- Messages will be added here dynamically -->
+            </div>
+
+            <div class="typing-indicator" id="typing-indicator">
+                <div class="typing-dot"></div>
+                <div class="typing-dot"></div>
+                <div class="typing-dot"></div>
+            </div>
+
+            <div class="chatbot-input-area">
+                <textarea class="chatbot-input" id="chatbot-input"
+                    placeholder="Ask about colleges, cutoffs, fees, placements..." maxlength="1000" rows="1"></textarea>
+                <button class="chatbot-send" id="chatbot-send" title="Send message">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobile-nav">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#search" class="nav-link">Search Colleges</a>
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="admin.html" class="nav-link"><i class="fas fa-lock"></i> Admin</a>
+        <a href="login.html" class="nav-link" id="mobile-login-link"><i class="fas fa-sign-in-alt"></i> Login</a>
+        <a href="#" class="nav-link" id="mobile-logout-link" style="display:none;"
+            onclick="logoutUser();return false;"><i class="fas fa-sign-out-alt"></i> Logout</a>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" title="Back to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Include College Data -->
+    <script src="data.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- Chatbot Configuration and Implementation -->
+    <script src="chatbot-config.js"></script>
+    <script src="chatbot.js"></script>
+
+    <script>
+        // Global variables
+        let allColleges = [];
+        let filteredColleges = [];
+        let currentPage = 1;
+        const itemsPerPage = 12;
+        let currentView = 'grid';
+
+        // Data validation function
+        function validateCollegeData() {
+            let validationReport = {
+                totalColleges: 0,
+                missingCutoffMarks: 0,
+                inconsistentRanks: 0,
+                invalidEstablishmentDates: 0,
+                missingFees: 0,
+                issues: []
+            };
+
+            // Validate all college categories
+            ['engineering', 'pharmacy', 'medical'].forEach(category => {
+                if (collegeData[category]) {
+                    collegeData[category].forEach((college, index) => {
+                        validationReport.totalColleges++;
+
+                        // Check for missing cutoff marks
+                        if (college.cutoffRanks && !college.cutoffMarks) {
+                            validationReport.missingCutoffMarks++;
+                            validationReport.issues.push(`${college.name}: Missing cutoff marks`);
+                        }
+
+                        // Check establishment dates
+                        if (!college.established || college.established < 1800 || college.established > 2024) {
+                            validationReport.invalidEstablishmentDates++;
+                            validationReport.issues.push(`${college.name}: Invalid establishment date (${college.established})`);
+                        }
+
+                        // Check fees format
+                        if (!college.fees || !college.fees.includes('₹')) {
+                            validationReport.missingFees++;
+                            validationReport.issues.push(`${college.name}: Missing or invalid fees format`);
+                        }
+
+                        // Check rank consistency (General should be lowest)
+                        if (college.cutoffRanks) {
+                            Object.values(college.cutoffRanks).forEach(ranks => {
+                                if (ranks.General > ranks.OBC || ranks.OBC > ranks.SC || ranks.SC > ranks.ST) {
+                                    validationReport.inconsistentRanks++;
+                                    validationReport.issues.push(`${college.name}: Inconsistent cutoff rank progression`);
+                                }
+                            });
+                        }
+                    });
+                }
+            });
+
+            console.log('📊 College Data Validation Report:', validationReport);
+            return validationReport;
+        }
+
+        // Initialize app
+        document.addEventListener('DOMContentLoaded', async function () {
+            // Hide loading screen
+            setTimeout(() => {
+                document.getElementById('loading').classList.add('hidden');
+                document.querySelector('.hero').style.opacity = '1';
+                document.querySelector('.hero').style.transform = 'translateY(0)';
+            }, 1500);
+
+            // Initialize AOS
+            if (typeof AOS !== 'undefined') {
+                AOS.init({
+                    duration: 800,
+                    easing: 'ease-in-out',
+                    once: true
+                });
+            }
+
+            // Load college data
+            await loadCollegeData();
+
+            // Initialize event listeners
+            initializeEventListeners();
+
+            // Initialize navigation
+            initializeNavigation();
+
+        });
+
+        // Navigation functionality
+        function initializeNavigation() {
+            const mobileToggle = document.querySelector('.mobile-menu-toggle');
+            const mobileNav = document.getElementById('mobile-nav');
+            const backToTop = document.getElementById('back-to-top');
+
+            // Mobile menu toggle
+            if (mobileToggle && mobileNav) {
+                mobileToggle.addEventListener('click', function () {
+                    mobileNav.classList.toggle('active');
+                    const icon = mobileToggle.querySelector('i');
+                    if (mobileNav.classList.contains('active')) {
+                        icon.className = 'fas fa-times';
+                    } else {
+                        icon.className = 'fas fa-bars';
+                    }
+                });
+
+                // Close mobile menu when clicking on links
+                const mobileLinks = mobileNav.querySelectorAll('.nav-link');
+                mobileLinks.forEach(link => {
+                    link.addEventListener('click', function () {
+                        mobileNav.classList.remove('active');
+                        mobileToggle.querySelector('i').className = 'fas fa-bars';
+                    });
+                });
+
+                // Close mobile menu when clicking outside
+                document.addEventListener('click', function (e) {
+                    if (!mobileToggle.contains(e.target) && !mobileNav.contains(e.target)) {
+                        mobileNav.classList.remove('active');
+                        mobileToggle.querySelector('i').className = 'fas fa-bars';
+                    }
+                });
+            }
+
+            // Back to top button
+            if (backToTop) {
+                window.addEventListener('scroll', function () {
+                    if (window.pageYOffset > 300) {
+                        backToTop.classList.add('visible');
+                    } else {
+                        backToTop.classList.remove('visible');
+                    }
+                });
+
+                backToTop.addEventListener('click', function () {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                });
+            }
+
+            // Smooth scrolling for navigation links
+            const navLinks = document.querySelectorAll('a[href^="#"]');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+
+                    if (targetSection) {
+                        const headerHeight = document.querySelector('.header').offsetHeight;
+                        const targetPosition = targetSection.offsetTop - headerHeight - 20;
+
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        }
+
+        async function loadCollegeData() {
+            const API_BASE = (window.location.port === '3000') ? '/api' : 'http://localhost:3000/api';
+            try {
+                // Try loading from API (MongoDB backend)
+                const res = await fetch(API_BASE + '/colleges');
+                if (res.ok) {
+                    allColleges = await res.json();
+                    console.log(`Loaded ${allColleges.length} colleges from MongoDB API`);
+                    if (allColleges.length > 0) {
+                        filteredColleges = [...allColleges];
+                        return;
+                    }
+                    console.warn('API returned 0 colleges, trying colleges.json fallback...');
+                }
+            } catch (e) {
+                console.warn('API not available, trying colleges.json fallback:', e.message);
+            }
+
+            // Fallback 1: Try loading from colleges.json file directly
+            try {
+                const jsonRes = await fetch('colleges.json');
+                if (jsonRes.ok) {
+                    const jsonData = await jsonRes.json();
+                    if (Array.isArray(jsonData) && jsonData.length > 0) {
+                        allColleges = jsonData;
+                        console.log(`Loaded ${allColleges.length} colleges from colleges.json`);
+                        filteredColleges = [...allColleges];
+                        return;
+                    }
+                }
+            } catch (e) {
+                console.warn('colleges.json not available, falling back to data.js:', e.message);
+            }
+
+            // Fallback 2: load from data.js (static file)
+            try {
+                allColleges = [];
+                if (typeof collegeData !== 'undefined') {
+                    if (collegeData.engineering) {
+                        collegeData.engineering.forEach(college => {
+                            allColleges.push({ ...college, category: 'engineering' });
+                        });
+                    }
+                    if (collegeData.pharmacy) {
+                        collegeData.pharmacy.forEach(college => {
+                            allColleges.push({ ...college, category: 'pharmacy' });
+                        });
+                    }
+                    if (collegeData.medical) {
+                        collegeData.medical.forEach(college => {
+                            allColleges.push({ ...college, category: 'medical' });
+                        });
+                    }
+                }
+                console.log(`Loaded ${allColleges.length} colleges from data.js (fallback)`);
+                filteredColleges = [...allColleges];
+            } catch (error) {
+                console.error('Error loading college data:', error);
+                allColleges = [];
+                filteredColleges = [];
+            }
+        }
+
+        function initializeEventListeners() {
+            // Search functionality
+            const searchInput = document.querySelector('.search-input');
+            const searchButton = document.querySelector('.btn-primary');
+
+            searchButton.addEventListener('click', performSearch);
+            searchInput.addEventListener('keypress', function (e) {
+                if (e.key === 'Enter') {
+                    performSearch();
+                }
+            });
+
+            // Filter functionality
+            const filterSelects = document.querySelectorAll('#district, #type, #category');
+            filterSelects.forEach(select => {
+                select.addEventListener('change', performSearch);
+            });
+
+            // View toggle
+            document.querySelectorAll('.view-btn').forEach(btn => {
+                btn.addEventListener('click', function () {
+                    document.querySelectorAll('.view-btn').forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    currentView = this.dataset.view;
+                    displayResults();
+                });
+            });
+
+            // Sort functionality
+            document.getElementById('sort-by').addEventListener('change', function () {
+                sortResults(this.value);
+                displayResults();
+            });
+
+            // CTA buttons
+            document.querySelectorAll('.cta-buttons .btn-primary').forEach(btn => {
+                btn.addEventListener('click', function () {
+                    document.querySelector('.search-input').focus();
+                    document.querySelector('.search-section').scrollIntoView({ behavior: 'smooth' });
+                });
+            });
+
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            });
+        }
+
+        function performSearch() {
+            const searchTerm = document.querySelector('.search-input').value.trim().toLowerCase();
+            const district = document.getElementById('district').value;
+            const type = document.getElementById('type').value;
+            const category = document.getElementById('category').value;
+
+            filteredColleges = allColleges.filter(college => {
+                // Search term filter
+                const matchesSearch = !searchTerm ||
+                    college.name.toLowerCase().includes(searchTerm) ||
+                    college.district.toLowerCase().includes(searchTerm) ||
+                    (college.branches && college.branches.some(branch =>
+                        branch.toLowerCase().includes(searchTerm)
+                    ));
+
+                // District filter
+                const matchesDistrict = !district || college.district === district;
+
+                // Type filter
+                const matchesType = !type || college.type === type;
+
+                // Category filter
+                const matchesCategory = !category || college.category === category;
+
+                return matchesSearch && matchesDistrict && matchesType && matchesCategory;
+            });
+
+            currentPage = 1;
+            displayResults();
+
+            // Show results section
+            document.getElementById('results').style.display = 'block';
+            document.getElementById('results').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function sortResults(sortBy) {
+            filteredColleges.sort((a, b) => {
+                switch (sortBy) {
+                    case 'name':
+                        return a.name.localeCompare(b.name);
+                    case 'rating':
+                        return (b.rating || 0) - (a.rating || 0);
+                    case 'fees':
+                        const aFees = parseFloat(a.fees?.replace(/[^\d]/g, '') || 0);
+                        const bFees = parseFloat(b.fees?.replace(/[^\d]/g, '') || 0);
+                        return aFees - bFees;
+                    case 'established':
+                        return (b.established || 0) - (a.established || 0);
+                    default:
+                        return 0;
+                }
+            });
+        }
+
+        function displayResults() {
+            const resultsGrid = document.getElementById('results-grid');
+            const resultsCount = document.getElementById('results-count');
+
+            // Make sure we have colleges to display
+            if (!filteredColleges || filteredColleges.length === 0) {
+                filteredColleges = [...allColleges];
+            }
+
+            // Update results count
+            resultsCount.textContent = `${filteredColleges.length} colleges found`;
+
+            // Update grid class for view type
+            resultsGrid.className = `results-grid ${currentView === 'list' ? 'list-view' : ''}`;
+
+            // Calculate pagination
+            const totalPages = Math.ceil(filteredColleges.length / itemsPerPage);
+            const startIndex = (currentPage - 1) * itemsPerPage;
+            const endIndex = startIndex + itemsPerPage;
+            const currentPageColleges = filteredColleges.slice(startIndex, endIndex);
+
+            // Clear results
+            resultsGrid.innerHTML = '';
+
+            if (currentPageColleges.length === 0) {
+                resultsGrid.innerHTML = `
+                    <div class="no-results">
+                        <i class="fas fa-search"></i>
+                        <h3>No colleges found</h3>
+                        <p>Try adjusting your search criteria or filters.</p>
+                    </div>
+                `;
+                return;
+            }
+
+            // Display colleges
+            currentPageColleges.forEach(college => {
+                const collegeCard = createCollegeCard(college);
+                resultsGrid.appendChild(collegeCard);
+            });
+
+            // Update pagination
+            updatePagination(totalPages);
+
+            // Show results section
+            document.getElementById('results').style.display = 'block';
+        }
+
+        function createCollegeCard(college) {
+            const card = document.createElement('div');
+            card.className = `result-card ${currentView === 'list' ? 'list-view' : ''}`;
+
+            const categoryColors = {
+                engineering: 'var(--primary)',
+                medical: 'var(--success)',
+                pharmacy: 'var(--warning)'
+            };
+
+            const categoryIcons = {
+                engineering: 'fas fa-cogs',
+                medical: 'fas fa-heartbeat',
+                pharmacy: 'fas fa-pills'
+            };
+
+            const branches = college.branches ? college.branches.slice(0, 3) : [];
+            const moreBranches = college.branches ? Math.max(0, college.branches.length - 3) : 0;
+
+            card.innerHTML = `
+                <div class="college-header" style="background: ${categoryColors[college.category] || 'var(--primary)'}">
+                    <div class="college-type">
+                        <i class="${categoryIcons[college.category] || 'fas fa-university'}"></i>
+                        ${college.type || 'N/A'}
+                    </div>
+                    <h3 class="college-title">${college.name}</h3>
+                    <div class="college-location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>${college.district}, Maharashtra</span>
+                    </div>
+                </div>
+                <div class="college-body">
+                    <div class="college-stats">
+                        <div class="stat">
+                            <span class="stat-value">${college.rating || 'N/A'}</span>
+                            <div class="stat-label">Rating</div>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">${college.established || 'N/A'}</span>
+                            <div class="stat-label">Est.</div>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">${college.fees || 'N/A'}</span>
+                            <div class="stat-label">Fees</div>
+                        </div>
+                    </div>
+                    ${branches.length > 0 ? `
+                        <div class="college-branches">
+                            <div class="branches-title">Available Branches:</div>
+                            <div class="branches-list">
+                                ${branches.map(branch => `<span class="branch-tag">${branch}</span>`).join('')}
+                                ${moreBranches > 0 ? `<span class="branch-tag">+${moreBranches} more</span>` : ''}
+                            </div>
+                        </div>
+                    ` : ''}
+                    <div class="college-actions">
+                        <button class="btn-outline" onclick="viewDetails('${college.name}')">
+                            <i class="fas fa-info-circle"></i> View Details
+                        </button>
+                        <button class="btn-outline" onclick="compareCutoffs('${college.name}')">
+                            <i class="fas fa-chart-bar"></i> Cutoffs
+                        </button>
+                    </div>
+                </div>
+            `;
+
+            return card;
+        }
+
+        function updatePagination(totalPages) {
+            const pagination = document.getElementById('pagination');
+            pagination.innerHTML = '';
+
+            if (totalPages <= 1) return;
+
+            // Previous button
+            const prevBtn = document.createElement('button');
+            prevBtn.className = 'page-btn';
+            prevBtn.innerHTML = '<i class="fas fa-chevron-left"></i>';
+            prevBtn.disabled = currentPage === 1;
+            prevBtn.onclick = () => changePage(currentPage - 1);
+            pagination.appendChild(prevBtn);
+
+            // Page numbers
+            for (let i = 1; i <= Math.min(totalPages, 5); i++) {
+                const pageBtn = document.createElement('button');
+                pageBtn.className = `page-btn ${i === currentPage ? 'active' : ''}`;
+                pageBtn.textContent = i;
+                pageBtn.onclick = () => changePage(i);
+                pagination.appendChild(pageBtn);
+            }
+
+            // Next button
+            const nextBtn = document.createElement('button');
+            nextBtn.className = 'page-btn';
+            nextBtn.innerHTML = '<i class="fas fa-chevron-right"></i>';
+            nextBtn.disabled = currentPage === totalPages;
+            nextBtn.onclick = () => changePage(currentPage + 1);
+            pagination.appendChild(nextBtn);
+        }
+
+        function changePage(page) {
+            currentPage = page;
+            displayResults();
+            document.getElementById('results').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function viewDetails(collegeName) {
+            const college = allColleges.find(c => c.name === collegeName);
+            if (college) {
+                // Create detailed modal content
+                let detailsHTML = `
+                    <div class="college-details-modal">
+                        <div class="modal-header">
+                            <h2>${college.name}</h2>
+                            <div class="college-badges">
+                                <span class="badge ${college.type.toLowerCase()}">${college.type}</span>
+                                <span class="badge category">${college.category || 'Engineering'}</span>
+                            </div>
+                        </div>
+                        
+                        <div class="modal-body">
+                            <div class="detail-section">
+                                <h3><i class="fas fa-info-circle"></i> Basic Information</h3>
+                                <div class="detail-grid">
+                                    <div class="detail-item">
+                                        <span class="label">Location:</span>
+                                        <span class="value">${college.district}, Maharashtra</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="label">Established:</span>
+                                        <span class="value">${college.established || 'N/A'}</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="label">Rating:</span>
+                                        <span class="value">${college.rating || 'N/A'}/5.0</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="label">Annual Fees:</span>
+                                        <span class="value">${college.fees || 'N/A'}</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            ${college.branches ? `
+                            <div class="detail-section">
+                                <h3><i class="fas fa-graduation-cap"></i> Available Branches</h3>
+                                <div class="branches-grid">
+                                    ${college.branches.map(branch => `<span class="branch-pill">${branch}</span>`).join('')}
+                                </div>
+                            </div>
+                            ` : ''}
+                            
+                            ${college.cutoffRanks ? `
+                            <div class="detail-section">
+                                <h3><i class="fas fa-chart-line"></i> Cutoff Ranks</h3>
+                                <div class="cutoff-table">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Exam</th>
+                                                <th>General</th>
+                                                <th>OBC</th>
+                                                <th>SC</th>
+                                                <th>ST</th>
+                                                <th>EWS</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            ${Object.entries(college.cutoffRanks).map(([exam, ranks]) => `
+                                                <tr>
+                                                    <td><strong>${exam}</strong></td>
+                                                    <td class="rank-cell">${ranks.General || 'N/A'}</td>
+                                                    <td class="rank-cell">${ranks.OBC || 'N/A'}</td>
+                                                    <td class="rank-cell">${ranks.SC || 'N/A'}</td>
+                                                    <td class="rank-cell">${ranks.ST || 'N/A'}</td>
+                                                    <td class="rank-cell">${ranks.EWS || 'N/A'}</td>
+                                                </tr>
+                                            `).join('')}
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            ` : ''}
+                            
+                            ${college.cutoffMarks ? `
+                            <div class="detail-section">
+                                <h3><i class="fas fa-chart-bar"></i> Cutoff Marks</h3>
+                                <div class="cutoff-table">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Exam</th>
+                                                <th>General</th>
+                                                <th>OBC</th>
+                                                <th>SC</th>
+                                                <th>ST</th>
+                                                <th>EWS</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            ${Object.entries(college.cutoffMarks).map(([exam, marks]) => `
+                                                <tr>
+                                                    <td><strong>${exam}</strong></td>
+                                                    <td class="marks-cell">${marks.General || 'N/A'}</td>
+                                                    <td class="marks-cell">${marks.OBC || 'N/A'}</td>
+                                                    <td class="marks-cell">${marks.SC || 'N/A'}</td>
+                                                    <td class="marks-cell">${marks.ST || 'N/A'}</td>
+                                                    <td class="marks-cell">${marks.EWS || 'N/A'}</td>
+                                                </tr>
+                                            `).join('')}
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            ` : ''}
+
+                            <div class="cutoff-note">
+                                <p><i class="fas fa-info-circle"></i> <strong>Note:</strong> Cutoff data is based on previous year trends and may vary. Please verify with official sources for the most current information.</p>
+                            </div>
+                        </div>
+                    </div>
+                `;
+
+                // Create and show modal
+                showModal('College Details', detailsHTML);
+            } else {
+                alert('College information not found.');
+            }
+        }
+
+        function showModal(title, content) {
+            // Remove existing modal if any
+            const existingModal = document.getElementById('details-modal');
+            if (existingModal) {
+                existingModal.remove();
+            }
+
+            // Create modal
+            const modal = document.createElement('div');
+            modal.id = 'details-modal';
+            modal.className = 'modal-overlay';
+            modal.innerHTML = `
+                <div class="modal-container">
+                    <div class="modal-header-bar">
+                        <h2>${title}</h2>
+                        <button class="modal-close" onclick="closeModal()">&times;</button>
+                    </div>
+                    <div class="modal-content">
+                        ${content}
+                    </div>
+                </div>
+            `;
+
+            document.body.appendChild(modal);
+
+            // Add modal styles if not already added
+            if (!document.getElementById('modal-styles')) {
+                const modalStyles = document.createElement('style');
+                modalStyles.id = 'modal-styles';
+                modalStyles.textContent = `
+                    .modal-overlay {
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background: rgba(0, 0, 0, 0.8);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        z-index: 10000;
+                        animation: fadeIn 0.3s ease;
+                    }
+                    
+                    .modal-container {
+                        background: white;
+                        border-radius: 15px;
+                        max-width: 90%;
+                        max-height: 90%;
+                        overflow-y: auto;
+                        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+                        animation: slideIn 0.3s ease;
+                    }
+                    
+                    .modal-header-bar {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 20px 30px;
+                        border-bottom: 1px solid #eee;
+                        background: var(--gradient-primary);
+                        color: white;
+                        border-radius: 15px 15px 0 0;
+                    }
+                    
+                    .modal-close {
+                        background: none;
+                        border: none;
+                        font-size: 24px;
+                        color: white;
+                        cursor: pointer;
+                        padding: 5px 10px;
+                        border-radius: 50%;
+                        transition: background 0.3s;
+                    }
+                    
+                    .modal-close:hover {
+                        background: rgba(255, 255, 255, 0.2);
+                    }
+                    
+                    .modal-content {
+                        padding: 30px;
+                    }
+                    
+                    .college-badges {
+                        display: flex;
+                        gap: 10px;
+                        margin-top: 10px;
+                    }
+                    
+                    .badge {
+                        padding: 5px 12px;
+                        border-radius: 20px;
+                        font-size: 12px;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                    }
+                    
+                    .badge.government {
+                        background: #4ecdc4;
+                        color: white;
+                    }
+                    
+                    .badge.private {
+                        background: #ff6b6b;
+                        color: white;
+                    }
+                    
+                    .badge.autonomous {
+                        background: #ffe066;
+                        color: #333;
+                    }
+                    
+                    .badge.category {
+                        background: var(--primary);
+                        color: white;
+                    }
+                    
+                    .detail-section {
+                        margin: 25px 0;
+                    }
+                    
+                    .detail-section h3 {
+                        color: var(--primary);
+                        margin-bottom: 15px;
+                        font-size: 18px;
+                    }
+                    
+                    .detail-grid {
+                        display: grid;
+                        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                        gap: 15px;
+                    }
+                    
+                    .detail-item {
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 10px 15px;
+                        background: #f8fafc;
+                        border-radius: 8px;
+                        border-left: 4px solid var(--primary);
+                    }
+                    
+                    .detail-item .label {
+                        font-weight: 600;
+                        color: #666;
+                    }
+                    
+                    .detail-item .value {
+                        font-weight: 500;
+                        color: #333;
+                    }
+                    
+                    .branches-grid {
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 10px;
+                    }
+                    
+                    .branch-pill {
+                        background: var(--gradient-primary);
+                        color: white;
+                        padding: 8px 16px;
+                        border-radius: 25px;
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
+                    
+                    .cutoff-table {
+                        overflow-x: auto;
+                    }
+                    
+                    .cutoff-table table {
+                        width: 100%;
+                        border-collapse: collapse;
+                        margin-top: 10px;
+                    }
+                    
+                    .cutoff-table th,
+                    .cutoff-table td {
+                        padding: 12px;
+                        text-align: left;
+                        border-bottom: 1px solid #eee;
+                    }
+                    
+                    .cutoff-table th {
+                        background: var(--light);
+                        font-weight: 600;
+                        color: var(--primary);
+                    }
+                    
+                    .cutoff-table tr:hover {
+                        background: #f8fafc;
+                    }
+                    
+                    .cutoff-section {
+                        margin: 25px 0;
+                    }
+                    
+                    .cutoff-section h3 {
+                        color: var(--primary);
+                        margin-bottom: 15px;
+                        font-size: 18px;
+                        border-bottom: 2px solid var(--primary);
+                        padding-bottom: 5px;
+                    }
+                    
+                    .rank-cell {
+                        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                        color: white;
+                        font-weight: 600;
+                        text-align: center;
+                        border-radius: 4px;
+                    }
+                    
+                    .marks-cell {
+                        background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%);
+                        color: white;
+                        font-weight: 600;
+                        text-align: center;
+                        border-radius: 4px;
+                    }
+                    
+                    .cutoff-note {
+                        background: #fff3cd;
+                        border: 1px solid #ffeaa7;
+                        border-radius: 8px;
+                        padding: 15px;
+                        margin-top: 20px;
+                    }
+                    
+                    .cutoff-note p {
+                        margin: 0;
+                        color: #856404;
+                    }
+                    
+                    @keyframes fadeIn {
+                        from { opacity: 0; }
+                        to { opacity: 1; }
+                    }
+                    
+                    @keyframes slideIn {
+                        from { transform: translateY(-50px); opacity: 0; }
+                        to { transform: translateY(0); opacity: 1; }
+                    }
+                `;
+                document.head.appendChild(modalStyles);
+            }
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('details-modal');
+            if (modal) {
+                modal.remove();
+            }
+        }
+
+        function compareCutoffs(collegeName) {
+            const college = allColleges.find(c => c.name === collegeName);
+            if (college && (college.cutoffRanks || college.cutoffMarks)) {
+                let cutoffHTML = `
+                    <div class="cutoff-details-modal">
+                        <div class="modal-header">
+                            <h2>Cutoff Information</h2>
+                            <h3>${college.name}</h3>
+                        </div>
+                        
+                        <div class="modal-body">
+                            ${college.cutoffRanks ? `
+                            <div class="cutoff-section">
+                                <h3><i class="fas fa-trophy"></i> Cutoff Ranks</h3>
+                                <div class="cutoff-table">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Branch</th>
+                                                <th>General</th>
+                                                <th>OBC</th>
+                                                <th>SC</th>
+                                                <th>ST</th>
+                                                <th>EWS</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            ${Object.entries(college.cutoffRanks).map(([branch, ranks]) => `
+                                                <tr>
+                                                    <td><strong>${branch}</strong></td>
+                                                    <td class="rank-cell">${ranks.General || 'N/A'}</td>
+                                                    <td class="rank-cell">${ranks.OBC || 'N/A'}</td>
+                                                    <td class="rank-cell">${ranks.SC || 'N/A'}</td>
+                                                    <td class="rank-cell">${ranks.ST || 'N/A'}</td>
+                                                    <td class="rank-cell">${ranks.EWS || 'N/A'}</td>
+                                                </tr>
+                                            `).join('')}
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            ` : ''}
+                            
+                            ${college.cutoffMarks ? `
+                            <div class="cutoff-section">
+                                <h3><i class="fas fa-chart-bar"></i> Cutoff Marks</h3>
+                                <div class="cutoff-table">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Branch</th>
+                                                <th>General</th>
+                                                <th>OBC</th>
+                                                <th>SC</th>
+                                                <th>ST</th>
+                                                <th>EWS</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            ${Object.entries(college.cutoffMarks).map(([branch, marks]) => `
+                                                <tr>
+                                                    <td><strong>${branch}</strong></td>
+                                                    <td class="marks-cell">${marks.General || 'N/A'}</td>
+                                                    <td class="marks-cell">${marks.OBC || 'N/A'}</td>
+                                                    <td class="marks-cell">${marks.SC || 'N/A'}</td>
+                                                    <td class="marks-cell">${marks.ST || 'N/A'}</td>
+                                                    <td class="marks-cell">${marks.EWS || 'N/A'}</td>
+                                                </tr>
+                                            `).join('')}
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            ` : ''}
+                            
+                            <div class="cutoff-note">
+                                <p><i class="fas fa-info-circle"></i> <strong>Note:</strong> Cutoff data is based on previous year trends and may vary. Please verify with official sources for the most current information.</p>
+                            </div>
+                        </div>
+                    </div>
+                `;
+
+                showModal('Cutoff Information', cutoffHTML);
+
+                // Add specific styles for cutoff modal
+                if (!document.getElementById('cutoff-modal-styles')) {
+                    const cutoffStyles = document.createElement('style');
+                    cutoffStyles.id = 'cutoff-modal-styles';
+                    cutoffStyles.textContent = `
+                        .cutoff-section {
+                            margin: 25px 0;
+                        }
+                        
+                        .cutoff-section h3 {
+                            color: var(--primary);
+                            margin-bottom: 15px;
+                            font-size: 18px;
+                            border-bottom: 2px solid var(--primary);
+                            padding-bottom: 5px;
+                        }
+                        
+                        .rank-cell {
+                            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                            color: white;
+                            font-weight: 600;
+                            text-align: center;
+                            border-radius: 4px;
+                        }
+                        
+                        .marks-cell {
+                            background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%);
+                            color: white;
+                            font-weight: 600;
+                            text-align: center;
+                            border-radius: 4px;
+                        }
+                        
+                        .cutoff-note {
+                            background: #fff3cd;
+                            border: 1px solid #ffeaa7;
+                            border-radius: 8px;
+                            padding: 15px;
+                            margin-top: 20px;
+                        }
+                        
+                        .cutoff-note p {
+                            margin: 0;
+                            color: #856404;
+                        }
+                        
+                        .cutoff-table table {
+                            border: 1px solid #dee2e6;
+                            border-radius: 8px;
+                            overflow: hidden;
+                        }
+                        
+                        .cutoff-table th {
+                            background: var(--gradient-primary);
+                            color: white;
+                            text-align: center;
+                            font-weight: 600;
+                        }
+                        
+                        .cutoff-table td:first-child {
+                            background: #f8f9fa;
+                            font-weight: 600;
+                            color: var(--primary);
+                        }
+                    `;
+                    document.head.appendChild(cutoffStyles);
+                }
+            } else {
+                alert('Cutoff information not available for this college.');
+            }
+        }
+
+        // Cutoff Filter Functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            // Tab switching functionality
+            const cutoffTabs = document.querySelectorAll('.cutoff-tab');
+            const cutoffContents = document.querySelectorAll('.cutoff-content');
+
+            cutoffTabs.forEach(tab => {
+                tab.addEventListener('click', function () {
+                    const examType = this.dataset.exam;
+
+                    // Update active tab
+                    cutoffTabs.forEach(t => {
+                        t.classList.remove('active');
+                        t.style.background = 'transparent';
+                        t.style.color = 'var(--primary)';
+                        t.style.border = '2px solid var(--primary)';
+                    });
+
+                    this.classList.add('active');
+                    this.style.background = 'var(--primary)';
+                    this.style.color = 'white';
+                    this.style.border = 'none';
+
+                    // Show/hide CET stream buttons
+                    const streamBtns = document.getElementById('cet-stream-btns');
+                    if (streamBtns) {
+                        streamBtns.style.display = examType === 'cet' ? 'flex' : 'none';
+                    }
+
+                    // Show corresponding content
+                    cutoffContents.forEach(content => {
+                        content.style.display = 'none';
+                        content.classList.remove('active');
+                    });
+
+                    const targetContent = document.getElementById(`${examType}-filters`);
+                    if (targetContent) {
+                        targetContent.style.display = 'block';
+                        targetContent.classList.add('active');
+                    }
+                });
+            });
+
+            // PCM/PCB Stream button handlers
+            const pcmBtn = document.getElementById('btn-pcm');
+            const pcbBtn = document.getElementById('btn-pcb');
+            const cetStreamInput = document.getElementById('cet-stream');
+            const streamLabel = document.getElementById('cet-stream-label');
+
+            if (pcmBtn && pcbBtn) {
+                pcmBtn.addEventListener('click', function () {
+                    cetStreamInput.value = 'pcm';
+                    // Activate PCM
+                    pcmBtn.style.background = 'linear-gradient(135deg, #667eea, #764ba2)';
+                    pcmBtn.style.color = 'white';
+                    pcmBtn.style.border = 'none';
+                    pcmBtn.style.boxShadow = '0 3px 10px rgba(102,126,234,0.3)';
+                    pcmBtn.classList.add('active');
+                    // Deactivate PCB
+                    pcbBtn.style.background = 'transparent';
+                    pcbBtn.style.color = '#4ecdc4';
+                    pcbBtn.style.border = '2px solid #4ecdc4';
+                    pcbBtn.style.boxShadow = 'none';
+                    pcbBtn.classList.remove('active');
+                    // Update label
+                    if (streamLabel) {
+                        streamLabel.innerHTML = '<span style="background: linear-gradient(135deg, #667eea, #764ba2); color:white; padding:6px 18px; border-radius:20px; font-weight:600; font-size:0.9rem;"><i class="fas fa-flask"></i> PCM \u2014 Engineering Colleges</span>';
+                    }
+                });
+
+                pcbBtn.addEventListener('click', function () {
+                    cetStreamInput.value = 'pcb';
+                    // Activate PCB
+                    pcbBtn.style.background = 'linear-gradient(135deg, #4ecdc4, #44a08d)';
+                    pcbBtn.style.color = 'white';
+                    pcbBtn.style.border = 'none';
+                    pcbBtn.style.boxShadow = '0 3px 10px rgba(78,205,196,0.3)';
+                    pcbBtn.classList.add('active');
+                    // Deactivate PCM
+                    pcmBtn.style.background = 'transparent';
+                    pcmBtn.style.color = '#667eea';
+                    pcmBtn.style.border = '2px solid #667eea';
+                    pcmBtn.style.boxShadow = 'none';
+                    pcmBtn.classList.remove('active');
+                    // Update label
+                    if (streamLabel) {
+                        streamLabel.innerHTML = '<span style="background: linear-gradient(135deg, #4ecdc4, #44a08d); color:white; padding:6px 18px; border-radius:20px; font-weight:600; font-size:0.9rem;"><i class="fas fa-pills"></i> PCB \u2014 Pharmacy Colleges</span>';
+                    }
+                });
+            }
+
+            // Apply cutoff filters
+            document.getElementById('apply-cutoff-filters').addEventListener('click', function () {
+                applyCutoffFilters();
+            });
+
+            // Clear cutoff filters
+            document.getElementById('clear-cutoff-filters').addEventListener('click', function () {
+                clearCutoffFilters();
+            });
+        });
+
+        function applyCutoffFilters() {
+            const activeTab = document.querySelector('.cutoff-tab.active');
+            if (!activeTab) return;
+
+            const examType = activeTab.dataset.exam;
+            const category = document.getElementById(`${examType}-category`).value;
+            const obtainedMarks = parseFloat(document.getElementById(`${examType}-obtained-marks`).value);
+
+            if (!obtainedMarks && obtainedMarks !== 0) {
+                alert('Please enter your obtained marks.');
+                return;
+            }
+
+            // Map exam tab to data key
+            const examKeyMap = { cet: 'CET', neet: 'NEET', jee: 'JEE' };
+            const examKey = examKeyMap[examType];
+
+            // Get CET stream (pcm=engineering, pcb=pharmacy)
+            const cetStream = document.getElementById('cet-stream') ? document.getElementById('cet-stream').value : 'pcm';
+
+            // Filter colleges: student's marks >= college cutoff marks for that exam & category
+            filteredColleges = allColleges.filter(college => {
+                // Match exam type to college category
+                if (examType === 'cet') {
+                    // PCM = engineering only, PCB = pharmacy only
+                    if (cetStream === 'pcm' && college.category !== 'engineering') return false;
+                    if (cetStream === 'pcb' && college.category !== 'pharmacy') return false;
+                }
+                if (examType === 'neet' && college.category !== 'medical') return false;
+                if (examType === 'jee' && college.category !== 'engineering') return false;
+
+                // Must have cutoff marks data for this exam
+                if (!college.cutoffMarks || !college.cutoffMarks[examKey]) return false;
+
+                // Get the cutoff mark for this exam + category
+                const cutoff = college.cutoffMarks[examKey][category];
+                if (cutoff === undefined || cutoff === null) return false;
+
+                // Student is eligible if their marks >= cutoff
+                return obtainedMarks >= cutoff;
+            });
+
+            // Sort by rating (best colleges first)
+            filteredColleges.sort((a, b) => (b.rating || 0) - (a.rating || 0));
+
+            currentPage = 1;
+            displayResults();
+            document.getElementById('results').scrollIntoView({ behavior: 'smooth' });
+
+            const resultCount = filteredColleges.length;
+            const examNames = { cet: 'CET', neet: 'NEET', jee: 'JEE' };
+            const streamLabel = examType === 'cet' ? (cetStream === 'pcm' ? ' PCM (Engineering)' : ' PCB (Pharmacy)') : '';
+            alert(`Found ${resultCount} colleges where you're eligible with ${obtainedMarks} marks in ${examNames[examType]}${streamLabel} (${category} category).`);
+        }
+
+        function clearCutoffFilters() {
+            const examTypes = ['cet', 'neet', 'jee'];
+            examTypes.forEach(examType => {
+                document.getElementById(`${examType}-category`).value = 'General';
+                document.getElementById(`${examType}-obtained-marks`).value = '';
+            });
+
+            filteredColleges = [...allColleges];
+            currentPage = 1;
+            displayResults();
+
+            alert('Filters cleared successfully!');
+        }
+
+        // ===== CUTOFF-WISE (ADVANCED) FILTERS =====
+        document.addEventListener('DOMContentLoaded', function () {
+            // Tab switching for advanced filters
+            const advTabs = document.querySelectorAll('.cutoff-tab-adv');
+            const advContents = document.querySelectorAll('.cutoff-content-adv');
+
+            advTabs.forEach(tab => {
+                tab.addEventListener('click', function () {
+                    const examType = this.dataset.exam;
+
+                    advTabs.forEach(t => {
+                        t.classList.remove('active');
+                        t.style.background = 'transparent';
+                        t.style.color = '#e67e22';
+                        t.style.border = '2px solid #e67e22';
+                    });
+
+                    this.classList.add('active');
+                    this.style.background = '#e67e22';
+                    this.style.color = 'white';
+                    this.style.border = 'none';
+
+                    advContents.forEach(c => {
+                        c.style.display = 'none';
+                        c.classList.remove('active');
+                    });
+
+                    const target = document.getElementById(`${examType}-adv-filters`);
+                    if (target) {
+                        target.style.display = 'block';
+                        target.classList.add('active');
+                    }
+                });
+            });
+
+            // Apply advanced cutoff filters
+            document.getElementById('apply-adv-cutoff-filters').addEventListener('click', function () {
+                applyAdvCutoffFilters();
+            });
+
+            // Clear advanced cutoff filters
+            document.getElementById('clear-adv-cutoff-filters').addEventListener('click', function () {
+                clearAdvCutoffFilters();
+            });
+        });
+
+        function applyAdvCutoffFilters() {
+            const activeTab = document.querySelector('.cutoff-tab-adv.active');
+            if (!activeTab) return;
+
+            const examType = activeTab.dataset.exam;
+            const category = document.getElementById(`${examType}-adv-category`).value;
+            const rankMin = parseInt(document.getElementById(`${examType}-adv-rank-min`).value) || null;
+            const rankMax = parseInt(document.getElementById(`${examType}-adv-rank-max`).value) || null;
+            const marksMin = parseFloat(document.getElementById(`${examType}-adv-marks-min`).value) || null;
+            const marksMax = parseFloat(document.getElementById(`${examType}-adv-marks-max`).value) || null;
+
+            if (!category && !rankMin && !rankMax && !marksMin && !marksMax) {
+                alert('Please enter at least one filter criteria.');
+                return;
+            }
+
+            // Map exam tab to data key
+            const examKeyMap = { cet: 'CET', neet: 'NEET', jee: 'JEE' };
+            const examKey = examKeyMap[examType];
+
+            filteredColleges = allColleges.filter(college => {
+                if (examType === 'cet' && college.category !== 'engineering' && college.category !== 'pharmacy') return false;
+                if (examType === 'neet' && college.category !== 'medical') return false;
+                if (examType === 'jee' && college.category !== 'engineering') return false;
+
+                if (!college.cutoffRanks && !college.cutoffMarks) return false;
+
+                // Access data by exam key (CET/NEET/JEE), not by branch
+                const cutoffRanks = college.cutoffRanks && college.cutoffRanks[examKey];
+                const cutoffMarks = college.cutoffMarks && college.cutoffMarks[examKey];
+                if (!cutoffRanks && !cutoffMarks) return false;
+
+                const categories = category ? [category] : ['General', 'OBC', 'SC', 'ST', 'EWS'];
+                return categories.some(cat => {
+                    let rankMatch = true;
+                    let marksMatch = true;
+
+                    if (cutoffRanks && cutoffRanks[cat] !== undefined) {
+                        if (rankMin && cutoffRanks[cat] < rankMin) rankMatch = false;
+                        if (rankMax && cutoffRanks[cat] > rankMax) rankMatch = false;
+                    }
+
+                    if (cutoffMarks && cutoffMarks[cat] !== undefined) {
+                        if (marksMin && cutoffMarks[cat] < marksMin) marksMatch = false;
+                        if (marksMax && cutoffMarks[cat] > marksMax) marksMatch = false;
+                    }
+
+                    return rankMatch && marksMatch;
+                });
+            });
+
+            currentPage = 1;
+            displayResults();
+            document.getElementById('results').scrollIntoView({ behavior: 'smooth' });
+
+            alert(`Found ${filteredColleges.length} colleges matching your cutoff criteria for ${examType.toUpperCase()}.`);
+        }
+
+        function clearAdvCutoffFilters() {
+            const examTypes = ['cet', 'neet', 'jee'];
+            examTypes.forEach(examType => {
+                document.getElementById(`${examType}-adv-category`).value = '';
+                document.getElementById(`${examType}-adv-rank-min`).value = '';
+                document.getElementById(`${examType}-adv-rank-max`).value = '';
+                document.getElementById(`${examType}-adv-marks-min`).value = '';
+                document.getElementById(`${examType}-adv-marks-max`).value = '';
+            });
+
+            filteredColleges = [...allColleges];
+            currentPage = 1;
+            displayResults();
+            alert('Cutoff filters cleared successfully!');
+        }
+
+        // Add CSS for cutoff filter animations
+        const style = document.createElement('style');
+        style.textContent = `
+            .cutoff-tab:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+            }
+            
+            .cutoff-content {
+                animation: fadeIn 0.3s ease-in-out;
+            }
+            
+            @keyframes fadeIn {
+                from { opacity: 0; transform: translateY(10px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+            
+            .filter-group input:focus,
+            .filter-group select:focus {
+                border-color: var(--primary) !important;
+                box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1) !important;
+                outline: none;
+            }
+            
+            .cutoff-filters {
+                background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%) !important;
+                box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Chatbot is now handled by chatbot.js - no additional code needed here
+        console.log('Unipulse AI Chatbot loading...');
+
+        // ===== USER AUTH SESSION CHECK =====
+        (function () {
+            var SESSION_KEY = 'unipulse_user_session';
+            function getUserSession() {
+                try {
+                    var s = sessionStorage.getItem(SESSION_KEY) || localStorage.getItem(SESSION_KEY);
+                    return s ? JSON.parse(s) : null;
+                } catch (e) { return null; }
+            }
+
+            var session = getUserSession();
+            if (session && session.name) {
+                // Logged in: show profile, hide login/signup
+                var loginBtn = document.getElementById('nav-login-btn');
+                var signupBtn = document.getElementById('nav-signup-btn');
+                var profileEl = document.getElementById('nav-user-profile');
+                var avatarEl = document.getElementById('nav-user-avatar');
+                var nameEl = document.getElementById('nav-user-name');
+                var mobileLogin = document.getElementById('mobile-login-link');
+                var mobileLogout = document.getElementById('mobile-logout-link');
+
+                if (loginBtn) loginBtn.style.display = 'none';
+                if (signupBtn) signupBtn.style.display = 'none';
+                if (profileEl) profileEl.style.display = 'flex';
+                if (avatarEl) avatarEl.textContent = session.name.charAt(0).toUpperCase();
+                if (nameEl) nameEl.textContent = session.name.split(' ')[0];
+                if (mobileLogin) mobileLogin.style.display = 'none';
+                if (mobileLogout) mobileLogout.style.display = 'block';
+            }
+
+            window.logoutUser = function () {
+                sessionStorage.removeItem(SESSION_KEY);
+                localStorage.removeItem(SESSION_KEY);
+                window.location.reload();
+            };
+        })();
+    </script>
+</body>
+
+</html>

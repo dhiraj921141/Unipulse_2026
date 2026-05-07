@@ -1,0 +1,7210 @@
+[
+    {
+        "name": "College of Engineering Pune (COEP)",
+        "type": "Government",
+        "district": "Pune",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electrical Engineering",
+            "Electronics & Telecommunication"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 500,
+                "OBC": 1200,
+                "SC": 5000,
+                "ST": 8000
+            },
+            "JEE": {
+                "General": 15000,
+                "OBC": 25000,
+                "SC": 45000,
+                "ST": 60000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 185,
+                "OBC": 170,
+                "SC": 140,
+                "ST": 120
+            }
+        },
+        "fees": "₹1,25,000/year",
+        "established": 1854,
+        "rating": 4.5
+    },
+    {
+        "name": "Vishwakarma Institute of Technology (VIT)",
+        "type": "Private",
+        "district": "Pune",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Mechanical Engineering",
+            "Electronics & Telecommunication",
+            "Artificial Intelligence"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 3000,
+                "OBC": 6000,
+                "SC": 15000,
+                "ST": 20000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 165,
+                "OBC": 150,
+                "SC": 120,
+                "ST": 100
+            }
+        },
+        "fees": "₹2,50,000/year",
+        "established": 1983,
+        "rating": 4.2
+    },
+    {
+        "name": "Grant Medical College",
+        "type": "Government",
+        "district": "Mumbai",
+        "category": "medical",
+        "branches": [
+            "MBBS",
+            "MD",
+            "MS"
+        ],
+        "cutoffRanks": {
+            "NEET": {
+                "General": 2000,
+                "OBC": 5000,
+                "SC": 15000,
+                "ST": 25000
+            }
+        },
+        "cutoffMarks": {
+            "NEET": {
+                "General": 620,
+                "OBC": 580,
+                "SC": 480,
+                "ST": 400
+            }
+        },
+        "fees": "₹50,000/year",
+        "established": 1845,
+        "rating": 4.6
+    },
+    {
+        "name": "Poona College of Pharmacy",
+        "type": "Government",
+        "district": "Pune",
+        "category": "pharmacy",
+        "branches": [
+            "B.Pharm",
+            "M.Pharm",
+            "D.Pharm"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 1000,
+                "OBC": 3000,
+                "SC": 8000,
+                "ST": 12000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 170,
+                "OBC": 150,
+                "SC": 120,
+                "ST": 100
+            }
+        },
+        "fees": "₹75,000/year",
+        "established": 1981,
+        "rating": 4
+    },
+    {
+        "name": "College of Engineering Pune (COEP)",
+        "type": "Government",
+        "district": "Pune",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electrical Engineering",
+            "Electronics & Telecommunication"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 500,
+                "OBC": 1200,
+                "SC": 5000,
+                "ST": 8000
+            },
+            "JEE": {
+                "General": 15000,
+                "OBC": 25000,
+                "SC": 45000,
+                "ST": 60000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 185,
+                "OBC": 170,
+                "SC": 140,
+                "ST": 120
+            }
+        },
+        "fees": "₹1,25,000/year",
+        "established": 1854,
+        "rating": 4.5
+    },
+    {
+        "name": "Veermata Jijabai Technological Institute (VJTI)",
+        "type": "Government",
+        "district": "Mumbai",
+        "category": "engineering",
+        "branches": [
+            "Computer Engineering",
+            "Information Technology",
+            "Electronics Engineering",
+            "Electrical Engineering",
+            "Mechanical Engineering",
+            "Textile Technology"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 101,
+                "OBC": 350,
+                "SC": 2200,
+                "ST": 6500
+            },
+            "JEE": {
+                "General": 12000,
+                "OBC": 20000,
+                "SC": 40000,
+                "ST": 55000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 192,
+                "OBC": 180,
+                "SC": 155,
+                "ST": 130
+            }
+        },
+        "fees": "₹84,000/year",
+        "established": 1887,
+        "rating": 4.6
+    },
+    {
+        "name": "Sardar Patel Institute of Technology (SPIT)",
+        "type": "Private (Autonomous)",
+        "district": "Mumbai",
+        "category": "engineering",
+        "branches": [
+            "Computer Engineering",
+            "Computer Science and Engineering (AI & ML)",
+            "Computer Science and Engineering (Data Science)",
+            "Electronics & Telecommunication"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 860,
+                "OBC": 1800,
+                "SC": 6000,
+                "ST": 12000
+            },
+            "JEE": {
+                "General": 18000,
+                "OBC": 28000,
+                "SC": 50000,
+                "ST": 75000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 182,
+                "OBC": 168,
+                "SC": 135,
+                "ST": 110
+            }
+        },
+        "fees": "₹1,96,000/year",
+        "established": 2005,
+        "rating": 4.4
+    },
+    {
+        "name": "Institute of Chemical Technology (ICT)",
+        "type": "Government (Deemed)",
+        "district": "Mumbai",
+        "category": "engineering",
+        "branches": [
+            "Chemical Engineering",
+            "Food Engineering and Technology",
+            "Polymer Engineering",
+            "Pharmaceuticals Chemistry"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 1200,
+                "OBC": 3000,
+                "SC": 5000,
+                "ST": 9000
+            },
+            "JEE": {
+                "General": 1849,
+                "OBC": 4500,
+                "SC": 15000,
+                "ST": 30000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 178,
+                "OBC": 160,
+                "SC": 145,
+                "ST": 115
+            }
+        },
+        "fees": "₹89,100/year",
+        "established": 1933,
+        "rating": 4.7
+    },
+    {
+        "name": "Pune Institute of Computer Technology (PICT)",
+        "type": "Private",
+        "district": "Pune",
+        "category": "engineering",
+        "branches": [
+            "Computer Engineering",
+            "Information Technology",
+            "Electronics & Telecommunication"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 450,
+                "OBC": 1100,
+                "SC": 4800,
+                "ST": 15000
+            },
+            "JEE": {
+                "General": 7500,
+                "OBC": 12000,
+                "SC": 35000,
+                "ST": 50000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 186,
+                "OBC": 172,
+                "SC": 142,
+                "ST": 105
+            }
+        },
+        "fees": "₹1,05,000/year",
+        "established": 1983,
+        "rating": 4.3
+    },
+    {
+        "name": "Walchand College of Engineering",
+        "type": "Government (Aided)",
+        "district": "Sangli",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Electronics Engineering",
+            "Electrical Engineering",
+            "Mechanical Engineering",
+            "Civil Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 1300,
+                "OBC": 2500,
+                "SC": 7500,
+                "ST": 18000
+            },
+            "JEE": {
+                "General": 17400,
+                "OBC": 28000,
+                "SC": 55000,
+                "ST": 80000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 175,
+                "OBC": 162,
+                "SC": 130,
+                "ST": 95
+            }
+        },
+        "fees": "₹85,500/year",
+        "established": 1947,
+        "rating": 4.2
+    },
+    {
+        "name": "Vishwakarma Institute of Technology (VIT)",
+        "type": "Private",
+        "district": "Pune",
+        "category": "engineering",
+        "branches": [
+            "Computer Engineering",
+            "Artificial Intelligence",
+            "Mechanical Engineering",
+            "Instrumentation Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 2200,
+                "OBC": 4500,
+                "SC": 12000,
+                "ST": 25000
+            },
+            "JEE": {
+                "General": 25000,
+                "OBC": 35000,
+                "SC": 60000,
+                "ST": 90000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 170,
+                "OBC": 155,
+                "SC": 120,
+                "ST": 90
+            }
+        },
+        "fees": "₹1,85,000/year",
+        "established": 1983,
+        "rating": 4.1
+    },
+    {
+        "name": "Government College of Engineering",
+        "type": "Government",
+        "district": "Aurangabad",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Electrical Engineering",
+            "Mechanical Engineering",
+            "Civil Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 3500,
+                "OBC": 6000,
+                "SC": 15000,
+                "ST": 30000
+            },
+            "JEE": {
+                "General": 45000,
+                "OBC": 55000,
+                "SC": 85000,
+                "ST": 110000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 165,
+                "OBC": 150,
+                "SC": 115,
+                "ST": 85
+            }
+        },
+        "fees": "₹80,300/year",
+        "established": 1960,
+        "rating": 4
+    },
+    {
+        "name": "Dwarkadas J. Sanghvi College of Engineering",
+        "type": "Private",
+        "district": "Mumbai",
+        "category": "engineering",
+        "branches": [
+            "Computer Engineering",
+            "Information Technology",
+            "Mechanical Engineering",
+            "Electronics & Telecommunication"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 1100,
+                "OBC": 2800,
+                "SC": 9000,
+                "ST": 20000
+            },
+            "JEE": {
+                "General": 20000,
+                "OBC": 32000,
+                "SC": 65000,
+                "ST": 95000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 178,
+                "OBC": 165,
+                "SC": 125,
+                "ST": 95
+            }
+        },
+        "fees": "₹2,10,000/year",
+        "established": 1994,
+        "rating": 4.3
+    },
+    {
+        "name": "Army Institute of Technology (AIT)",
+        "type": "Private",
+        "district": "Pune",
+        "category": "engineering",
+        "branches": [
+            "Computer Engineering",
+            "Information Technology",
+            "Electronics & Telecommunication",
+            "Mechanical Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": "N/A (Army Ward Only)"
+            },
+            "JEE": {
+                "General": 45000,
+                "OBC": 60000,
+                "SC": 90000,
+                "ST": 120000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": "N/A"
+            }
+        },
+        "fees": "₹1,75,000/year",
+        "established": 1994,
+        "rating": 4.5
+    },
+    {
+        "name": "Shri Ramdeobaba College of Engineering and Management (RCOEM)",
+        "type": "Private",
+        "district": "Nagpur",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Electronics & Communication",
+            "Mechanical Engineering",
+            "Industrial Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 2500,
+                "OBC": 5500,
+                "SC": 14000,
+                "ST": 32000
+            },
+            "JEE": {
+                "General": 30000,
+                "OBC": 45000,
+                "SC": 75000,
+                "ST": 105000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 172,
+                "OBC": 158,
+                "SC": 118,
+                "ST": 82
+            }
+        },
+        "fees": "₹1,65,000/year",
+        "established": 1984,
+        "rating": 4.2
+    },
+    {
+        "name": "Pimpri Chinchwad College of Engineering (PCCOE)",
+        "type": "Private",
+        "district": "Pune",
+        "category": "engineering",
+        "branches": [
+            "Computer Engineering",
+            "Information Technology",
+            "Mechanical Engineering",
+            "Civil Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 2800,
+                "OBC": 5000,
+                "SC": 13000,
+                "ST": 28000
+            },
+            "JEE": {
+                "General": 32000,
+                "OBC": 42000,
+                "SC": 70000,
+                "ST": 98000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 168,
+                "OBC": 154,
+                "SC": 122,
+                "ST": 88
+            }
+        },
+        "fees": "₹1,45,000/year",
+        "established": 1999,
+        "rating": 4.1
+    },
+    {
+        "name": "Government College of Engineering",
+        "type": "Government",
+        "district": "Karad",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Electrical Engineering",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electronics"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 4200,
+                "OBC": 7500,
+                "SC": 18000,
+                "ST": 35000
+            },
+            "JEE": {
+                "General": 55000,
+                "OBC": 70000,
+                "SC": 100000,
+                "ST": 130000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 162,
+                "OBC": 145,
+                "SC": 110,
+                "ST": 80
+            }
+        },
+        "fees": "₹75,000/year",
+        "established": 1960,
+        "rating": 3.9
+    },
+    {
+        "name": "Thadomal Shahani Engineering College (TSEC)",
+        "type": "Private",
+        "district": "Mumbai",
+        "category": "engineering",
+        "branches": [
+            "Computer Engineering",
+            "Information Technology",
+            "Artificial Intelligence & Data Science",
+            "Chemical Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 2200,
+                "OBC": 4800,
+                "SC": 12500,
+                "ST": 27000
+            },
+            "JEE": {
+                "General": 28000,
+                "OBC": 38000,
+                "SC": 68000,
+                "ST": 95000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 174,
+                "OBC": 160,
+                "SC": 128,
+                "ST": 92
+            }
+        },
+        "fees": "₹1,90,000/year",
+        "established": 1977,
+        "rating": 4
+    },
+    {
+        "name": "K. J. Somaiya College of Engineering",
+        "type": "Private (Somaiya Vidyavihar)",
+        "district": "Mumbai",
+        "category": "engineering",
+        "branches": [
+            "Computer Engineering",
+            "Information Technology",
+            "Electronics & Telecommunication",
+            "Mechanical Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 1800,
+                "OBC": 4000,
+                "SC": 11000,
+                "ST": 25000
+            },
+            "JEE": {
+                "General": 22000,
+                "OBC": 34000,
+                "SC": 62000,
+                "ST": 90000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 176,
+                "OBC": 162,
+                "SC": 130,
+                "ST": 98
+            }
+        },
+        "fees": "₹4,50,000/year",
+        "established": 1983,
+        "rating": 4.2
+    },
+    {
+        "name": "Government College of Engineering (GCOEA)",
+        "type": "Government",
+        "district": "Amravati",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Electronics & Telecommunication",
+            "Electrical Engineering",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Instrumentation Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 7500,
+                "OBC": 12000,
+                "SC": 25000,
+                "ST": 45000
+            },
+            "JEE": {
+                "General": 65000,
+                "OBC": 85000,
+                "SC": 120000,
+                "ST": 180000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 165,
+                "OBC": 152,
+                "SC": 120,
+                "ST": 95
+            }
+        },
+        "fees": "₹85,000/year",
+        "established": 1964,
+        "rating": 4.3
+    },
+    {
+        "name": "Shri Sant Gajanan Maharaj College of Engineering (SSGMCE)",
+        "type": "Private",
+        "district": "Buldhana (Shegaon)",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Electronics & Telecommunication",
+            "Electrical Engineering",
+            "Mechanical Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 15000,
+                "OBC": 22000,
+                "SC": 45000,
+                "ST": 75000
+            },
+            "JEE": {
+                "General": 108000,
+                "OBC": 145000,
+                "SC": 210000,
+                "ST": 300000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 155,
+                "OBC": 145,
+                "SC": 110,
+                "ST": 85
+            }
+        },
+        "fees": "₹1,05,000/year",
+        "established": 1983,
+        "rating": 4.5
+    },
+    {
+        "name": "Prof. Ram Meghe Institute of Technology and Research (PRMITR)",
+        "type": "Private",
+        "district": "Amravati (Badnera)",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "AI & Data Science",
+            "IoT",
+            "Electronics & Telecommunication",
+            "Mechanical Engineering",
+            "Civil Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 20000,
+                "OBC": 28000,
+                "SC": 55000,
+                "ST": 85000
+            },
+            "JEE": {
+                "General": 114000,
+                "OBC": 160000,
+                "SC": 240000,
+                "ST": 350000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 148,
+                "OBC": 138,
+                "SC": 105,
+                "ST": 80
+            }
+        },
+        "fees": "₹1,32,000/year",
+        "established": 1983,
+        "rating": 4.1
+    },
+    {
+        "name": "Sipna College of Engineering and Technology",
+        "type": "Private",
+        "district": "Amravati",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "AI & Data Science",
+            "Electronics & Telecommunication",
+            "Mechanical Engineering",
+            "Civil Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 25000,
+                "OBC": 35000,
+                "SC": 65000,
+                "ST": 95000
+            },
+            "JEE": {
+                "General": 145000,
+                "OBC": 190000,
+                "SC": 280000,
+                "ST": 380000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 140,
+                "OBC": 130,
+                "SC": 98,
+                "ST": 75
+            }
+        },
+        "fees": "₹1,07,000/year",
+        "established": 1999,
+        "rating": 4
+    },
+    {
+        "name": "P. R. Pote Patil College of Engineering and Management",
+        "type": "Private",
+        "district": "Amravati",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "AI & Machine Learning",
+            "Electronics & Telecommunication",
+            "Electrical Engineering",
+            "Mechanical Engineering",
+            "Civil Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 30000,
+                "OBC": 42000,
+                "SC": 75000,
+                "ST": 110000
+            },
+            "JEE": {
+                "General": 152000,
+                "OBC": 210000,
+                "SC": 310000,
+                "ST": 420000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 135,
+                "OBC": 125,
+                "SC": 92,
+                "ST": 70
+            }
+        },
+        "fees": "₹1,27,000/year",
+        "established": 2008,
+        "rating": 3.9
+    },
+    {
+        "name": "Jawaharlal Darda Institute of Engineering and Technology (JDIET)",
+        "type": "Private",
+        "district": "Yavatmal",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Chemical Engineering",
+            "Textile Engineering",
+            "Electronics & Telecommunication",
+            "Mechanical Engineering",
+            "Civil Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 35000,
+                "OBC": 48000,
+                "SC": 80000,
+                "ST": 120000
+            },
+            "JEE": {
+                "General": 180000,
+                "OBC": 240000,
+                "SC": 350000,
+                "ST": 480000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 128,
+                "OBC": 118,
+                "SC": 88,
+                "ST": 65
+            }
+        },
+        "fees": "₹92,000/year",
+        "established": 1996,
+        "rating": 3.8
+    },
+    {
+        "name": "Prof. Ram Meghe College of Engineering & Management (PRMCEAM)",
+        "type": "Private",
+        "district": "Amravati (Badnera)",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Electronics & Telecommunication",
+            "Electrical Engineering",
+            "Civil Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 38000,
+                "OBC": 52000,
+                "SC": 85000,
+                "ST": 130000
+            },
+            "JEE": {
+                "General": 210000,
+                "OBC": 270000,
+                "SC": 380000,
+                "ST": 510000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 122,
+                "OBC": 112,
+                "SC": 85,
+                "ST": 62
+            }
+        },
+        "fees": "₹85,000/year",
+        "established": 2009,
+        "rating": 3.7
+    },
+    {
+        "name": "H.V.P.M. College of Engineering and Technology",
+        "type": "Private",
+        "district": "Amravati",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Electronics & Telecommunication",
+            "Mechanical Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 42000,
+                "OBC": 58000,
+                "SC": 90000,
+                "ST": 140000
+            },
+            "JEE": {
+                "General": 230000,
+                "OBC": 300000,
+                "SC": 420000,
+                "ST": 550000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 118,
+                "OBC": 108,
+                "SC": 82,
+                "ST": 60
+            }
+        },
+        "fees": "₹94,000/year",
+        "established": 2002,
+        "rating": 3.7
+    },
+    {
+        "name": "Anuradha Engineering College",
+        "type": "Private",
+        "district": "Buldhana (Chikhli)",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Chemical Engineering",
+            "Mechanical Engineering",
+            "Civil Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 45000,
+                "OBC": 62000,
+                "SC": 95000,
+                "ST": 150000
+            },
+            "JEE": {
+                "General": 250000,
+                "OBC": 330000,
+                "SC": 450000,
+                "ST": 600000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 112,
+                "OBC": 102,
+                "SC": 78,
+                "ST": 58
+            }
+        },
+        "fees": "₹84,500/year",
+        "established": 1993,
+        "rating": 3.6
+    },
+    {
+        "name": "Babasaheb Naik College of Engineering",
+        "type": "Private",
+        "district": "Yavatmal (Pusad)",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Electronics & Telecommunication",
+            "Electrical Engineering",
+            "Mechanical Engineering",
+            "Civil Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 48000,
+                "OBC": 65000,
+                "SC": 100000,
+                "ST": 160000
+            },
+            "JEE": {
+                "General": 280000,
+                "OBC": 360000,
+                "SC": 480000,
+                "ST": 650000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 108,
+                "OBC": 98,
+                "SC": 75,
+                "ST": 55
+            }
+        },
+        "fees": "₹1,02,000/year",
+        "established": 1983,
+        "rating": 3.8
+    },
+    {
+        "name": "Dr. Rajendra Gode Institute of Technology & Research",
+        "type": "Private",
+        "district": "Amravati",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Electronics & Telecommunication",
+            "Mechanical Engineering",
+            "Civil Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 52000,
+                "OBC": 70000,
+                "SC": 110000,
+                "ST": 175000
+            },
+            "JEE": {
+                "General": 310000,
+                "OBC": 400000,
+                "SC": 520000,
+                "ST": 700000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 102,
+                "OBC": 92,
+                "SC": 70,
+                "ST": 52
+            }
+        },
+        "fees": "₹95,000/year",
+        "established": 2008,
+        "rating": 3.5
+    },
+    {
+        "name": "Jagadambha College of Engineering and Technology",
+        "type": "Private",
+        "district": "Yavatmal",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Electronics & Telecommunication",
+            "Electrical Engineering",
+            "Mechanical Engineering",
+            "Civil Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 55000,
+                "OBC": 75000,
+                "SC": 120000,
+                "ST": 190000
+            },
+            "JEE": {
+                "General": 340000,
+                "OBC": 430000,
+                "SC": 550000,
+                "ST": 750000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 98,
+                "OBC": 88,
+                "SC": 65,
+                "ST": 50
+            }
+        },
+        "fees": "₹1,05,000/year",
+        "established": 2009,
+        "rating": 3.6
+    },
+    {
+        "name": "Shri Shivaji Education Society's College of Engineering and Technology",
+        "type": "Private",
+        "district": "Akola",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Electronics & Telecommunication",
+            "Mechanical Engineering",
+            "Civil Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 40000,
+                "OBC": 55000,
+                "SC": 95000,
+                "ST": 145000
+            },
+            "JEE": {
+                "General": 220000,
+                "OBC": 290000,
+                "SC": 410000,
+                "ST": 580000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 120,
+                "OBC": 110,
+                "SC": 80,
+                "ST": 60
+            }
+        },
+        "fees": "₹1,20,500/year",
+        "established": 1983,
+        "rating": 3.7
+    },
+    {
+        "name": "Mauli Group of Institution's College of Engineering and Technology",
+        "type": "Private",
+        "district": "Buldhana (Shegaon)",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Electronics & Telecommunication",
+            "Electrical Engineering",
+            "Mechanical Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 48000,
+                "OBC": 68000,
+                "SC": 105000,
+                "ST": 170000
+            },
+            "JEE": {
+                "General": 270000,
+                "OBC": 350000,
+                "SC": 470000,
+                "ST": 630000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 110,
+                "OBC": 100,
+                "SC": 75,
+                "ST": 55
+            }
+        },
+        "fees": "₹80,000/year",
+        "established": 2011,
+        "rating": 3.8
+    },
+    {
+        "name": "Sanmati Engineering College",
+        "type": "Private",
+        "district": "Washim",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Civil Engineering",
+            "Mechanical Engineering",
+            "Electrical Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 60000,
+                "OBC": 85000,
+                "SC": 135000,
+                "ST": 210000
+            },
+            "JEE": {
+                "General": 380000,
+                "OBC": 480000,
+                "SC": 620000,
+                "ST": 800000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 92,
+                "OBC": 82,
+                "SC": 60,
+                "ST": 45
+            }
+        },
+        "fees": "₹87,000/year",
+        "established": 2010,
+        "rating": 3.4
+    },
+    {
+        "name": "G.H. Raisoni College of Engineering and Management",
+        "type": "Private",
+        "district": "Amravati",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "AI & Data Science",
+            "Civil Engineering",
+            "Mechanical Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 32000,
+                "OBC": 45000,
+                "SC": 78000,
+                "ST": 115000
+            },
+            "JEE": {
+                "General": 160000,
+                "OBC": 220000,
+                "SC": 330000,
+                "ST": 450000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 132,
+                "OBC": 122,
+                "SC": 90,
+                "ST": 68
+            }
+        },
+        "fees": "₹1,15,000/year",
+        "established": 2008,
+        "rating": 3.9
+    },
+    {
+        "name": "Manav School of Engineering and Technology",
+        "type": "Private",
+        "district": "Akola",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Electrical Engineering",
+            "Mechanical Engineering",
+            "Civil Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 65000,
+                "OBC": 90000,
+                "SC": 145000,
+                "ST": 230000
+            },
+            "JEE": {
+                "General": 420000,
+                "OBC": 520000,
+                "SC": 680000,
+                "ST": 850000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 88,
+                "OBC": 78,
+                "SC": 55,
+                "ST": 40
+            }
+        },
+        "fees": "₹66,000/year",
+        "established": 2011,
+        "rating": 3.3
+    },
+    {
+        "name": "Rajarshi Shahu College of Engineering",
+        "type": "Private",
+        "district": "Buldhana",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Electronics & Telecommunication",
+            "Mechanical Engineering",
+            "Civil Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 58000,
+                "OBC": 80000,
+                "SC": 125000,
+                "ST": 200000
+            },
+            "JEE": {
+                "General": 350000,
+                "OBC": 450000,
+                "SC": 580000,
+                "ST": 780000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 95,
+                "OBC": 85,
+                "SC": 62,
+                "ST": 48
+            }
+        },
+        "fees": "₹44,500/year",
+        "established": 2008,
+        "rating": 3.2
+    },
+    {
+        "name": "Padmashri Dr. V.B. Kolte College of Engineering",
+        "type": "Private",
+        "district": "Buldhana (Malkapur)",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Electrical Engineering",
+            "Mechanical Engineering",
+            "Civil Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 62000,
+                "OBC": 88000,
+                "SC": 140000,
+                "ST": 220000
+            },
+            "JEE": {
+                "General": 400000,
+                "OBC": 500000,
+                "SC": 650000,
+                "ST": 820000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 90,
+                "OBC": 80,
+                "SC": 58,
+                "ST": 42
+            }
+        },
+        "fees": "₹72,000/year",
+        "established": 2010,
+        "rating": 3.4
+    },
+    {
+        "name": "IBSS College of Engineering",
+        "type": "Private",
+        "district": "Amravati",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Electronics & Telecommunication",
+            "Mechanical Engineering",
+            "Civil Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 54000,
+                "OBC": 78000,
+                "SC": 118000,
+                "ST": 185000
+            },
+            "JEE": {
+                "General": 330000,
+                "OBC": 420000,
+                "SC": 540000,
+                "ST": 730000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 100,
+                "OBC": 90,
+                "SC": 68,
+                "ST": 50
+            }
+        },
+        "fees": "₹84,000/year",
+        "established": 2008,
+        "rating": 3.5
+    },
+    {
+        "name": "Government College of Engineering, Yavatmal",
+        "type": "Government",
+        "district": "Yavatmal",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Electronics & Telecommunication",
+            "Electrical Engineering",
+            "Mechanical Engineering",
+            "Civil Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 35000,
+                "OBC": 48000,
+                "SC": 85000,
+                "ST": 120000
+            },
+            "JEE": {
+                "General": 210000,
+                "OBC": 280000,
+                "SC": 380000,
+                "ST": 510000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 130,
+                "OBC": 120,
+                "SC": 88,
+                "ST": 65
+            }
+        },
+        "fees": "₹96,800/year",
+        "established": 2018,
+        "rating": 4
+    },
+    {
+        "name": "Pratap Institute of Management and Technology",
+        "type": "Private",
+        "district": "Washim",
+        "category": "engineering",
+        "branches": [
+            "Information Technology",
+            "Civil Engineering",
+            "Mechanical Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 75000,
+                "OBC": 95000,
+                "SC": 150000,
+                "ST": 250000
+            },
+            "JEE": {
+                "General": 450000,
+                "OBC": 550000,
+                "SC": 720000,
+                "ST": 900000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 80,
+                "OBC": 70,
+                "SC": 50,
+                "ST": 35
+            }
+        },
+        "fees": "₹96,000/year",
+        "established": 2010,
+        "rating": 3.4
+    },
+    {
+        "name": "G.H. Raisoni Institute of Engineering and Technology, Khamgaon",
+        "type": "Private",
+        "district": "Buldhana (Khamgaon)",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Electronics & Telecommunication",
+            "Mechanical Engineering",
+            "Civil Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 50000,
+                "OBC": 72000,
+                "SC": 115000,
+                "ST": 180000
+            },
+            "JEE": {
+                "General": 300000,
+                "OBC": 390000,
+                "SC": 510000,
+                "ST": 690000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 105,
+                "OBC": 95,
+                "SC": 72,
+                "ST": 52
+            }
+        },
+        "fees": "₹1,10,000/year",
+        "established": 2009,
+        "rating": 3.6
+    },
+    {
+        "name": "Vidya Niketan College of Engineering (VNCOE), Bhandara Road",
+        "type": "Private",
+        "district": "Buldhana (Khamgaon)",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Electronics & Telecommunication",
+            "Electrical Engineering",
+            "Mechanical Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 55000,
+                "OBC": 78000,
+                "SC": 120000,
+                "ST": 195000
+            },
+            "JEE": {
+                "General": 330000,
+                "OBC": 420000,
+                "SC": 560000,
+                "ST": 740000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 100,
+                "OBC": 90,
+                "SC": 68,
+                "ST": 48
+            }
+        },
+        "fees": "₹90,000/year",
+        "established": 2007,
+        "rating": 3.4
+    },
+    {
+        "name": "Late Bhausaheb Hiray S.S. Trust's College of Engineering, Jalgaon Jamod",
+        "type": "Private",
+        "district": "Buldhana (Jalgaon Jamod)",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Electrical Engineering",
+            "Mechanical Engineering",
+            "Civil Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 60000,
+                "OBC": 85000,
+                "SC": 130000,
+                "ST": 210000
+            },
+            "JEE": {
+                "General": 370000,
+                "OBC": 470000,
+                "SC": 600000,
+                "ST": 800000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 92,
+                "OBC": 82,
+                "SC": 60,
+                "ST": 42
+            }
+        },
+        "fees": "₹78,000/year",
+        "established": 2009,
+        "rating": 3.3
+    },
+    {
+        "name": "Bapurao Deshmukh College of Engineering, Sevagram",
+        "type": "Private",
+        "district": "Buldhana (Deulgaon Raja)",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Mechanical Engineering",
+            "Civil Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 65000,
+                "OBC": 90000,
+                "SC": 140000,
+                "ST": 225000
+            },
+            "JEE": {
+                "General": 400000,
+                "OBC": 500000,
+                "SC": 650000,
+                "ST": 850000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 88,
+                "OBC": 78,
+                "SC": 55,
+                "ST": 40
+            }
+        },
+        "fees": "₹75,000/year",
+        "established": 2010,
+        "rating": 3.2
+    },
+    {
+        "name": "Khamgaon Shikshan Prasarak Mandal's College of Engineering",
+        "type": "Private",
+        "district": "Buldhana (Khamgaon)",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Electrical Engineering",
+            "Mechanical Engineering",
+            "Civil Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 62000,
+                "OBC": 88000,
+                "SC": 135000,
+                "ST": 215000
+            },
+            "JEE": {
+                "General": 385000,
+                "OBC": 485000,
+                "SC": 630000,
+                "ST": 820000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 90,
+                "OBC": 80,
+                "SC": 58,
+                "ST": 40
+            }
+        },
+        "fees": "₹82,000/year",
+        "established": 2005,
+        "rating": 3.3
+    },
+    {
+        "name": "Nandura Shikshan Sanstha's College of Pharmacy, Nandura",
+        "type": "Private",
+        "district": "Buldhana (Nandura)",
+        "category": "pharmacy",
+        "branches": [
+            "B.Pharm",
+            "D.Pharm"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 20000,
+                "OBC": 35000,
+                "SC": 60000,
+                "ST": 95000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 130,
+                "OBC": 115,
+                "SC": 85,
+                "ST": 60
+            }
+        },
+        "fees": "₹65,000/year",
+        "established": 2006,
+        "rating": 3.5
+    },
+    {
+        "name": "Shri Gajanan Maharaj College of Pharmacy, Shegaon",
+        "type": "Private",
+        "district": "Buldhana (Shegaon)",
+        "category": "pharmacy",
+        "branches": [
+            "B.Pharm",
+            "D.Pharm",
+            "M.Pharm"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 15000,
+                "OBC": 28000,
+                "SC": 50000,
+                "ST": 80000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 140,
+                "OBC": 125,
+                "SC": 92,
+                "ST": 68
+            }
+        },
+        "fees": "₹70,000/year",
+        "established": 1998,
+        "rating": 3.8
+    },
+    {
+        "name": "Mehkar Shikshan Sanstha's College of Pharmacy, Mehkar",
+        "type": "Private",
+        "district": "Buldhana (Mehkar)",
+        "category": "pharmacy",
+        "branches": [
+            "B.Pharm",
+            "D.Pharm"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 25000,
+                "OBC": 40000,
+                "SC": 70000,
+                "ST": 105000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 120,
+                "OBC": 108,
+                "SC": 78,
+                "ST": 55
+            }
+        },
+        "fees": "₹60,000/year",
+        "established": 2008,
+        "rating": 3.4
+    },
+    {
+        "name": "Amrutvahini College of Engineering, Sangamner",
+        "type": "Private",
+        "district": "Ahmednagar",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electronics & Telecommunication"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 18000,
+                "OBC": 28000,
+                "SC": 55000,
+                "ST": 90000
+            },
+            "JEE": {
+                "General": 120000,
+                "OBC": 180000,
+                "SC": 300000,
+                "ST": 450000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 148,
+                "OBC": 135,
+                "SC": 100,
+                "ST": 75
+            }
+        },
+        "fees": "₹1,05,000/year",
+        "established": 1983,
+        "rating": 4
+    },
+    {
+        "name": "Pravara Rural Engineering College, Loni",
+        "type": "Private",
+        "district": "Ahmednagar",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electrical Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 25000,
+                "OBC": 38000,
+                "SC": 65000,
+                "ST": 110000
+            },
+            "JEE": {
+                "General": 160000,
+                "OBC": 220000,
+                "SC": 350000,
+                "ST": 520000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 138,
+                "OBC": 125,
+                "SC": 90,
+                "ST": 68
+            }
+        },
+        "fees": "₹95,000/year",
+        "established": 1983,
+        "rating": 3.8
+    },
+    {
+        "name": "Smt. Kashibai Navale College of Engineering, Ahmednagar",
+        "type": "Private",
+        "district": "Ahmednagar",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Mechanical Engineering",
+            "Electronics & Telecommunication"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 30000,
+                "OBC": 45000,
+                "SC": 75000,
+                "ST": 120000
+            },
+            "JEE": {
+                "General": 190000,
+                "OBC": 260000,
+                "SC": 380000,
+                "ST": 550000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 132,
+                "OBC": 120,
+                "SC": 85,
+                "ST": 62
+            }
+        },
+        "fees": "₹90,000/year",
+        "established": 2001,
+        "rating": 3.6
+    },
+    {
+        "name": "Pravara Institute of Medical Sciences, Loni",
+        "type": "Private (Deemed)",
+        "district": "Ahmednagar",
+        "category": "medical",
+        "branches": [
+            "MBBS",
+            "MD",
+            "MS",
+            "BDS"
+        ],
+        "cutoffRanks": {
+            "NEET": {
+                "General": 15000,
+                "OBC": 28000,
+                "SC": 55000,
+                "ST": 85000
+            }
+        },
+        "cutoffMarks": {
+            "NEET": {
+                "General": 550,
+                "OBC": 500,
+                "SC": 400,
+                "ST": 350
+            }
+        },
+        "fees": "₹8,00,000/year",
+        "established": 1985,
+        "rating": 4.2
+    },
+    {
+        "name": "Pravara Rural College of Pharmacy, Loni",
+        "type": "Private",
+        "district": "Ahmednagar",
+        "category": "pharmacy",
+        "branches": [
+            "B.Pharm",
+            "D.Pharm",
+            "M.Pharm"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 12000,
+                "OBC": 22000,
+                "SC": 42000,
+                "ST": 70000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 145,
+                "OBC": 130,
+                "SC": 98,
+                "ST": 72
+            }
+        },
+        "fees": "₹75,000/year",
+        "established": 1990,
+        "rating": 3.8
+    },
+    {
+        "name": "Amrutvahini College of Pharmacy, Sangamner",
+        "type": "Private",
+        "district": "Ahmednagar",
+        "category": "pharmacy",
+        "branches": [
+            "B.Pharm",
+            "D.Pharm"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 18000,
+                "OBC": 30000,
+                "SC": 52000,
+                "ST": 82000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 135,
+                "OBC": 120,
+                "SC": 88,
+                "ST": 65
+            }
+        },
+        "fees": "₹70,000/year",
+        "established": 2004,
+        "rating": 3.6
+    },
+    {
+        "name": "AISSMS College of Engineering, Pune Road, Ahmednagar",
+        "type": "Private",
+        "district": "Ahmednagar",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Mechanical Engineering",
+            "Civil Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 35000,
+                "OBC": 50000,
+                "SC": 80000,
+                "ST": 130000
+            },
+            "JEE": {
+                "General": 210000,
+                "OBC": 280000,
+                "SC": 400000,
+                "ST": 580000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 128,
+                "OBC": 115,
+                "SC": 82,
+                "ST": 58
+            }
+        },
+        "fees": "₹88,000/year",
+        "established": 2005,
+        "rating": 3.5
+    },
+    {
+        "name": "Government College of Engineering, Aurangabad",
+        "type": "Government",
+        "district": "Aurangabad",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electrical Engineering",
+            "Electronics & Telecommunication",
+            "Chemical Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 3500,
+                "OBC": 8000,
+                "SC": 22000,
+                "ST": 40000
+            },
+            "JEE": {
+                "General": 25000,
+                "OBC": 60000,
+                "SC": 150000,
+                "ST": 250000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 178,
+                "OBC": 165,
+                "SC": 138,
+                "ST": 115
+            }
+        },
+        "fees": "₹45,000/year",
+        "established": 1960,
+        "rating": 4.5
+    },
+    {
+        "name": "Deogiri Institute of Engineering, Aurangabad",
+        "type": "Private",
+        "district": "Aurangabad",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electronics & Telecommunication"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 20000,
+                "OBC": 32000,
+                "SC": 58000,
+                "ST": 95000
+            },
+            "JEE": {
+                "General": 130000,
+                "OBC": 195000,
+                "SC": 310000,
+                "ST": 470000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 145,
+                "OBC": 132,
+                "SC": 98,
+                "ST": 72
+            }
+        },
+        "fees": "₹1,10,000/year",
+        "established": 2009,
+        "rating": 3.8
+    },
+    {
+        "name": "MIT Aurangabad (Maharashtra Institute of Technology)",
+        "type": "Private",
+        "district": "Aurangabad",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electronics & Telecommunication"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 25000,
+                "OBC": 38000,
+                "SC": 65000,
+                "ST": 105000
+            },
+            "JEE": {
+                "General": 155000,
+                "OBC": 220000,
+                "SC": 340000,
+                "ST": 500000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 140,
+                "OBC": 128,
+                "SC": 92,
+                "ST": 68
+            }
+        },
+        "fees": "₹1,00,000/year",
+        "established": 2001,
+        "rating": 3.7
+    },
+    {
+        "name": "Government Medical College, Aurangabad",
+        "type": "Government",
+        "district": "Aurangabad",
+        "category": "medical",
+        "branches": [
+            "MBBS",
+            "MD",
+            "MS"
+        ],
+        "cutoffRanks": {
+            "NEET": {
+                "General": 8000,
+                "OBC": 18000,
+                "SC": 40000,
+                "ST": 65000
+            }
+        },
+        "cutoffMarks": {
+            "NEET": {
+                "General": 580,
+                "OBC": 540,
+                "SC": 440,
+                "ST": 380
+            }
+        },
+        "fees": "₹50,000/year",
+        "established": 1956,
+        "rating": 4.5
+    },
+    {
+        "name": "MGM Medical College, Aurangabad",
+        "type": "Private",
+        "district": "Aurangabad",
+        "category": "medical",
+        "branches": [
+            "MBBS",
+            "MD",
+            "MS",
+            "BDS"
+        ],
+        "cutoffRanks": {
+            "NEET": {
+                "General": 25000,
+                "OBC": 42000,
+                "SC": 70000,
+                "ST": 100000
+            }
+        },
+        "cutoffMarks": {
+            "NEET": {
+                "General": 520,
+                "OBC": 480,
+                "SC": 380,
+                "ST": 320
+            }
+        },
+        "fees": "₹10,00,000/year",
+        "established": 1990,
+        "rating": 4
+    },
+    {
+        "name": "Y.B. Chavan College of Pharmacy, Aurangabad",
+        "type": "Private",
+        "district": "Aurangabad",
+        "category": "pharmacy",
+        "branches": [
+            "B.Pharm",
+            "D.Pharm",
+            "M.Pharm"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 10000,
+                "OBC": 20000,
+                "SC": 38000,
+                "ST": 62000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 150,
+                "OBC": 135,
+                "SC": 102,
+                "ST": 78
+            }
+        },
+        "fees": "₹72,000/year",
+        "established": 1982,
+        "rating": 3.9
+    },
+    {
+        "name": "Marathwada Institute of Technology, Beed",
+        "type": "Private",
+        "district": "Beed",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electrical Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 55000,
+                "OBC": 75000,
+                "SC": 115000,
+                "ST": 185000
+            },
+            "JEE": {
+                "General": 330000,
+                "OBC": 420000,
+                "SC": 560000,
+                "ST": 740000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 102,
+                "OBC": 92,
+                "SC": 70,
+                "ST": 50
+            }
+        },
+        "fees": "₹80,000/year",
+        "established": 2007,
+        "rating": 3.3
+    },
+    {
+        "name": "Swami Vivekanand College of Engineering, Beed",
+        "type": "Private",
+        "district": "Beed",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Mechanical Engineering",
+            "Civil Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 60000,
+                "OBC": 82000,
+                "SC": 125000,
+                "ST": 200000
+            },
+            "JEE": {
+                "General": 360000,
+                "OBC": 450000,
+                "SC": 600000,
+                "ST": 780000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 98,
+                "OBC": 88,
+                "SC": 65,
+                "ST": 45
+            }
+        },
+        "fees": "₹75,000/year",
+        "established": 2009,
+        "rating": 3.2
+    },
+    {
+        "name": "S.S.G.M. College of Engineering, Bhandara",
+        "type": "Private",
+        "district": "Bhandara",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electrical Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 48000,
+                "OBC": 68000,
+                "SC": 108000,
+                "ST": 175000
+            },
+            "JEE": {
+                "General": 290000,
+                "OBC": 380000,
+                "SC": 520000,
+                "ST": 700000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 108,
+                "OBC": 98,
+                "SC": 75,
+                "ST": 52
+            }
+        },
+        "fees": "₹78,000/year",
+        "established": 2004,
+        "rating": 3.4
+    },
+    {
+        "name": "Government College of Engineering, Chandrapur",
+        "type": "Government",
+        "district": "Chandrapur",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electrical Engineering",
+            "Mining Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 22000,
+                "OBC": 35000,
+                "SC": 60000,
+                "ST": 100000
+            },
+            "JEE": {
+                "General": 140000,
+                "OBC": 200000,
+                "SC": 320000,
+                "ST": 480000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 142,
+                "OBC": 130,
+                "SC": 95,
+                "ST": 70
+            }
+        },
+        "fees": "₹42,000/year",
+        "established": 1996,
+        "rating": 4
+    },
+    {
+        "name": "Rajiv Gandhi College of Engineering, Chandrapur",
+        "type": "Private",
+        "district": "Chandrapur",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Mechanical Engineering",
+            "Civil Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 50000,
+                "OBC": 70000,
+                "SC": 110000,
+                "ST": 180000
+            },
+            "JEE": {
+                "General": 300000,
+                "OBC": 390000,
+                "SC": 530000,
+                "ST": 710000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 105,
+                "OBC": 95,
+                "SC": 72,
+                "ST": 50
+            }
+        },
+        "fees": "₹82,000/year",
+        "established": 2007,
+        "rating": 3.4
+    },
+    {
+        "name": "SSVPS College of Engineering, Dhule",
+        "type": "Private",
+        "district": "Dhule",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electrical Engineering",
+            "Electronics & Telecommunication"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 22000,
+                "OBC": 35000,
+                "SC": 60000,
+                "ST": 100000
+            },
+            "JEE": {
+                "General": 140000,
+                "OBC": 200000,
+                "SC": 320000,
+                "ST": 480000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 142,
+                "OBC": 130,
+                "SC": 95,
+                "ST": 70
+            }
+        },
+        "fees": "₹90,000/year",
+        "established": 1984,
+        "rating": 3.9
+    },
+    {
+        "name": "RCPET's Institute of Management Research, Shirpur",
+        "type": "Private",
+        "district": "Dhule",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Mechanical Engineering",
+            "Civil Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 40000,
+                "OBC": 58000,
+                "SC": 90000,
+                "ST": 150000
+            },
+            "JEE": {
+                "General": 250000,
+                "OBC": 330000,
+                "SC": 460000,
+                "ST": 620000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 118,
+                "OBC": 108,
+                "SC": 78,
+                "ST": 55
+            }
+        },
+        "fees": "₹85,000/year",
+        "established": 2001,
+        "rating": 3.5
+    },
+    {
+        "name": "Government College of Engineering, Gadchiroli",
+        "type": "Government",
+        "district": "Gadchiroli",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electrical Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 35000,
+                "OBC": 50000,
+                "SC": 82000,
+                "ST": 135000
+            },
+            "JEE": {
+                "General": 210000,
+                "OBC": 280000,
+                "SC": 400000,
+                "ST": 560000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 128,
+                "OBC": 115,
+                "SC": 85,
+                "ST": 60
+            }
+        },
+        "fees": "₹38,000/year",
+        "established": 2015,
+        "rating": 3.5
+    },
+    {
+        "name": "J.D. College of Engineering, Gondia",
+        "type": "Private",
+        "district": "Gondia",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electrical Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 50000,
+                "OBC": 72000,
+                "SC": 112000,
+                "ST": 180000
+            },
+            "JEE": {
+                "General": 300000,
+                "OBC": 395000,
+                "SC": 540000,
+                "ST": 720000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 105,
+                "OBC": 95,
+                "SC": 72,
+                "ST": 50
+            }
+        },
+        "fees": "₹75,000/year",
+        "established": 2008,
+        "rating": 3.3
+    },
+    {
+        "name": "Shreeyash College of Engineering, Hingoli",
+        "type": "Private",
+        "district": "Hingoli",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Mechanical Engineering",
+            "Civil Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 65000,
+                "OBC": 88000,
+                "SC": 130000,
+                "ST": 210000
+            },
+            "JEE": {
+                "General": 390000,
+                "OBC": 480000,
+                "SC": 630000,
+                "ST": 820000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 90,
+                "OBC": 80,
+                "SC": 58,
+                "ST": 40
+            }
+        },
+        "fees": "₹72,000/year",
+        "established": 2010,
+        "rating": 3.1
+    },
+    {
+        "name": "Government College of Engineering, Jalgaon",
+        "type": "Government",
+        "district": "Jalgaon",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electrical Engineering",
+            "Electronics & Telecommunication"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 10000,
+                "OBC": 18000,
+                "SC": 40000,
+                "ST": 70000
+            },
+            "JEE": {
+                "General": 65000,
+                "OBC": 120000,
+                "SC": 220000,
+                "ST": 350000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 162,
+                "OBC": 148,
+                "SC": 118,
+                "ST": 90
+            }
+        },
+        "fees": "₹42,000/year",
+        "established": 1960,
+        "rating": 4.3
+    },
+    {
+        "name": "SSBT College of Engineering, Jalgaon",
+        "type": "Private",
+        "district": "Jalgaon",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electronics & Telecommunication"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 30000,
+                "OBC": 45000,
+                "SC": 72000,
+                "ST": 120000
+            },
+            "JEE": {
+                "General": 185000,
+                "OBC": 260000,
+                "SC": 380000,
+                "ST": 550000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 132,
+                "OBC": 120,
+                "SC": 88,
+                "ST": 65
+            }
+        },
+        "fees": "₹88,000/year",
+        "established": 1995,
+        "rating": 3.7
+    },
+    {
+        "name": "G.H. Raisoni College of Engineering, Jalgaon",
+        "type": "Private",
+        "district": "Jalgaon",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Mechanical Engineering",
+            "Civil Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 35000,
+                "OBC": 50000,
+                "SC": 80000,
+                "ST": 130000
+            },
+            "JEE": {
+                "General": 210000,
+                "OBC": 290000,
+                "SC": 400000,
+                "ST": 580000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 128,
+                "OBC": 115,
+                "SC": 82,
+                "ST": 60
+            }
+        },
+        "fees": "₹95,000/year",
+        "established": 2007,
+        "rating": 3.6
+    },
+    {
+        "name": "Mahatma Gandhi Mission's College of Engineering, Jalna",
+        "type": "Private",
+        "district": "Jalna",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electronics & Telecommunication"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 40000,
+                "OBC": 58000,
+                "SC": 92000,
+                "ST": 150000
+            },
+            "JEE": {
+                "General": 240000,
+                "OBC": 330000,
+                "SC": 460000,
+                "ST": 620000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 118,
+                "OBC": 108,
+                "SC": 78,
+                "ST": 55
+            }
+        },
+        "fees": "₹85,000/year",
+        "established": 2006,
+        "rating": 3.5
+    },
+    {
+        "name": "Shivaji University College of Engineering, Kolhapur",
+        "type": "Government",
+        "district": "Kolhapur",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electrical Engineering",
+            "Electronics & Telecommunication",
+            "Chemical Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 5000,
+                "OBC": 10000,
+                "SC": 28000,
+                "ST": 48000
+            },
+            "JEE": {
+                "General": 35000,
+                "OBC": 70000,
+                "SC": 160000,
+                "ST": 260000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 175,
+                "OBC": 162,
+                "SC": 135,
+                "ST": 110
+            }
+        },
+        "fees": "₹48,000/year",
+        "established": 1962,
+        "rating": 4.4
+    },
+    {
+        "name": "D.Y. Patil College of Engineering, Kolhapur",
+        "type": "Private",
+        "district": "Kolhapur",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electronics & Telecommunication"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 15000,
+                "OBC": 25000,
+                "SC": 48000,
+                "ST": 80000
+            },
+            "JEE": {
+                "General": 95000,
+                "OBC": 155000,
+                "SC": 270000,
+                "ST": 410000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 152,
+                "OBC": 140,
+                "SC": 108,
+                "ST": 82
+            }
+        },
+        "fees": "₹1,20,000/year",
+        "established": 1984,
+        "rating": 4
+    },
+    {
+        "name": "Rajarambapu Institute of Technology, Islampur",
+        "type": "Private (Autonomous)",
+        "district": "Kolhapur",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electrical Engineering",
+            "Electronics & Telecommunication"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 8000,
+                "OBC": 15000,
+                "SC": 35000,
+                "ST": 60000
+            },
+            "JEE": {
+                "General": 55000,
+                "OBC": 100000,
+                "SC": 200000,
+                "ST": 320000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 168,
+                "OBC": 155,
+                "SC": 125,
+                "ST": 98
+            }
+        },
+        "fees": "₹1,10,000/year",
+        "established": 1983,
+        "rating": 4.3
+    },
+    {
+        "name": "Government Medical College, Kolhapur",
+        "type": "Government",
+        "district": "Kolhapur",
+        "category": "medical",
+        "branches": [
+            "MBBS",
+            "MD",
+            "MS"
+        ],
+        "cutoffRanks": {
+            "NEET": {
+                "General": 10000,
+                "OBC": 20000,
+                "SC": 42000,
+                "ST": 68000
+            }
+        },
+        "cutoffMarks": {
+            "NEET": {
+                "General": 570,
+                "OBC": 530,
+                "SC": 430,
+                "ST": 370
+            }
+        },
+        "fees": "₹48,000/year",
+        "established": 1946,
+        "rating": 4.4
+    },
+    {
+        "name": "VPM's Polytechnic & Engineering College, Latur",
+        "type": "Private",
+        "district": "Latur",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electrical Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 42000,
+                "OBC": 60000,
+                "SC": 95000,
+                "ST": 155000
+            },
+            "JEE": {
+                "General": 260000,
+                "OBC": 350000,
+                "SC": 480000,
+                "ST": 650000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 115,
+                "OBC": 105,
+                "SC": 78,
+                "ST": 55
+            }
+        },
+        "fees": "₹82,000/year",
+        "established": 1993,
+        "rating": 3.5
+    },
+    {
+        "name": "Government Medical College, Latur",
+        "type": "Government",
+        "district": "Latur",
+        "category": "medical",
+        "branches": [
+            "MBBS",
+            "MD",
+            "MS"
+        ],
+        "cutoffRanks": {
+            "NEET": {
+                "General": 12000,
+                "OBC": 22000,
+                "SC": 45000,
+                "ST": 72000
+            }
+        },
+        "cutoffMarks": {
+            "NEET": {
+                "General": 560,
+                "OBC": 520,
+                "SC": 420,
+                "ST": 360
+            }
+        },
+        "fees": "₹48,000/year",
+        "established": 1986,
+        "rating": 4.3
+    },
+    {
+        "name": "Sardar Patel College of Engineering (SPCE)",
+        "type": "Government (Autonomous)",
+        "district": "Mumbai",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electronics & Telecommunication"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 1500,
+                "OBC": 3500,
+                "SC": 12000,
+                "ST": 22000
+            },
+            "JEE": {
+                "General": 10000,
+                "OBC": 25000,
+                "SC": 70000,
+                "ST": 120000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 188,
+                "OBC": 178,
+                "SC": 158,
+                "ST": 140
+            }
+        },
+        "fees": "₹1,55,000/year",
+        "established": 1962,
+        "rating": 4.6
+    },
+    {
+        "name": "K.J. Somaiya College of Engineering",
+        "type": "Private",
+        "district": "Mumbai",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Mechanical Engineering",
+            "Electronics & Telecommunication",
+            "Electronics Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 4000,
+                "OBC": 8000,
+                "SC": 20000,
+                "ST": 38000
+            },
+            "JEE": {
+                "General": 28000,
+                "OBC": 55000,
+                "SC": 130000,
+                "ST": 220000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 178,
+                "OBC": 168,
+                "SC": 142,
+                "ST": 120
+            }
+        },
+        "fees": "₹1,80,000/year",
+        "established": 1983,
+        "rating": 4.3
+    },
+    {
+        "name": "Thadomal Shahani Engineering College",
+        "type": "Private",
+        "district": "Mumbai",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Electronics & Telecommunication",
+            "Biomedical Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 5000,
+                "OBC": 10000,
+                "SC": 25000,
+                "ST": 42000
+            },
+            "JEE": {
+                "General": 35000,
+                "OBC": 65000,
+                "SC": 145000,
+                "ST": 240000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 175,
+                "OBC": 165,
+                "SC": 138,
+                "ST": 115
+            }
+        },
+        "fees": "₹1,75,000/year",
+        "established": 1983,
+        "rating": 4.2
+    },
+    {
+        "name": "Seth Govindji Raoji Doshi College of Pharmacy, Mumbai",
+        "type": "Private",
+        "district": "Mumbai",
+        "category": "pharmacy",
+        "branches": [
+            "B.Pharm",
+            "D.Pharm",
+            "M.Pharm"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 5000,
+                "OBC": 12000,
+                "SC": 28000,
+                "ST": 48000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 165,
+                "OBC": 150,
+                "SC": 120,
+                "ST": 95
+            }
+        },
+        "fees": "₹1,20,000/year",
+        "established": 1981,
+        "rating": 4.1
+    },
+    {
+        "name": "Fr. Conceicao Rodrigues College of Engineering, Bandra",
+        "type": "Private",
+        "district": "Mumbai Suburban",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Mechanical Engineering",
+            "Electronics & Telecommunication"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 6000,
+                "OBC": 12000,
+                "SC": 28000,
+                "ST": 48000
+            },
+            "JEE": {
+                "General": 40000,
+                "OBC": 75000,
+                "SC": 160000,
+                "ST": 260000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 172,
+                "OBC": 160,
+                "SC": 135,
+                "ST": 110
+            }
+        },
+        "fees": "₹1,65,000/year",
+        "established": 1984,
+        "rating": 4.1
+    },
+    {
+        "name": "Dwarkadas J. Sanghvi College of Engineering, Vile Parle",
+        "type": "Private (Autonomous)",
+        "district": "Mumbai Suburban",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Mechanical Engineering",
+            "Electronics & Telecommunication",
+            "Chemical Engineering",
+            "Biomedical Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 2500,
+                "OBC": 5000,
+                "SC": 15000,
+                "ST": 28000
+            },
+            "JEE": {
+                "General": 18000,
+                "OBC": 38000,
+                "SC": 95000,
+                "ST": 160000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 185,
+                "OBC": 175,
+                "SC": 152,
+                "ST": 132
+            }
+        },
+        "fees": "₹2,10,000/year",
+        "established": 1994,
+        "rating": 4.5
+    },
+    {
+        "name": "Mukesh Patel School of Technology Management, Vile Parle",
+        "type": "Private",
+        "district": "Mumbai Suburban",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Electronics & Telecommunication",
+            "Mechanical Engineering",
+            "Data Science"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 3000,
+                "OBC": 6000,
+                "SC": 18000,
+                "ST": 32000
+            },
+            "JEE": {
+                "General": 20000,
+                "OBC": 42000,
+                "SC": 105000,
+                "ST": 175000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 182,
+                "OBC": 172,
+                "SC": 148,
+                "ST": 128
+            }
+        },
+        "fees": "₹2,30,000/year",
+        "established": 2006,
+        "rating": 4.4
+    },
+    {
+        "name": "Sardar Patel Institute of Technology, Andheri",
+        "type": "Private",
+        "district": "Thane",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Electronics & Telecommunication",
+            "Mechanical Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 5500,
+                "OBC": 11000,
+                "SC": 26000,
+                "ST": 45000
+            },
+            "JEE": {
+                "General": 38000,
+                "OBC": 70000,
+                "SC": 155000,
+                "ST": 250000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 174,
+                "OBC": 162,
+                "SC": 136,
+                "ST": 112
+            }
+        },
+        "fees": "₹1,70,000/year",
+        "established": 2005,
+        "rating": 4.2
+    },
+    {
+        "name": "Terna Engineering College, Nerul",
+        "type": "Private",
+        "district": "Thane",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electronics & Telecommunication"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 15000,
+                "OBC": 25000,
+                "SC": 50000,
+                "ST": 82000
+            },
+            "JEE": {
+                "General": 95000,
+                "OBC": 155000,
+                "SC": 280000,
+                "ST": 420000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 152,
+                "OBC": 140,
+                "SC": 108,
+                "ST": 82
+            }
+        },
+        "fees": "₹1,25,000/year",
+        "established": 1991,
+        "rating": 3.9
+    },
+    {
+        "name": "Lokmanya Tilak College of Engineering, Koparkhairane",
+        "type": "Private",
+        "district": "Thane",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Mechanical Engineering",
+            "Electronics & Telecommunication"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 18000,
+                "OBC": 28000,
+                "SC": 55000,
+                "ST": 90000
+            },
+            "JEE": {
+                "General": 115000,
+                "OBC": 175000,
+                "SC": 300000,
+                "ST": 450000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 148,
+                "OBC": 135,
+                "SC": 102,
+                "ST": 78
+            }
+        },
+        "fees": "₹1,15,000/year",
+        "established": 1987,
+        "rating": 3.8
+    },
+    {
+        "name": "Rajiv Gandhi Institute of Technology, Versova",
+        "type": "Private",
+        "district": "Palghar",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Mechanical Engineering",
+            "Civil Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 30000,
+                "OBC": 45000,
+                "SC": 72000,
+                "ST": 120000
+            },
+            "JEE": {
+                "General": 185000,
+                "OBC": 260000,
+                "SC": 380000,
+                "ST": 550000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 132,
+                "OBC": 120,
+                "SC": 88,
+                "ST": 65
+            }
+        },
+        "fees": "₹1,00,000/year",
+        "established": 2008,
+        "rating": 3.5
+    },
+    {
+        "name": "Pillai College of Engineering, Panvel",
+        "type": "Private",
+        "district": "Raigad",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electronics & Telecommunication",
+            "Chemical Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 8000,
+                "OBC": 15000,
+                "SC": 35000,
+                "ST": 60000
+            },
+            "JEE": {
+                "General": 52000,
+                "OBC": 95000,
+                "SC": 195000,
+                "ST": 315000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 168,
+                "OBC": 155,
+                "SC": 125,
+                "ST": 98
+            }
+        },
+        "fees": "₹1,45,000/year",
+        "established": 1999,
+        "rating": 4.1
+    },
+    {
+        "name": "Terna Medical College, Nerul",
+        "type": "Private",
+        "district": "Raigad",
+        "category": "medical",
+        "branches": [
+            "MBBS",
+            "MD",
+            "MS"
+        ],
+        "cutoffRanks": {
+            "NEET": {
+                "General": 20000,
+                "OBC": 35000,
+                "SC": 60000,
+                "ST": 90000
+            }
+        },
+        "cutoffMarks": {
+            "NEET": {
+                "General": 530,
+                "OBC": 490,
+                "SC": 390,
+                "ST": 330
+            }
+        },
+        "fees": "₹12,00,000/year",
+        "established": 1991,
+        "rating": 3.9
+    },
+    {
+        "name": "Government College of Engineering, Ratnagiri",
+        "type": "Government",
+        "district": "Ratnagiri",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electronics & Telecommunication"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 15000,
+                "OBC": 25000,
+                "SC": 50000,
+                "ST": 82000
+            },
+            "JEE": {
+                "General": 95000,
+                "OBC": 155000,
+                "SC": 275000,
+                "ST": 420000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 152,
+                "OBC": 140,
+                "SC": 108,
+                "ST": 82
+            }
+        },
+        "fees": "₹42,000/year",
+        "established": 2004,
+        "rating": 3.8
+    },
+    {
+        "name": "Finolex Academy of Management and Technology, Ratnagiri",
+        "type": "Private",
+        "district": "Ratnagiri",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electronics & Telecommunication"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 20000,
+                "OBC": 32000,
+                "SC": 58000,
+                "ST": 95000
+            },
+            "JEE": {
+                "General": 125000,
+                "OBC": 190000,
+                "SC": 310000,
+                "ST": 470000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 145,
+                "OBC": 132,
+                "SC": 100,
+                "ST": 75
+            }
+        },
+        "fees": "₹1,05,000/year",
+        "established": 2002,
+        "rating": 3.9
+    },
+    {
+        "name": "Sharad Institute of Technology College of Engineering, Yadrav",
+        "type": "Private",
+        "district": "Sindhudurg",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electronics & Telecommunication"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 45000,
+                "OBC": 65000,
+                "SC": 100000,
+                "ST": 165000
+            },
+            "JEE": {
+                "General": 275000,
+                "OBC": 360000,
+                "SC": 500000,
+                "ST": 680000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 112,
+                "OBC": 102,
+                "SC": 75,
+                "ST": 52
+            }
+        },
+        "fees": "₹80,000/year",
+        "established": 2008,
+        "rating": 3.4
+    },
+    {
+        "name": "Walchand Institute of Technology, Solapur",
+        "type": "Private (Autonomous)",
+        "district": "Solapur",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electronics & Telecommunication",
+            "Electrical Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 6000,
+                "OBC": 12000,
+                "SC": 30000,
+                "ST": 52000
+            },
+            "JEE": {
+                "General": 40000,
+                "OBC": 80000,
+                "SC": 170000,
+                "ST": 280000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 172,
+                "OBC": 158,
+                "SC": 132,
+                "ST": 105
+            }
+        },
+        "fees": "₹1,00,000/year",
+        "established": 1983,
+        "rating": 4.3
+    },
+    {
+        "name": "N.B. Navale Sinhgad College of Engineering, Solapur",
+        "type": "Private",
+        "district": "Solapur",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electronics & Telecommunication"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 28000,
+                "OBC": 42000,
+                "SC": 68000,
+                "ST": 112000
+            },
+            "JEE": {
+                "General": 175000,
+                "OBC": 245000,
+                "SC": 360000,
+                "ST": 530000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 135,
+                "OBC": 122,
+                "SC": 90,
+                "ST": 68
+            }
+        },
+        "fees": "₹88,000/year",
+        "established": 2001,
+        "rating": 3.6
+    },
+    {
+        "name": "Government Medical College, Solapur",
+        "type": "Government",
+        "district": "Solapur",
+        "category": "medical",
+        "branches": [
+            "MBBS",
+            "MD",
+            "MS"
+        ],
+        "cutoffRanks": {
+            "NEET": {
+                "General": 11000,
+                "OBC": 21000,
+                "SC": 44000,
+                "ST": 70000
+            }
+        },
+        "cutoffMarks": {
+            "NEET": {
+                "General": 565,
+                "OBC": 525,
+                "SC": 425,
+                "ST": 365
+            }
+        },
+        "fees": "₹48,000/year",
+        "established": 1962,
+        "rating": 4.3
+    },
+    {
+        "name": "Government College of Engineering, Karad",
+        "type": "Government",
+        "district": "Satara",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electrical Engineering",
+            "Electronics & Telecommunication"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 8000,
+                "OBC": 15000,
+                "SC": 35000,
+                "ST": 58000
+            },
+            "JEE": {
+                "General": 52000,
+                "OBC": 95000,
+                "SC": 195000,
+                "ST": 315000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 168,
+                "OBC": 155,
+                "SC": 125,
+                "ST": 98
+            }
+        },
+        "fees": "₹42,000/year",
+        "established": 1960,
+        "rating": 4.3
+    },
+    {
+        "name": "Sanjay Ghodawat University, Kolhapur-Sangli Road",
+        "type": "Private",
+        "district": "Satara",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Mechanical Engineering",
+            "Civil Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 22000,
+                "OBC": 35000,
+                "SC": 60000,
+                "ST": 100000
+            },
+            "JEE": {
+                "General": 140000,
+                "OBC": 200000,
+                "SC": 320000,
+                "ST": 480000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 142,
+                "OBC": 130,
+                "SC": 97,
+                "ST": 72
+            }
+        },
+        "fees": "₹1,50,000/year",
+        "established": 2017,
+        "rating": 3.7
+    },
+    {
+        "name": "Krishna Institute of Medical Sciences, Karad",
+        "type": "Private (Deemed)",
+        "district": "Satara",
+        "category": "medical",
+        "branches": [
+            "MBBS",
+            "MD",
+            "MS",
+            "BDS"
+        ],
+        "cutoffRanks": {
+            "NEET": {
+                "General": 18000,
+                "OBC": 32000,
+                "SC": 58000,
+                "ST": 88000
+            }
+        },
+        "cutoffMarks": {
+            "NEET": {
+                "General": 540,
+                "OBC": 495,
+                "SC": 395,
+                "ST": 340
+            }
+        },
+        "fees": "₹10,00,000/year",
+        "established": 1983,
+        "rating": 4.2
+    },
+    {
+        "name": "Government College of Engineering, Nanded",
+        "type": "Government",
+        "district": "Nanded",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electrical Engineering",
+            "Electronics & Telecommunication"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 12000,
+                "OBC": 22000,
+                "SC": 45000,
+                "ST": 75000
+            },
+            "JEE": {
+                "General": 78000,
+                "OBC": 130000,
+                "SC": 240000,
+                "ST": 380000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 158,
+                "OBC": 145,
+                "SC": 112,
+                "ST": 88
+            }
+        },
+        "fees": "₹42,000/year",
+        "established": 1985,
+        "rating": 4
+    },
+    {
+        "name": "MGM College of Engineering, Nanded",
+        "type": "Private",
+        "district": "Nanded",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Mechanical Engineering",
+            "Civil Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 35000,
+                "OBC": 50000,
+                "SC": 80000,
+                "ST": 130000
+            },
+            "JEE": {
+                "General": 210000,
+                "OBC": 290000,
+                "SC": 400000,
+                "ST": 580000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 128,
+                "OBC": 115,
+                "SC": 82,
+                "ST": 60
+            }
+        },
+        "fees": "₹90,000/year",
+        "established": 2001,
+        "rating": 3.5
+    },
+    {
+        "name": "Government Medical College, Nanded",
+        "type": "Government",
+        "district": "Nanded",
+        "category": "medical",
+        "branches": [
+            "MBBS",
+            "MD",
+            "MS"
+        ],
+        "cutoffRanks": {
+            "NEET": {
+                "General": 13000,
+                "OBC": 24000,
+                "SC": 48000,
+                "ST": 75000
+            }
+        },
+        "cutoffMarks": {
+            "NEET": {
+                "General": 555,
+                "OBC": 515,
+                "SC": 415,
+                "ST": 355
+            }
+        },
+        "fees": "₹48,000/year",
+        "established": 1988,
+        "rating": 4.2
+    },
+    {
+        "name": "S.S.V.P.S. BSD College of Engineering, Nandurbar",
+        "type": "Private",
+        "district": "Nandurbar",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Mechanical Engineering",
+            "Civil Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 55000,
+                "OBC": 75000,
+                "SC": 115000,
+                "ST": 185000
+            },
+            "JEE": {
+                "General": 330000,
+                "OBC": 420000,
+                "SC": 560000,
+                "ST": 740000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 102,
+                "OBC": 92,
+                "SC": 70,
+                "ST": 50
+            }
+        },
+        "fees": "₹78,000/year",
+        "established": 2008,
+        "rating": 3.2
+    },
+    {
+        "name": "K.K. Wagh Institute of Engineering, Nashik",
+        "type": "Private",
+        "district": "Nashik",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electronics & Telecommunication",
+            "Electrical Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 10000,
+                "OBC": 18000,
+                "SC": 40000,
+                "ST": 68000
+            },
+            "JEE": {
+                "General": 65000,
+                "OBC": 120000,
+                "SC": 220000,
+                "ST": 350000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 162,
+                "OBC": 148,
+                "SC": 118,
+                "ST": 92
+            }
+        },
+        "fees": "₹1,15,000/year",
+        "established": 1984,
+        "rating": 4.2
+    },
+    {
+        "name": "Sandip Institute of Technology, Nashik",
+        "type": "Private",
+        "district": "Nashik",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electronics & Telecommunication"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 20000,
+                "OBC": 32000,
+                "SC": 58000,
+                "ST": 95000
+            },
+            "JEE": {
+                "General": 130000,
+                "OBC": 190000,
+                "SC": 310000,
+                "ST": 470000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 145,
+                "OBC": 132,
+                "SC": 100,
+                "ST": 75
+            }
+        },
+        "fees": "₹1,00,000/year",
+        "established": 2007,
+        "rating": 3.8
+    },
+    {
+        "name": "MVP Samaj's K.B.T. College of Engineering, Nashik",
+        "type": "Private",
+        "district": "Nashik",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electronics & Telecommunication"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 15000,
+                "OBC": 25000,
+                "SC": 48000,
+                "ST": 80000
+            },
+            "JEE": {
+                "General": 95000,
+                "OBC": 155000,
+                "SC": 270000,
+                "ST": 410000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 152,
+                "OBC": 140,
+                "SC": 108,
+                "ST": 82
+            }
+        },
+        "fees": "₹1,05,000/year",
+        "established": 1983,
+        "rating": 4
+    },
+    {
+        "name": "Government Medical College, Nashik",
+        "type": "Government",
+        "district": "Nashik",
+        "category": "medical",
+        "branches": [
+            "MBBS",
+            "MD",
+            "MS"
+        ],
+        "cutoffRanks": {
+            "NEET": {
+                "General": 9000,
+                "OBC": 18000,
+                "SC": 40000,
+                "ST": 66000
+            }
+        },
+        "cutoffMarks": {
+            "NEET": {
+                "General": 575,
+                "OBC": 535,
+                "SC": 435,
+                "ST": 375
+            }
+        },
+        "fees": "₹48,000/year",
+        "established": 1946,
+        "rating": 4.5
+    },
+    {
+        "name": "Terna College of Engineering, Osmanabad",
+        "type": "Private",
+        "district": "Osmanabad",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Mechanical Engineering",
+            "Civil Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 52000,
+                "OBC": 72000,
+                "SC": 112000,
+                "ST": 180000
+            },
+            "JEE": {
+                "General": 310000,
+                "OBC": 400000,
+                "SC": 540000,
+                "ST": 720000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 104,
+                "OBC": 94,
+                "SC": 72,
+                "ST": 50
+            }
+        },
+        "fees": "₹78,000/year",
+        "established": 2007,
+        "rating": 3.3
+    },
+    {
+        "name": "Government College of Engineering, Parbhani",
+        "type": "Government",
+        "district": "Parbhani",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electrical Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 28000,
+                "OBC": 42000,
+                "SC": 70000,
+                "ST": 115000
+            },
+            "JEE": {
+                "General": 175000,
+                "OBC": 245000,
+                "SC": 360000,
+                "ST": 530000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 135,
+                "OBC": 122,
+                "SC": 90,
+                "ST": 68
+            }
+        },
+        "fees": "₹42,000/year",
+        "established": 1982,
+        "rating": 3.8
+    },
+    {
+        "name": "Datta Meghe Institute of Engineering, Wardha",
+        "type": "Private",
+        "district": "Wardha",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electronics & Telecommunication"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 38000,
+                "OBC": 55000,
+                "SC": 88000,
+                "ST": 142000
+            },
+            "JEE": {
+                "General": 230000,
+                "OBC": 315000,
+                "SC": 440000,
+                "ST": 600000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 120,
+                "OBC": 110,
+                "SC": 80,
+                "ST": 58
+            }
+        },
+        "fees": "₹92,000/year",
+        "established": 2009,
+        "rating": 3.5
+    },
+    {
+        "name": "JNMC - Jawaharlal Nehru Medical College, Wardha",
+        "type": "Private (Deemed)",
+        "district": "Wardha",
+        "category": "medical",
+        "branches": [
+            "MBBS",
+            "MD",
+            "MS",
+            "BDS"
+        ],
+        "cutoffRanks": {
+            "NEET": {
+                "General": 16000,
+                "OBC": 30000,
+                "SC": 55000,
+                "ST": 85000
+            }
+        },
+        "cutoffMarks": {
+            "NEET": {
+                "General": 545,
+                "OBC": 500,
+                "SC": 400,
+                "ST": 345
+            }
+        },
+        "fees": "₹11,00,000/year",
+        "established": 1990,
+        "rating": 4.1
+    },
+    {
+        "name": "Visvesvaraya National Institute of Technology (VNIT)",
+        "type": "Government (Autonomous)",
+        "district": "Nagpur",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electrical Engineering",
+            "Electronics & Telecommunication",
+            "Chemical Engineering",
+            "Metallurgical Engineering",
+            "Mining Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 600,
+                "OBC": 1500,
+                "SC": 6000,
+                "ST": 12000
+            },
+            "JEE": {
+                "General": 4000,
+                "OBC": 10000,
+                "SC": 35000,
+                "ST": 65000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 195,
+                "OBC": 185,
+                "SC": 168,
+                "ST": 152
+            }
+        },
+        "fees": "₹1,75,000/year",
+        "established": 1960,
+        "rating": 4.8
+    },
+    {
+        "name": "G.H. Raisoni College of Engineering, Nagpur",
+        "type": "Private (Autonomous)",
+        "district": "Nagpur",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electronics & Telecommunication",
+            "Electrical Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 12000,
+                "OBC": 22000,
+                "SC": 45000,
+                "ST": 75000
+            },
+            "JEE": {
+                "General": 78000,
+                "OBC": 130000,
+                "SC": 240000,
+                "ST": 380000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 158,
+                "OBC": 145,
+                "SC": 112,
+                "ST": 88
+            }
+        },
+        "fees": "₹1,15,000/year",
+        "established": 1996,
+        "rating": 4.1
+    },
+    {
+        "name": "Yeshwantrao Chavan College of Engineering, Nagpur",
+        "type": "Government (Aided)",
+        "district": "Nagpur",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electrical Engineering",
+            "Electronics & Telecommunication"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 5000,
+                "OBC": 10000,
+                "SC": 28000,
+                "ST": 48000
+            },
+            "JEE": {
+                "General": 35000,
+                "OBC": 68000,
+                "SC": 155000,
+                "ST": 255000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 175,
+                "OBC": 162,
+                "SC": 135,
+                "ST": 110
+            }
+        },
+        "fees": "₹55,000/year",
+        "established": 1984,
+        "rating": 4.3
+    },
+    {
+        "name": "Priyadarshini College of Engineering, Nagpur",
+        "type": "Private",
+        "district": "Nagpur",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Mechanical Engineering",
+            "Civil Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 22000,
+                "OBC": 35000,
+                "SC": 60000,
+                "ST": 100000
+            },
+            "JEE": {
+                "General": 140000,
+                "OBC": 200000,
+                "SC": 320000,
+                "ST": 480000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 142,
+                "OBC": 130,
+                "SC": 95,
+                "ST": 72
+            }
+        },
+        "fees": "₹95,000/year",
+        "established": 1992,
+        "rating": 3.7
+    },
+    {
+        "name": "Government Medical College, Nagpur",
+        "type": "Government",
+        "district": "Nagpur",
+        "category": "medical",
+        "branches": [
+            "MBBS",
+            "MD",
+            "MS"
+        ],
+        "cutoffRanks": {
+            "NEET": {
+                "General": 5000,
+                "OBC": 12000,
+                "SC": 32000,
+                "ST": 55000
+            }
+        },
+        "cutoffMarks": {
+            "NEET": {
+                "General": 600,
+                "OBC": 560,
+                "SC": 460,
+                "ST": 400
+            }
+        },
+        "fees": "₹50,000/year",
+        "established": 1947,
+        "rating": 4.7
+    },
+    {
+        "name": "NKP Salve Institute of Medical Sciences, Nagpur",
+        "type": "Private",
+        "district": "Nagpur",
+        "category": "medical",
+        "branches": [
+            "MBBS",
+            "MD",
+            "MS"
+        ],
+        "cutoffRanks": {
+            "NEET": {
+                "General": 22000,
+                "OBC": 38000,
+                "SC": 65000,
+                "ST": 95000
+            }
+        },
+        "cutoffMarks": {
+            "NEET": {
+                "General": 525,
+                "OBC": 485,
+                "SC": 385,
+                "ST": 325
+            }
+        },
+        "fees": "₹12,00,000/year",
+        "established": 1998,
+        "rating": 3.9
+    },
+    {
+        "name": "Vishwakarma Institute of Technology (VIT), Pune",
+        "type": "Private (Autonomous)",
+        "district": "Pune",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electronics & Telecommunication",
+            "Electrical Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 2000,
+                "OBC": 4500,
+                "SC": 14000,
+                "ST": 25000
+            },
+            "JEE": {
+                "General": 14000,
+                "OBC": 30000,
+                "SC": 80000,
+                "ST": 135000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 186,
+                "OBC": 176,
+                "SC": 155,
+                "ST": 135
+            }
+        },
+        "fees": "₹1,55,000/year",
+        "established": 1983,
+        "rating": 4.5
+    },
+    {
+        "name": "Cummins College of Engineering for Women, Pune",
+        "type": "Private (Autonomous)",
+        "district": "Pune",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Electronics & Telecommunication",
+            "Instrumentation Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 3000,
+                "OBC": 6500,
+                "SC": 18000,
+                "ST": 32000
+            },
+            "JEE": {
+                "General": 20000,
+                "OBC": 42000,
+                "SC": 100000,
+                "ST": 170000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 182,
+                "OBC": 172,
+                "SC": 148,
+                "ST": 128
+            }
+        },
+        "fees": "₹1,38,000/year",
+        "established": 1991,
+        "rating": 4.4
+    },
+    {
+        "name": "B.J. Government Medical College, Pune",
+        "type": "Government",
+        "district": "Pune",
+        "category": "medical",
+        "branches": [
+            "MBBS",
+            "MD",
+            "MS"
+        ],
+        "cutoffRanks": {
+            "NEET": {
+                "General": 4000,
+                "OBC": 10000,
+                "SC": 28000,
+                "ST": 50000
+            }
+        },
+        "cutoffMarks": {
+            "NEET": {
+                "General": 610,
+                "OBC": 570,
+                "SC": 470,
+                "ST": 410
+            }
+        },
+        "fees": "₹50,000/year",
+        "established": 1946,
+        "rating": 4.8
+    },
+    {
+        "name": "Bharati Vidyapeeth Medical College, Pune",
+        "type": "Private (Deemed)",
+        "district": "Pune",
+        "category": "medical",
+        "branches": [
+            "MBBS",
+            "MD",
+            "MS",
+            "BDS"
+        ],
+        "cutoffRanks": {
+            "NEET": {
+                "General": 18000,
+                "OBC": 32000,
+                "SC": 58000,
+                "ST": 88000
+            }
+        },
+        "cutoffMarks": {
+            "NEET": {
+                "General": 540,
+                "OBC": 498,
+                "SC": 398,
+                "ST": 340
+            }
+        },
+        "fees": "₹12,00,000/year",
+        "established": 1989,
+        "rating": 4.1
+    },
+    {
+        "name": "Poona College of Pharmacy, Pune",
+        "type": "Private",
+        "district": "Pune",
+        "category": "pharmacy",
+        "branches": [
+            "B.Pharm",
+            "D.Pharm",
+            "M.Pharm",
+            "Pharm.D"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 3000,
+                "OBC": 8000,
+                "SC": 22000,
+                "ST": 40000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 175,
+                "OBC": 160,
+                "SC": 130,
+                "ST": 105
+            }
+        },
+        "fees": "₹1,00,000/year",
+        "established": 1981,
+        "rating": 4.3
+    },
+    {
+        "name": "Walchand College of Engineering, Sangli",
+        "type": "Government (Autonomous)",
+        "district": "Sangli",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electrical Engineering",
+            "Electronics & Telecommunication"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 3000,
+                "OBC": 7000,
+                "SC": 20000,
+                "ST": 38000
+            },
+            "JEE": {
+                "General": 22000,
+                "OBC": 50000,
+                "SC": 120000,
+                "ST": 200000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 180,
+                "OBC": 168,
+                "SC": 140,
+                "ST": 118
+            }
+        },
+        "fees": "₹55,000/year",
+        "established": 1947,
+        "rating": 4.6
+    },
+    {
+        "name": "Government Medical College, Miraj",
+        "type": "Government",
+        "district": "Sangli",
+        "category": "medical",
+        "branches": [
+            "MBBS",
+            "MD",
+            "MS"
+        ],
+        "cutoffRanks": {
+            "NEET": {
+                "General": 9500,
+                "OBC": 19000,
+                "SC": 42000,
+                "ST": 68000
+            }
+        },
+        "cutoffMarks": {
+            "NEET": {
+                "General": 572,
+                "OBC": 532,
+                "SC": 432,
+                "ST": 372
+            }
+        },
+        "fees": "₹48,000/year",
+        "established": 1962,
+        "rating": 4.4
+    },
+    {
+        "name": "Savitribai Phule Pune University Department of Technology",
+        "type": "Government",
+        "district": "Pune",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Electronics & Telecommunication"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 2000,
+                "OBC": 4500,
+                "SC": 14000,
+                "ST": 25000
+            },
+            "JEE": {
+                "General": 14000,
+                "OBC": 30000,
+                "SC": 80000,
+                "ST": 135000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 186,
+                "OBC": 176,
+                "SC": 155,
+                "ST": 135
+            }
+        },
+        "fees": "₹52,000/year",
+        "established": 1970,
+        "rating": 4.5
+    },
+    {
+        "name": "Army Institute of Technology, Pune",
+        "type": "Private",
+        "district": "Pune",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Mechanical Engineering",
+            "Electronics & Telecommunication"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 3500,
+                "OBC": 7000,
+                "SC": 20000,
+                "ST": 35000
+            },
+            "JEE": {
+                "General": 22000,
+                "OBC": 48000,
+                "SC": 115000,
+                "ST": 190000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 180,
+                "OBC": 170,
+                "SC": 145,
+                "ST": 122
+            }
+        },
+        "fees": "₹1,35,000/year",
+        "established": 1994,
+        "rating": 4.3
+    },
+    {
+        "name": "Maharashtra Institute of Technology (MIT), Pune",
+        "type": "Private",
+        "district": "Pune",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electronics & Telecommunication",
+            "Electrical Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 5000,
+                "OBC": 10000,
+                "SC": 28000,
+                "ST": 48000
+            },
+            "JEE": {
+                "General": 35000,
+                "OBC": 65000,
+                "SC": 155000,
+                "ST": 255000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 175,
+                "OBC": 162,
+                "SC": 135,
+                "ST": 110
+            }
+        },
+        "fees": "₹1,45,000/year",
+        "established": 1983,
+        "rating": 4.2
+    },
+    {
+        "name": "Sinhgad College of Engineering, Vadgaon",
+        "type": "Private",
+        "district": "Pune",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electronics & Telecommunication",
+            "Electrical Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 8000,
+                "OBC": 15000,
+                "SC": 35000,
+                "ST": 60000
+            },
+            "JEE": {
+                "General": 52000,
+                "OBC": 95000,
+                "SC": 195000,
+                "ST": 315000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 168,
+                "OBC": 155,
+                "SC": 125,
+                "ST": 98
+            }
+        },
+        "fees": "₹1,20,000/year",
+        "established": 1996,
+        "rating": 4
+    },
+    {
+        "name": "Sinhgad Institute of Technology, Lonavala",
+        "type": "Private",
+        "district": "Pune (Lonavala)",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Mechanical Engineering",
+            "Civil Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 30000,
+                "OBC": 45000,
+                "SC": 72000,
+                "ST": 120000
+            },
+            "JEE": {
+                "General": 185000,
+                "OBC": 260000,
+                "SC": 380000,
+                "ST": 550000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 132,
+                "OBC": 120,
+                "SC": 88,
+                "ST": 65
+            }
+        },
+        "fees": "₹95,000/year",
+        "established": 2002,
+        "rating": 3.6
+    },
+    {
+        "name": "Marathwada Mitra Mandal's College of Engineering, Pune",
+        "type": "Private",
+        "district": "Pune",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Electronics & Telecommunication",
+            "Mechanical Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 10000,
+                "OBC": 18000,
+                "SC": 40000,
+                "ST": 68000
+            },
+            "JEE": {
+                "General": 65000,
+                "OBC": 120000,
+                "SC": 220000,
+                "ST": 350000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 162,
+                "OBC": 148,
+                "SC": 118,
+                "ST": 92
+            }
+        },
+        "fees": "₹1,15,000/year",
+        "established": 2000,
+        "rating": 3.9
+    },
+    {
+        "name": "Zeal College of Engineering and Research, Pune",
+        "type": "Private",
+        "district": "Pune",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electronics & Telecommunication"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 22000,
+                "OBC": 35000,
+                "SC": 60000,
+                "ST": 100000
+            },
+            "JEE": {
+                "General": 140000,
+                "OBC": 200000,
+                "SC": 320000,
+                "ST": 480000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 142,
+                "OBC": 130,
+                "SC": 95,
+                "ST": 72
+            }
+        },
+        "fees": "₹1,05,000/year",
+        "established": 2007,
+        "rating": 3.7
+    },
+    {
+        "name": "JSPM's Rajarshi Shahu College of Engineering, Pune",
+        "type": "Private",
+        "district": "Pune",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Mechanical Engineering",
+            "Electronics & Telecommunication",
+            "Civil Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 12000,
+                "OBC": 22000,
+                "SC": 45000,
+                "ST": 75000
+            },
+            "JEE": {
+                "General": 78000,
+                "OBC": 130000,
+                "SC": 240000,
+                "ST": 380000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 158,
+                "OBC": 145,
+                "SC": 112,
+                "ST": 88
+            }
+        },
+        "fees": "₹1,10,000/year",
+        "established": 2001,
+        "rating": 3.8
+    },
+    {
+        "name": "Dr. D.Y. Patil Institute of Technology, Pimpri",
+        "type": "Private",
+        "district": "Pune",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electronics & Telecommunication"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 15000,
+                "OBC": 25000,
+                "SC": 50000,
+                "ST": 82000
+            },
+            "JEE": {
+                "General": 95000,
+                "OBC": 155000,
+                "SC": 270000,
+                "ST": 410000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 152,
+                "OBC": 140,
+                "SC": 108,
+                "ST": 82
+            }
+        },
+        "fees": "₹1,25,000/year",
+        "established": 2002,
+        "rating": 3.8
+    },
+    {
+        "name": "NBN Sinhgad School of Engineering, Ambegaon",
+        "type": "Private",
+        "district": "Pune (Ambegaon)",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electrical Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 35000,
+                "OBC": 50000,
+                "SC": 80000,
+                "ST": 130000
+            },
+            "JEE": {
+                "General": 210000,
+                "OBC": 290000,
+                "SC": 400000,
+                "ST": 580000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 128,
+                "OBC": 115,
+                "SC": 82,
+                "ST": 60
+            }
+        },
+        "fees": "₹90,000/year",
+        "established": 2005,
+        "rating": 3.5
+    },
+    {
+        "name": "G.H. Raisoni College of Engineering and Management, Pune",
+        "type": "Private",
+        "district": "Pune",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Mechanical Engineering",
+            "Electronics & Telecommunication"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 20000,
+                "OBC": 32000,
+                "SC": 58000,
+                "ST": 95000
+            },
+            "JEE": {
+                "General": 130000,
+                "OBC": 190000,
+                "SC": 310000,
+                "ST": 470000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 145,
+                "OBC": 132,
+                "SC": 100,
+                "ST": 75
+            }
+        },
+        "fees": "₹1,08,000/year",
+        "established": 2008,
+        "rating": 3.7
+    },
+    {
+        "name": "Indira College of Engineering and Management, Pune",
+        "type": "Private",
+        "district": "Pune",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Mechanical Engineering",
+            "Civil Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 25000,
+                "OBC": 38000,
+                "SC": 65000,
+                "ST": 108000
+            },
+            "JEE": {
+                "General": 155000,
+                "OBC": 220000,
+                "SC": 340000,
+                "ST": 500000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 138,
+                "OBC": 125,
+                "SC": 92,
+                "ST": 68
+            }
+        },
+        "fees": "₹1,02,000/year",
+        "established": 2007,
+        "rating": 3.6
+    },
+    {
+        "name": "Genba Sopanrao Moze College of Engineering, Balewadi",
+        "type": "Private",
+        "district": "Pune",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Mechanical Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 40000,
+                "OBC": 58000,
+                "SC": 90000,
+                "ST": 150000
+            },
+            "JEE": {
+                "General": 250000,
+                "OBC": 330000,
+                "SC": 460000,
+                "ST": 620000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 118,
+                "OBC": 108,
+                "SC": 78,
+                "ST": 55
+            }
+        },
+        "fees": "₹88,000/year",
+        "established": 2009,
+        "rating": 3.4
+    },
+    {
+        "name": "Alandi College of Engineering, Alandi (Devachi)",
+        "type": "Private",
+        "district": "Pune (Alandi)",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Mechanical Engineering",
+            "Civil Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 50000,
+                "OBC": 70000,
+                "SC": 110000,
+                "ST": 180000
+            },
+            "JEE": {
+                "General": 300000,
+                "OBC": 390000,
+                "SC": 530000,
+                "ST": 710000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 105,
+                "OBC": 95,
+                "SC": 72,
+                "ST": 50
+            }
+        },
+        "fees": "₹82,000/year",
+        "established": 2010,
+        "rating": 3.3
+    },
+    {
+        "name": "Smt. Kashibai Navale College of Engineering, Vadgaon",
+        "type": "Private",
+        "district": "Pune (Vadgaon)",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electronics & Telecommunication"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 6000,
+                "OBC": 12000,
+                "SC": 30000,
+                "ST": 52000
+            },
+            "JEE": {
+                "General": 40000,
+                "OBC": 80000,
+                "SC": 170000,
+                "ST": 280000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 172,
+                "OBC": 158,
+                "SC": 132,
+                "ST": 105
+            }
+        },
+        "fees": "₹1,28,000/year",
+        "established": 2001,
+        "rating": 4.1
+    },
+    {
+        "name": "Jayawantrao Sawant College of Engineering, Hadapsar",
+        "type": "Private",
+        "district": "Pune (Hadapsar)",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electronics & Telecommunication"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 18000,
+                "OBC": 28000,
+                "SC": 55000,
+                "ST": 90000
+            },
+            "JEE": {
+                "General": 115000,
+                "OBC": 175000,
+                "SC": 300000,
+                "ST": 450000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 148,
+                "OBC": 135,
+                "SC": 102,
+                "ST": 78
+            }
+        },
+        "fees": "₹1,05,000/year",
+        "established": 2001,
+        "rating": 3.7
+    },
+    {
+        "name": "Siddhant College of Engineering, Sudumbare (Maval)",
+        "type": "Private",
+        "district": "Pune (Maval)",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Mechanical Engineering",
+            "Civil Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 55000,
+                "OBC": 75000,
+                "SC": 115000,
+                "ST": 185000
+            },
+            "JEE": {
+                "General": 330000,
+                "OBC": 420000,
+                "SC": 560000,
+                "ST": 740000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 102,
+                "OBC": 92,
+                "SC": 70,
+                "ST": 50
+            }
+        },
+        "fees": "₹78,000/year",
+        "established": 2008,
+        "rating": 3.2
+    },
+    {
+        "name": "Sinhgad Academy of Engineering, Kondhwa",
+        "type": "Private",
+        "district": "Pune (Kondhwa)",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Mechanical Engineering",
+            "Electronics & Telecommunication"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 15000,
+                "OBC": 25000,
+                "SC": 50000,
+                "ST": 82000
+            },
+            "JEE": {
+                "General": 95000,
+                "OBC": 155000,
+                "SC": 270000,
+                "ST": 410000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 152,
+                "OBC": 140,
+                "SC": 108,
+                "ST": 82
+            }
+        },
+        "fees": "₹1,12,000/year",
+        "established": 2001,
+        "rating": 3.8
+    },
+    {
+        "name": "AISSMS Institute of Information Technology, Pune",
+        "type": "Private",
+        "district": "Pune",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Electronics & Telecommunication"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 4000,
+                "OBC": 8500,
+                "SC": 22000,
+                "ST": 38000
+            },
+            "JEE": {
+                "General": 28000,
+                "OBC": 55000,
+                "SC": 130000,
+                "ST": 215000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 178,
+                "OBC": 168,
+                "SC": 142,
+                "ST": 118
+            }
+        },
+        "fees": "₹1,32,000/year",
+        "established": 1999,
+        "rating": 4.2
+    },
+    {
+        "name": "BVDU College of Engineering, Pune",
+        "type": "Private (Deemed)",
+        "district": "Pune",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electronics & Telecommunication",
+            "Electrical Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 7000,
+                "OBC": 14000,
+                "SC": 32000,
+                "ST": 55000
+            },
+            "JEE": {
+                "General": 48000,
+                "OBC": 90000,
+                "SC": 180000,
+                "ST": 295000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 170,
+                "OBC": 158,
+                "SC": 130,
+                "ST": 105
+            }
+        },
+        "fees": "₹1,50,000/year",
+        "established": 1983,
+        "rating": 4.1
+    },
+    {
+        "name": "Pimpri Chinchwad College of Engineering, Nigdi",
+        "type": "Private",
+        "district": "Pune (Pimpri-Chinchwad)",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electronics & Telecommunication",
+            "Electrical Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 5500,
+                "OBC": 11000,
+                "SC": 28000,
+                "ST": 48000
+            },
+            "JEE": {
+                "General": 38000,
+                "OBC": 72000,
+                "SC": 158000,
+                "ST": 255000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 174,
+                "OBC": 162,
+                "SC": 135,
+                "ST": 110
+            }
+        },
+        "fees": "₹1,18,000/year",
+        "established": 1990,
+        "rating": 4.2
+    },
+    {
+        "name": "Vidya Pratishthan's Kamalnayan Bajaj Institute of Engg, Baramati",
+        "type": "Private",
+        "district": "Pune (Baramati)",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electrical Engineering",
+            "Electronics & Telecommunication"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 20000,
+                "OBC": 32000,
+                "SC": 58000,
+                "ST": 95000
+            },
+            "JEE": {
+                "General": 130000,
+                "OBC": 190000,
+                "SC": 310000,
+                "ST": 470000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 145,
+                "OBC": 132,
+                "SC": 100,
+                "ST": 75
+            }
+        },
+        "fees": "₹95,000/year",
+        "established": 1983,
+        "rating": 3.9
+    },
+    {
+        "name": "Sharadchandra Pawar College of Engineering, Dumbarwadi (Junnar)",
+        "type": "Private",
+        "district": "Pune (Junnar)",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Mechanical Engineering",
+            "Civil Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 60000,
+                "OBC": 82000,
+                "SC": 125000,
+                "ST": 200000
+            },
+            "JEE": {
+                "General": 360000,
+                "OBC": 450000,
+                "SC": 600000,
+                "ST": 780000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 95,
+                "OBC": 85,
+                "SC": 62,
+                "ST": 42
+            }
+        },
+        "fees": "₹72,000/year",
+        "established": 2010,
+        "rating": 3.1
+    },
+    {
+        "name": "Sinhgad Institute of Technology & Science, Narhe",
+        "type": "Private",
+        "district": "Pune (Narhe)",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Mechanical Engineering",
+            "Electronics & Telecommunication"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 12000,
+                "OBC": 22000,
+                "SC": 45000,
+                "ST": 75000
+            },
+            "JEE": {
+                "General": 78000,
+                "OBC": 130000,
+                "SC": 240000,
+                "ST": 380000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 158,
+                "OBC": 145,
+                "SC": 112,
+                "ST": 88
+            }
+        },
+        "fees": "₹1,10,000/year",
+        "established": 2002,
+        "rating": 3.8
+    },
+    {
+        "name": "MAEER's MIT College of Engineering, Kothrud",
+        "type": "Private",
+        "district": "Pune",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electronics & Telecommunication"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 3000,
+                "OBC": 6500,
+                "SC": 18000,
+                "ST": 32000
+            },
+            "JEE": {
+                "General": 20000,
+                "OBC": 42000,
+                "SC": 105000,
+                "ST": 175000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 182,
+                "OBC": 172,
+                "SC": 148,
+                "ST": 128
+            }
+        },
+        "fees": "₹1,48,000/year",
+        "established": 1983,
+        "rating": 4.4
+    },
+    {
+        "name": "Armed Forces Medical College (AFMC), Pune",
+        "type": "Government",
+        "district": "Pune",
+        "category": "medical",
+        "branches": [
+            "MBBS",
+            "MD",
+            "MS"
+        ],
+        "cutoffRanks": {
+            "NEET": {
+                "General": 200,
+                "OBC": 800,
+                "SC": 3000,
+                "ST": 5000
+            }
+        },
+        "cutoffMarks": {
+            "NEET": {
+                "General": 690,
+                "OBC": 665,
+                "SC": 600,
+                "ST": 560
+            }
+        },
+        "fees": "₹56,000/year",
+        "established": 1948,
+        "rating": 4.9
+    },
+    {
+        "name": "Dr. D.Y. Patil Medical College, Pimpri",
+        "type": "Private (Deemed)",
+        "district": "Pune",
+        "category": "medical",
+        "branches": [
+            "MBBS",
+            "MD",
+            "MS",
+            "BDS"
+        ],
+        "cutoffRanks": {
+            "NEET": {
+                "General": 20000,
+                "OBC": 35000,
+                "SC": 60000,
+                "ST": 90000
+            }
+        },
+        "cutoffMarks": {
+            "NEET": {
+                "General": 530,
+                "OBC": 490,
+                "SC": 390,
+                "ST": 330
+            }
+        },
+        "fees": "₹15,00,000/year",
+        "established": 1996,
+        "rating": 4
+    },
+    {
+        "name": "Sassoon General Hospital / GMC Pune",
+        "type": "Government",
+        "district": "Pune",
+        "category": "medical",
+        "branches": [
+            "MBBS",
+            "MD",
+            "MS"
+        ],
+        "cutoffRanks": {
+            "NEET": {
+                "General": 3500,
+                "OBC": 8000,
+                "SC": 25000,
+                "ST": 45000
+            }
+        },
+        "cutoffMarks": {
+            "NEET": {
+                "General": 615,
+                "OBC": 575,
+                "SC": 475,
+                "ST": 415
+            }
+        },
+        "fees": "₹48,000/year",
+        "established": 1946,
+        "rating": 4.7
+    },
+    {
+        "name": "Symbiosis Medical College for Women, Pune",
+        "type": "Private (Deemed)",
+        "district": "Pune",
+        "category": "medical",
+        "branches": [
+            "MBBS"
+        ],
+        "cutoffRanks": {
+            "NEET": {
+                "General": 15000,
+                "OBC": 28000,
+                "SC": 52000,
+                "ST": 80000
+            }
+        },
+        "cutoffMarks": {
+            "NEET": {
+                "General": 550,
+                "OBC": 510,
+                "SC": 410,
+                "ST": 350
+            }
+        },
+        "fees": "₹18,00,000/year",
+        "established": 2020,
+        "rating": 4
+    },
+    {
+        "name": "Sinhgad Dental College and Hospital, Pune",
+        "type": "Private",
+        "district": "Pune",
+        "category": "medical",
+        "branches": [
+            "BDS",
+            "MDS"
+        ],
+        "cutoffRanks": {
+            "NEET": {
+                "General": 40000,
+                "OBC": 60000,
+                "SC": 90000,
+                "ST": 130000
+            }
+        },
+        "cutoffMarks": {
+            "NEET": {
+                "General": 440,
+                "OBC": 400,
+                "SC": 320,
+                "ST": 270
+            }
+        },
+        "fees": "₹5,00,000/year",
+        "established": 2002,
+        "rating": 3.6
+    },
+    {
+        "name": "Maharashtra Institute of Pharmacy, Pune",
+        "type": "Private",
+        "district": "Pune",
+        "category": "pharmacy",
+        "branches": [
+            "B.Pharm",
+            "D.Pharm",
+            "M.Pharm"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 5000,
+                "OBC": 12000,
+                "SC": 28000,
+                "ST": 48000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 165,
+                "OBC": 150,
+                "SC": 120,
+                "ST": 95
+            }
+        },
+        "fees": "₹1,00,000/year",
+        "established": 1981,
+        "rating": 4.1
+    },
+    {
+        "name": "Sinhgad College of Pharmacy, Vadgaon",
+        "type": "Private",
+        "district": "Pune",
+        "category": "pharmacy",
+        "branches": [
+            "B.Pharm",
+            "D.Pharm",
+            "M.Pharm"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 8000,
+                "OBC": 16000,
+                "SC": 35000,
+                "ST": 58000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 160,
+                "OBC": 145,
+                "SC": 115,
+                "ST": 90
+            }
+        },
+        "fees": "₹90,000/year",
+        "established": 1998,
+        "rating": 3.9
+    },
+    {
+        "name": "Dr. D.Y. Patil College of Pharmacy, Akurdi",
+        "type": "Private",
+        "district": "Pune",
+        "category": "pharmacy",
+        "branches": [
+            "B.Pharm",
+            "D.Pharm",
+            "M.Pharm",
+            "Pharm.D"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 6000,
+                "OBC": 14000,
+                "SC": 32000,
+                "ST": 52000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 162,
+                "OBC": 148,
+                "SC": 118,
+                "ST": 92
+            }
+        },
+        "fees": "₹1,10,000/year",
+        "established": 2000,
+        "rating": 4
+    },
+    {
+        "name": "JSPM's Charak College of Pharmacy, Wagholi",
+        "type": "Private",
+        "district": "Pune (Wagholi)",
+        "category": "pharmacy",
+        "branches": [
+            "B.Pharm",
+            "D.Pharm"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 15000,
+                "OBC": 25000,
+                "SC": 48000,
+                "ST": 78000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 148,
+                "OBC": 135,
+                "SC": 105,
+                "ST": 80
+            }
+        },
+        "fees": "₹78,000/year",
+        "established": 2008,
+        "rating": 3.5
+    },
+    {
+        "name": "Bharati Vidyapeeth College of Pharmacy, Kolhapur Road",
+        "type": "Private",
+        "district": "Pune",
+        "category": "pharmacy",
+        "branches": [
+            "B.Pharm",
+            "D.Pharm",
+            "M.Pharm"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 4000,
+                "OBC": 10000,
+                "SC": 25000,
+                "ST": 42000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 170,
+                "OBC": 155,
+                "SC": 125,
+                "ST": 100
+            }
+        },
+        "fees": "₹1,05,000/year",
+        "established": 1985,
+        "rating": 4.2
+    },
+    {
+        "name": "Annasaheb Dange College of Engineering, Ashta",
+        "type": "Private",
+        "district": "Satara (Ashta)",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electronics & Telecommunication"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 18000,
+                "OBC": 28000,
+                "SC": 55000,
+                "ST": 90000
+            },
+            "JEE": {
+                "General": 115000,
+                "OBC": 175000,
+                "SC": 300000,
+                "ST": 450000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 148,
+                "OBC": 135,
+                "SC": 102,
+                "ST": 78
+            }
+        },
+        "fees": "₹95,000/year",
+        "established": 1999,
+        "rating": 3.8
+    },
+    {
+        "name": "Padmabhooshan Vasantdada Patil Institute of Technology, Budhgaon",
+        "type": "Private",
+        "district": "Satara (Budhgaon)",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electronics & Telecommunication"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 25000,
+                "OBC": 38000,
+                "SC": 65000,
+                "ST": 108000
+            },
+            "JEE": {
+                "General": 155000,
+                "OBC": 220000,
+                "SC": 340000,
+                "ST": 500000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 138,
+                "OBC": 125,
+                "SC": 92,
+                "ST": 68
+            }
+        },
+        "fees": "₹88,000/year",
+        "established": 2001,
+        "rating": 3.6
+    },
+    {
+        "name": "Satara College of Engineering, Satara",
+        "type": "Private",
+        "district": "Satara",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electrical Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 40000,
+                "OBC": 58000,
+                "SC": 90000,
+                "ST": 150000
+            },
+            "JEE": {
+                "General": 250000,
+                "OBC": 330000,
+                "SC": 460000,
+                "ST": 620000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 118,
+                "OBC": 108,
+                "SC": 78,
+                "ST": 55
+            }
+        },
+        "fees": "₹82,000/year",
+        "established": 2008,
+        "rating": 3.4
+    },
+    {
+        "name": "Sanjeevan Engineering and Technology Institute, Panhala",
+        "type": "Private",
+        "district": "Satara (Panhala)",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Mechanical Engineering",
+            "Civil Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 52000,
+                "OBC": 72000,
+                "SC": 112000,
+                "ST": 180000
+            },
+            "JEE": {
+                "General": 310000,
+                "OBC": 400000,
+                "SC": 540000,
+                "ST": 720000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 104,
+                "OBC": 94,
+                "SC": 72,
+                "ST": 50
+            }
+        },
+        "fees": "₹75,000/year",
+        "established": 2010,
+        "rating": 3.2
+    },
+    {
+        "name": "Yashoda Technical Campus, Satara",
+        "type": "Private",
+        "district": "Satara",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electrical Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 48000,
+                "OBC": 68000,
+                "SC": 105000,
+                "ST": 170000
+            },
+            "JEE": {
+                "General": 290000,
+                "OBC": 380000,
+                "SC": 520000,
+                "ST": 700000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 108,
+                "OBC": 98,
+                "SC": 75,
+                "ST": 52
+            }
+        },
+        "fees": "₹78,000/year",
+        "established": 2009,
+        "rating": 3.3
+    },
+    {
+        "name": "Sinhgad College of Engineering, Korti (Pandharpur Road)",
+        "type": "Private",
+        "district": "Satara (Korti)",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Mechanical Engineering",
+            "Civil Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 55000,
+                "OBC": 75000,
+                "SC": 115000,
+                "ST": 185000
+            },
+            "JEE": {
+                "General": 330000,
+                "OBC": 420000,
+                "SC": 560000,
+                "ST": 740000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 102,
+                "OBC": 92,
+                "SC": 70,
+                "ST": 50
+            }
+        },
+        "fees": "₹72,000/year",
+        "established": 2012,
+        "rating": 3.1
+    },
+    {
+        "name": "Krishna Institute of Pharmacy, Karad",
+        "type": "Private",
+        "district": "Satara (Karad)",
+        "category": "pharmacy",
+        "branches": [
+            "B.Pharm",
+            "D.Pharm",
+            "M.Pharm",
+            "Pharm.D"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 5000,
+                "OBC": 12000,
+                "SC": 28000,
+                "ST": 48000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 165,
+                "OBC": 150,
+                "SC": 120,
+                "ST": 95
+            }
+        },
+        "fees": "₹95,000/year",
+        "established": 2000,
+        "rating": 4.1
+    },
+    {
+        "name": "Satara College of Pharmacy, Satara",
+        "type": "Private",
+        "district": "Satara",
+        "category": "pharmacy",
+        "branches": [
+            "B.Pharm",
+            "D.Pharm"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 18000,
+                "OBC": 30000,
+                "SC": 55000,
+                "ST": 88000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 140,
+                "OBC": 128,
+                "SC": 95,
+                "ST": 72
+            }
+        },
+        "fees": "₹68,000/year",
+        "established": 2005,
+        "rating": 3.5
+    },
+    {
+        "name": "Krishna Institute of Nursing, Karad",
+        "type": "Private (Deemed)",
+        "district": "Satara (Karad)",
+        "category": "medical",
+        "branches": [
+            "B.Sc Nursing",
+            "M.Sc Nursing",
+            "GNM"
+        ],
+        "cutoffRanks": {
+            "NEET": {
+                "General": 22000,
+                "OBC": 38000,
+                "SC": 65000,
+                "ST": 95000
+            }
+        },
+        "cutoffMarks": {
+            "NEET": {
+                "General": 520,
+                "OBC": 480,
+                "SC": 380,
+                "ST": 320
+            }
+        },
+        "fees": "₹6,00,000/year",
+        "established": 1998,
+        "rating": 3.9
+    },
+    {
+        "name": "Tatyasaheb Kore Institute of Engineering, Warananagar",
+        "type": "Private",
+        "district": "Sangli (Warananagar)",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electronics & Telecommunication",
+            "Electrical Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 10000,
+                "OBC": 18000,
+                "SC": 40000,
+                "ST": 68000
+            },
+            "JEE": {
+                "General": 65000,
+                "OBC": 120000,
+                "SC": 220000,
+                "ST": 350000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 162,
+                "OBC": 148,
+                "SC": 118,
+                "ST": 92
+            }
+        },
+        "fees": "₹1,00,000/year",
+        "established": 1983,
+        "rating": 4.1
+    },
+    {
+        "name": "Bharati Vidyapeeth's College of Engineering, Sangli",
+        "type": "Private",
+        "district": "Sangli",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electronics & Telecommunication"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 15000,
+                "OBC": 25000,
+                "SC": 50000,
+                "ST": 82000
+            },
+            "JEE": {
+                "General": 95000,
+                "OBC": 155000,
+                "SC": 270000,
+                "ST": 410000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 152,
+                "OBC": 140,
+                "SC": 108,
+                "ST": 82
+            }
+        },
+        "fees": "₹1,05,000/year",
+        "established": 1998,
+        "rating": 3.8
+    },
+    {
+        "name": "D.Y. Patil College of Engineering, Kasaba Bawada, Kolhapur Road",
+        "type": "Private",
+        "district": "Sangli",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Mechanical Engineering",
+            "Civil Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 35000,
+                "OBC": 50000,
+                "SC": 80000,
+                "ST": 130000
+            },
+            "JEE": {
+                "General": 210000,
+                "OBC": 290000,
+                "SC": 400000,
+                "ST": 580000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 128,
+                "OBC": 115,
+                "SC": 82,
+                "ST": 60
+            }
+        },
+        "fees": "₹88,000/year",
+        "established": 2005,
+        "rating": 3.5
+    },
+    {
+        "name": "Ashokrao Mane Group of Institutions, Vathar",
+        "type": "Private",
+        "district": "Sangli (Vathar)",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electrical Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 45000,
+                "OBC": 65000,
+                "SC": 100000,
+                "ST": 165000
+            },
+            "JEE": {
+                "General": 275000,
+                "OBC": 360000,
+                "SC": 500000,
+                "ST": 680000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 112,
+                "OBC": 102,
+                "SC": 75,
+                "ST": 52
+            }
+        },
+        "fees": "₹78,000/year",
+        "established": 2008,
+        "rating": 3.3
+    },
+    {
+        "name": "Yashwant College of Engineering, Sangli (Wadi Ratnagiri Road)",
+        "type": "Private",
+        "district": "Sangli",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Mechanical Engineering",
+            "Civil Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 55000,
+                "OBC": 75000,
+                "SC": 115000,
+                "ST": 185000
+            },
+            "JEE": {
+                "General": 330000,
+                "OBC": 420000,
+                "SC": 560000,
+                "ST": 740000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 102,
+                "OBC": 92,
+                "SC": 70,
+                "ST": 50
+            }
+        },
+        "fees": "₹72,000/year",
+        "established": 2010,
+        "rating": 3.1
+    },
+    {
+        "name": "Sangli Miraj Medical College (Government)",
+        "type": "Government",
+        "district": "Sangli",
+        "category": "medical",
+        "branches": [
+            "MBBS",
+            "MD",
+            "MS"
+        ],
+        "cutoffRanks": {
+            "NEET": {
+                "General": 8500,
+                "OBC": 17000,
+                "SC": 38000,
+                "ST": 62000
+            }
+        },
+        "cutoffMarks": {
+            "NEET": {
+                "General": 580,
+                "OBC": 540,
+                "SC": 440,
+                "ST": 380
+            }
+        },
+        "fees": "₹48,000/year",
+        "established": 1962,
+        "rating": 4.4
+    },
+    {
+        "name": "Bharati Vidyapeeth's Medical College, Sangli",
+        "type": "Private",
+        "district": "Sangli",
+        "category": "medical",
+        "branches": [
+            "MBBS",
+            "MD",
+            "MS",
+            "BDS"
+        ],
+        "cutoffRanks": {
+            "NEET": {
+                "General": 22000,
+                "OBC": 38000,
+                "SC": 65000,
+                "ST": 95000
+            }
+        },
+        "cutoffMarks": {
+            "NEET": {
+                "General": 525,
+                "OBC": 485,
+                "SC": 385,
+                "ST": 325
+            }
+        },
+        "fees": "₹12,00,000/year",
+        "established": 1989,
+        "rating": 3.9
+    },
+    {
+        "name": "Appasaheb Birnale College of Pharmacy, Sangli",
+        "type": "Private",
+        "district": "Sangli",
+        "category": "pharmacy",
+        "branches": [
+            "B.Pharm",
+            "D.Pharm",
+            "M.Pharm"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 8000,
+                "OBC": 16000,
+                "SC": 35000,
+                "ST": 58000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 160,
+                "OBC": 145,
+                "SC": 115,
+                "ST": 90
+            }
+        },
+        "fees": "₹72,000/year",
+        "established": 1990,
+        "rating": 3.8
+    },
+    {
+        "name": "Government College of Pharmacy, Karad",
+        "type": "Government",
+        "district": "Sangli (Karad)",
+        "category": "pharmacy",
+        "branches": [
+            "B.Pharm",
+            "M.Pharm"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 2000,
+                "OBC": 5000,
+                "SC": 15000,
+                "ST": 28000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 180,
+                "OBC": 168,
+                "SC": 140,
+                "ST": 115
+            }
+        },
+        "fees": "₹25,000/year",
+        "established": 1965,
+        "rating": 4.3
+    },
+    {
+        "name": "KIT's College of Engineering, Kolhapur",
+        "type": "Private",
+        "district": "Kolhapur",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electronics & Telecommunication"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 12000,
+                "OBC": 22000,
+                "SC": 45000,
+                "ST": 75000
+            },
+            "JEE": {
+                "General": 78000,
+                "OBC": 130000,
+                "SC": 240000,
+                "ST": 380000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 158,
+                "OBC": 145,
+                "SC": 112,
+                "ST": 88
+            }
+        },
+        "fees": "₹1,05,000/year",
+        "established": 1983,
+        "rating": 4
+    },
+    {
+        "name": "Sanjay Ghodawat Group of Institutions, Atigre",
+        "type": "Private",
+        "district": "Kolhapur (Atigre)",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electronics & Telecommunication",
+            "Electrical Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 18000,
+                "OBC": 28000,
+                "SC": 55000,
+                "ST": 90000
+            },
+            "JEE": {
+                "General": 115000,
+                "OBC": 175000,
+                "SC": 300000,
+                "ST": 450000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 148,
+                "OBC": 135,
+                "SC": 102,
+                "ST": 78
+            }
+        },
+        "fees": "₹1,15,000/year",
+        "established": 2009,
+        "rating": 3.8
+    },
+    {
+        "name": "Kolhapur Institute of Technology, Kolhapur",
+        "type": "Private",
+        "district": "Kolhapur",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electrical Engineering",
+            "Electronics & Telecommunication"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 20000,
+                "OBC": 32000,
+                "SC": 58000,
+                "ST": 95000
+            },
+            "JEE": {
+                "General": 130000,
+                "OBC": 190000,
+                "SC": 310000,
+                "ST": 470000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 145,
+                "OBC": 132,
+                "SC": 100,
+                "ST": 75
+            }
+        },
+        "fees": "₹98,000/year",
+        "established": 1993,
+        "rating": 3.7
+    },
+    {
+        "name": "Sharad Institute of Technology, College of Engineering, Ichalkaranji",
+        "type": "Private",
+        "district": "Kolhapur (Ichalkaranji)",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Textile Technology"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 30000,
+                "OBC": 45000,
+                "SC": 72000,
+                "ST": 120000
+            },
+            "JEE": {
+                "General": 185000,
+                "OBC": 260000,
+                "SC": 380000,
+                "ST": 550000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 132,
+                "OBC": 120,
+                "SC": 88,
+                "ST": 65
+            }
+        },
+        "fees": "₹85,000/year",
+        "established": 2001,
+        "rating": 3.6
+    },
+    {
+        "name": "Dattajirao Kadam Technical Education Society's Engineering College, Ichalkaranji",
+        "type": "Private",
+        "district": "Kolhapur (Ichalkaranji)",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Mechanical Engineering",
+            "Civil Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 42000,
+                "OBC": 60000,
+                "SC": 95000,
+                "ST": 155000
+            },
+            "JEE": {
+                "General": 260000,
+                "OBC": 350000,
+                "SC": 480000,
+                "ST": 650000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 115,
+                "OBC": 105,
+                "SC": 78,
+                "ST": 55
+            }
+        },
+        "fees": "₹78,000/year",
+        "established": 2005,
+        "rating": 3.4
+    },
+    {
+        "name": "Annasaheb Dange College of Engineering, Ashta (Walwa)",
+        "type": "Private",
+        "district": "Kolhapur (Ashta)",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electrical Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 22000,
+                "OBC": 35000,
+                "SC": 60000,
+                "ST": 100000
+            },
+            "JEE": {
+                "General": 140000,
+                "OBC": 200000,
+                "SC": 320000,
+                "ST": 480000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 142,
+                "OBC": 130,
+                "SC": 95,
+                "ST": 72
+            }
+        },
+        "fees": "₹92,000/year",
+        "established": 2000,
+        "rating": 3.7
+    },
+    {
+        "name": "Chhatrapati Shivaji Maharaj Institute of Technology, Panvel Road, Kolhapur",
+        "type": "Private",
+        "district": "Kolhapur",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Mechanical Engineering",
+            "Civil Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 48000,
+                "OBC": 68000,
+                "SC": 105000,
+                "ST": 170000
+            },
+            "JEE": {
+                "General": 290000,
+                "OBC": 380000,
+                "SC": 520000,
+                "ST": 700000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 108,
+                "OBC": 98,
+                "SC": 75,
+                "ST": 52
+            }
+        },
+        "fees": "₹75,000/year",
+        "established": 2009,
+        "rating": 3.3
+    },
+    {
+        "name": "Rajaram College of Pharmacy, Kolhapur",
+        "type": "Private",
+        "district": "Kolhapur",
+        "category": "pharmacy",
+        "branches": [
+            "B.Pharm",
+            "D.Pharm",
+            "M.Pharm"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 6000,
+                "OBC": 14000,
+                "SC": 32000,
+                "ST": 52000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 162,
+                "OBC": 148,
+                "SC": 118,
+                "ST": 92
+            }
+        },
+        "fees": "₹78,000/year",
+        "established": 1990,
+        "rating": 3.9
+    },
+    {
+        "name": "D.Y. Patil College of Pharmacy, Kolhapur",
+        "type": "Private",
+        "district": "Kolhapur",
+        "category": "pharmacy",
+        "branches": [
+            "B.Pharm",
+            "D.Pharm",
+            "M.Pharm",
+            "Pharm.D"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 8000,
+                "OBC": 16000,
+                "SC": 35000,
+                "ST": 58000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 160,
+                "OBC": 145,
+                "SC": 115,
+                "ST": 90
+            }
+        },
+        "fees": "₹85,000/year",
+        "established": 2002,
+        "rating": 3.7
+    },
+    {
+        "name": "Sanjay Ghodawat Group - Pharmacy, Atigre",
+        "type": "Private",
+        "district": "Kolhapur (Atigre)",
+        "category": "pharmacy",
+        "branches": [
+            "B.Pharm",
+            "D.Pharm"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 12000,
+                "OBC": 22000,
+                "SC": 42000,
+                "ST": 68000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 150,
+                "OBC": 135,
+                "SC": 105,
+                "ST": 80
+            }
+        },
+        "fees": "₹80,000/year",
+        "established": 2010,
+        "rating": 3.6
+    },
+    {
+        "name": "D.Y. Patil Medical College, Kolhapur",
+        "type": "Private (Deemed)",
+        "district": "Kolhapur",
+        "category": "medical",
+        "branches": [
+            "MBBS",
+            "MD",
+            "MS",
+            "BDS"
+        ],
+        "cutoffRanks": {
+            "NEET": {
+                "General": 18000,
+                "OBC": 32000,
+                "SC": 58000,
+                "ST": 88000
+            }
+        },
+        "cutoffMarks": {
+            "NEET": {
+                "General": 540,
+                "OBC": 498,
+                "SC": 398,
+                "ST": 340
+            }
+        },
+        "fees": "₹14,00,000/year",
+        "established": 1996,
+        "rating": 4
+    },
+    {
+        "name": "Rajaram Medical College (Government), Kolhapur",
+        "type": "Government",
+        "district": "Kolhapur",
+        "category": "medical",
+        "branches": [
+            "MBBS",
+            "MD",
+            "MS"
+        ],
+        "cutoffRanks": {
+            "NEET": {
+                "General": 9000,
+                "OBC": 18000,
+                "SC": 40000,
+                "ST": 65000
+            }
+        },
+        "cutoffMarks": {
+            "NEET": {
+                "General": 575,
+                "OBC": 535,
+                "SC": 435,
+                "ST": 375
+            }
+        },
+        "fees": "₹48,000/year",
+        "established": 1946,
+        "rating": 4.5
+    },
+    {
+        "name": "Siddheshwar Women's College of Engineering, Solapur",
+        "type": "Private",
+        "district": "Solapur",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Information Technology",
+            "Electronics & Telecommunication"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 35000,
+                "OBC": 50000,
+                "SC": 80000,
+                "ST": 130000
+            },
+            "JEE": {
+                "General": 210000,
+                "OBC": 290000,
+                "SC": 400000,
+                "ST": 580000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 128,
+                "OBC": 115,
+                "SC": 82,
+                "ST": 60
+            }
+        },
+        "fees": "₹82,000/year",
+        "established": 2005,
+        "rating": 3.5
+    },
+    {
+        "name": "Punyashlok Ahilyadevi Holkar Solapur University Engineering College",
+        "type": "Government",
+        "district": "Solapur",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electrical Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 15000,
+                "OBC": 25000,
+                "SC": 50000,
+                "ST": 82000
+            },
+            "JEE": {
+                "General": 95000,
+                "OBC": 155000,
+                "SC": 275000,
+                "ST": 420000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 152,
+                "OBC": 140,
+                "SC": 108,
+                "ST": 82
+            }
+        },
+        "fees": "₹45,000/year",
+        "established": 2012,
+        "rating": 3.7
+    },
+    {
+        "name": "Fabtech College of Engineering and Research, Sangola",
+        "type": "Private",
+        "district": "Solapur (Sangola)",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Mechanical Engineering",
+            "Civil Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 55000,
+                "OBC": 75000,
+                "SC": 115000,
+                "ST": 185000
+            },
+            "JEE": {
+                "General": 330000,
+                "OBC": 420000,
+                "SC": 560000,
+                "ST": 740000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 102,
+                "OBC": 92,
+                "SC": 70,
+                "ST": 50
+            }
+        },
+        "fees": "₹72,000/year",
+        "established": 2010,
+        "rating": 3.2
+    },
+    {
+        "name": "BVP's Institute of Management & Rural Development, Sangli-Solapur Road",
+        "type": "Private",
+        "district": "Solapur",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Mechanical Engineering",
+            "Civil Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 48000,
+                "OBC": 68000,
+                "SC": 105000,
+                "ST": 170000
+            },
+            "JEE": {
+                "General": 290000,
+                "OBC": 380000,
+                "SC": 520000,
+                "ST": 700000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 108,
+                "OBC": 98,
+                "SC": 75,
+                "ST": 52
+            }
+        },
+        "fees": "₹78,000/year",
+        "established": 2007,
+        "rating": 3.3
+    },
+    {
+        "name": "Shri Vithal Education & Research Institute's COE, Pandharpur",
+        "type": "Private",
+        "district": "Solapur (Pandharpur)",
+        "category": "engineering",
+        "branches": [
+            "Computer Science",
+            "Mechanical Engineering",
+            "Civil Engineering",
+            "Electrical Engineering"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 50000,
+                "OBC": 70000,
+                "SC": 110000,
+                "ST": 180000
+            },
+            "JEE": {
+                "General": 300000,
+                "OBC": 390000,
+                "SC": 530000,
+                "ST": 710000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 105,
+                "OBC": 95,
+                "SC": 72,
+                "ST": 50
+            }
+        },
+        "fees": "₹75,000/year",
+        "established": 2008,
+        "rating": 3.3
+    },
+    {
+        "name": "Solapur University Pharmacy College",
+        "type": "Government",
+        "district": "Solapur",
+        "category": "pharmacy",
+        "branches": [
+            "B.Pharm",
+            "M.Pharm"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 3000,
+                "OBC": 8000,
+                "SC": 22000,
+                "ST": 40000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 175,
+                "OBC": 160,
+                "SC": 130,
+                "ST": 105
+            }
+        },
+        "fees": "₹28,000/year",
+        "established": 2005,
+        "rating": 3.9
+    },
+    {
+        "name": "Sangola Taluka College of Pharmacy, Sangola",
+        "type": "Private",
+        "district": "Solapur (Sangola)",
+        "category": "pharmacy",
+        "branches": [
+            "B.Pharm",
+            "D.Pharm"
+        ],
+        "cutoffRanks": {
+            "CET": {
+                "General": 20000,
+                "OBC": 32000,
+                "SC": 58000,
+                "ST": 92000
+            }
+        },
+        "cutoffMarks": {
+            "CET": {
+                "General": 138,
+                "OBC": 125,
+                "SC": 92,
+                "ST": 68
+            }
+        },
+        "fees": "₹62,000/year",
+        "established": 2008,
+        "rating": 3.3
+    },
+    {
+        "name": "Pandharpur Medical College (Government)",
+        "type": "Government",
+        "district": "Solapur (Pandharpur)",
+        "category": "medical",
+        "branches": [
+            "MBBS"
+        ],
+        "cutoffRanks": {
+            "NEET": {
+                "General": 15000,
+                "OBC": 28000,
+                "SC": 52000,
+                "ST": 80000
+            }
+        },
+        "cutoffMarks": {
+            "NEET": {
+                "General": 550,
+                "OBC": 510,
+                "SC": 410,
+                "ST": 350
+            }
+        },
+        "fees": "₹48,000/year",
+        "established": 2018,
+        "rating": 3.8
+    },
+    {
+        "name": "Ashwini Sahakari Rugnalaya's Medical College, Solapur",
+        "type": "Private",
+        "district": "Solapur",
+        "category": "medical",
+        "branches": [
+            "MBBS",
+            "MD"
+        ],
+        "cutoffRanks": {
+            "NEET": {
+                "General": 28000,
+                "OBC": 45000,
+                "SC": 72000,
+                "ST": 105000
+            }
+        },
+        "cutoffMarks": {
+            "NEET": {
+                "General": 510,
+                "OBC": 470,
+                "SC": 370,
+                "ST": 310
+            }
+        },
+        "fees": "₹13,00,000/year",
+        "established": 2005,
+        "rating": 3.6
+    }
+]

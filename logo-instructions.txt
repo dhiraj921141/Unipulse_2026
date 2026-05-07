@@ -1,0 +1,12 @@
+LOGO SETUP INSTRUCTIONS:
+
+1. Save the Unipulse logo image you provided as "unipulse-logo.png" in the project folder
+2. The logo should be in PNG format with transparent background for best results
+3. Recommended dimensions: 200x200 pixels or similar square format
+4. The website is already configured to display the logo properly in:
+   - Header (45px height on desktop, 35px on mobile)
+   - Footer (35px height)
+
+Current logo file path: unipulse-logo.png
+
+The website will automatically use this logo once you save it with the correct filename.

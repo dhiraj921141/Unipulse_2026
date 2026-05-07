@@ -1,0 +1,54 @@
+# Admin Panel with Authentication for Unipulse
+
+Add a fully functional, premium admin panel with proper login authentication. Only authenticated users can access the admin dashboard to manage college data.
+
+## Proposed Changes
+
+### Admin Panel (New Files)
+
+#### [NEW] [admin.html](file:///c:/Unipulse%20newww/admin.html)
+
+A complete admin panel page with:
+- **Login screen** — username/password form with validation, animated error states, and a "remember me" option
+- **Dashboard** (shown after login) — stats cards (total colleges, per-category counts), quick-action buttons
+- **College Management** — searchable/filterable table of all colleges, with Add/Edit/Delete modals
+- **Logout button** — clears session and returns to login screen
+- Premium dark-themed UI with glassmorphism, gradients, and micro-animations matching the main site branding
+
+**Authentication approach** (client-side, since no backend):
+- Hardcoded admin credentials: `admin` / `unipulse2024`
+- Session stored in `sessionStorage` (cleared on tab close)
+- Route guard on page load — if not authenticated, show login; if authenticated, show dashboard
+- Login attempts limited to prevent brute force (lockout after 5 failed attempts for 30 seconds)
+
+#### [NEW] [admin.js](file:///c:/Unipulse%20newww/admin.js)
+
+JavaScript logic for:
+- `AdminAuth` class — handles login/logout, session management, attempt tracking
+- `AdminDashboard` class — populates stats, renders college table, handles search/filter
+- CRUD operations — Add, Edit, Delete colleges (modifies in-memory `collegeData`, persisted to `localStorage`)
+- Form validation for college data entry
+- Export college data as JSON
+
+---
+
+### Main Site Update
+
+#### [MODIFY] [index.html](file:///c:/Unipulse%20newww/index.html)
+
+- Add an "Admin" link (with lock icon) to the desktop navigation menu and mobile nav
+- Link points to `admin.html`
+
+## Verification Plan
+
+### Browser Testing
+1. Open `admin.html` directly — should see the login page, not the dashboard
+2. Enter wrong credentials — should show an error message with shake animation
+3. Enter correct credentials (`admin` / `unipulse2024`) — should transition to the dashboard
+4. Dashboard should show accurate college counts from [data.js](file:///c:/Unipulse%20newww/data.js)
+5. Add a new college via the form — it should appear in the table
+6. Edit an existing college — changes should reflect in the table
+7. Delete a college — it should be removed from the table
+8. Click Logout — should return to login screen
+9. Try accessing the dashboard URL directly without login — should redirect to login
+10. Verify the "Admin" link in [index.html](file:///c:/Unipulse%20newww/index.html) navigation opens `admin.html`
